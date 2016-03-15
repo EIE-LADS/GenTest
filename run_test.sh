@@ -31,10 +31,10 @@ done
 
 		if [ "${ANSW_MIPS}" = "${ANSW_GCC}" ];
 				then
-					printf "${t}\t\tPASSED" 
+					printf "${t}\t\tPASSED\n" 
 				else
 					printf "${t}\t\tFAILED\n"
-					printf "gcc out ${ANSW_GCC}"
-					printf "mips out ${ANSW_MIPS}" 
+					printf "gcc out ${ANSW_GCC}\n"
+					printf "mips out ${ANSW_MIPS}\n" 
 				fi 
 	done
