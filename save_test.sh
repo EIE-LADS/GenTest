@@ -12,7 +12,7 @@
 NAME_EXE=jesus
 NAME_TEST=jesus
 NUM=
-TESTS="$(ls test/ | sed -E -e '/([a-z]+_test_[0-9]+\.c)/!d' | sed -E -e 's%([a-z]+_test_[0-9]+).c%\1%')"
+TESTS="$(ls test/ | sed -r -e '/([a-z]+_test_[0-9]+\.c)/!d' | sed -r -e 's%([a-z]+_test_[0-9]+).c%\1%')"
 
 while [ "$1" != "" ]; do
    NUM=$1;

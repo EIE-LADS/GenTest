@@ -1,6 +1,6 @@
 #!/bin/bash
 NAME=
-TESTS="$(ls test/ | sed -r -e '/([a-z]+_test_[0-9]+\.c)/!d'"
+TESTS="$(ls test/ | sed -r -e '/([a-z]+_test_[0-9]+\.c)/!d' | sed -r -e 's%([a-z]+_test_[0-9]+).c%\1%')"
 
 X=1
 Y=3
