@@ -3,21 +3,21 @@
 	.ent f
 	.type f, @function
 f:
-	move $fp, $sp		# func 
+	move $fp, $sp
 	move $t0, $a0
 	sw $t0, 4($fp)
 	move $t0, $a1
 	sw $t0, 8($fp)
 SCOPE_1:
-	lw $t0, 8($fp)		# string_leaf var: b
-	lw $t1, 4($fp)		# string_leaf var: a
-	sub $t2,	$t0,	$t1	# expr op: >
-	slt $t2,	$zero,	$t2	# expr op: >
+	lw $t0, 8($fp)
+	lw $t1, 4($fp)
+	sub $t2,	$t0,	$t1
+	slt $t2,	$zero,	$t2
 	sw $t0, 8($fp)
 	sw $t1, 4($fp)
-	move $v0, $t2		# statement return 
-	j $31		# statement return 
-	nop 		# statement return 
+	move $v0, $t2
+	j $31
+	nop 
 	.end f
 
 	#end of f

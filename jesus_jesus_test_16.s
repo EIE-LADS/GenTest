@@ -3,38 +3,38 @@
 	.ent f
 	.type f, @function
 f:
-	move $fp, $sp		# func 
+	move $fp, $sp
 	move $t0, $a0
 	sw $t0, 4($fp)
 	move $t0, $a1
 	sw $t0, 8($fp)
 SCOPE_1:
-	lw $t0, 4($fp)		# string_leaf var: a
-	li $t1, 1		# int_leaf var: 1
-	li $t2, 35		# int_leaf var: 35
-	li $t3, 29		# int_leaf var: 29
-	and $t4,	$t2,	$t3	# expr op: &
-	or $t2,	$t1,	$t4	# expr op: |
-	move $t0,	$t2	# expr op: =
+	lw $t0, 4($fp)
+	li $t1, 1
+	li $t2, 35
+	li $t3, 29
+	and $t4,	$t2,	$t3
+	or $t2,	$t1,	$t4
+	move $t0,	$t2
 	sw $t0, 4($fp)
-	lw $t0, 8($fp)		# string_leaf var: b
-	li $t1, 1		# int_leaf var: 1
-	li $t2, 35		# int_leaf var: 35
-	li $t3, 29		# int_leaf var: 29
-	and $t4,	$t2,	$t3	# expr op: &&
-	or $t2,	$t1,	$t4	# expr op: ||
-	move $t0,	$t2	# expr op: =
+	lw $t0, 8($fp)
+	li $t1, 1
+	li $t2, 35
+	li $t3, 29
+	and $t4,	$t2,	$t3
+	or $t2,	$t1,	$t4
+	move $t0,	$t2
 	sw $t0, 8($fp)
-	lw $t0, 4($fp)		# string_leaf var: a
-	lw $t1, 8($fp)		# string_leaf var: b
-	mul $t2,	$t0,	$t1	# expr op: *
-	nop 	# expr op: *
-	nop 	# expr op: *
+	lw $t0, 4($fp)
+	lw $t1, 8($fp)
+	mul $t2,	$t0,	$t1
+	nop 
+	nop 
 	sw $t0, 4($fp)
 	sw $t1, 8($fp)
-	move $v0, $t2		# statement return 
-	j $31		# statement return 
-	nop 		# statement return 
+	move $v0, $t2
+	j $31
+	nop 
 	.end f
 
 	#end of f
