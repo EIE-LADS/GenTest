@@ -1,4 +1,5 @@
 #!/bin/bash
+NUM=1
 NAME=jesus
 TESTS="$(ls test/ | sed -r -e '/([a-z]+_test_[0-9]+\.c)/!d' | sed -r -e 's%([a-z]+_test_[0-9]+).c%\1%')"
 
