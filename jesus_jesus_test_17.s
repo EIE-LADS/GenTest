@@ -1,0 +1,2 @@
+ERROR:  syntax error
+	.text
