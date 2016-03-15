@@ -10,12 +10,9 @@
 
 
 NAME_EXE=jesus
-NAME_TEST=
+NAME_TEST=jesus
 NUM=
-OUTPUT=assm_jesus.s
-TESTS="$(ls test/ | sed -r -e '/([a-z]+_test_[0-9]+\.c)/!d' | sed -r -e 's%([a-z]+_test_[0-9]+).c%\1%')"
-echo $TESTS
-echo "\n"
+TESTS="$(ls test/ | sed -E -e '/([a-z]+_test_[0-9]+\.c)/!d' | sed -E -e 's%([a-z]+_test_[0-9]+).c%\1%')"
 
 while [ "$1" != "" ]; do
    NUM=$1;
@@ -23,10 +20,11 @@ while [ "$1" != "" ]; do
 done
 
 if [ "$NUM" != "" ]; then
-	cat test/${NAME_TEST}_test_${NUM}.txt | bin/c_codegen > ${NAME_EXE}_${NAME_TEST}_test_${NUM}.txt
+	cat test/${NAME_TEST}_test_${NUM}.c | bin/c_codegen > ${NAME_EXE}_${NAME_TEST}_test_${NUM}.txt
 else
 	for t in $TESTS;
 	do
+		echo saving ${t}
 		cat test/${t}.c | bin/c_codegen > test/${NAME_EXE}_${t}.s
 	done
 fi
