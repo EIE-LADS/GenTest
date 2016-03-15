@@ -18,17 +18,19 @@ done
 	do
 
 		#Run through gcc
-		mips-linux-gnu-gcc test/driver.c test/${NAME}_test_${NUM}.c -o bin/test_gcc
-		bin/test_gcc $X $Y
+		mips-linux-gnu-gcc -static test/driver.c test/${t}.c -o bin/test_gcc
+		qemu-mips bin/test_gcc $X $Y
 		ANSW_GCC="$(echo $?)"
 	
 		#Run my assembly
 		mips-linux-gnu-gcc -c -static test/driver.c -o bin/driver.o
-		mips-linux-gnu-gcc -c -static test/${NAME}_test_${NUM}.s -o bin/assm.o
+		mips-linux-gnu-gcc -c -static test/${NAME}_${t}.s -o bin/assm.o
 		mips-linux-gnu-gcc -static bin/assm.o bin/driver.o -o bin/test_mips
 		qemu-mips bin/test_mips $X $Y
 		ANSW_MIPS="$(echo $?)"
 
+
+		echo "test ${t}"
 		echo "gcc out ${ANSW_GCC}"
 		echo "mips out ${ANSW_MIPS}"
 	done
