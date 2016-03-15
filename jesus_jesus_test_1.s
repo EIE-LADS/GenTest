@@ -1,7 +1,7 @@
 	.text
 	.global f
 	.ent f
-	.type f, @func
+	.type f, @function
 f:
 	move $fp, $sp
 	move $t0, $a0
