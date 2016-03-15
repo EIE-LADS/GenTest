@@ -29,8 +29,12 @@ done
 		qemu-mips bin/test_mips $X $Y
 		ANSW_MIPS="$(echo $?)"
 
-
-		echo "test ${t}"
-		echo "gcc out ${ANSW_GCC}"
-		echo "mips out ${ANSW_MIPS}"
+		if [ "${ANSW_MIPS}" = "${ANSW_GCC}" ];
+				then
+					printf "${t}\t\tPASSED" 
+				else
+					printf "${t}\t\tFAILED\n"
+					printf "gcc out ${ANSW_GCC}"
+					printf "mips out ${ANSW_MIPS}" 
+				fi 
 	done
