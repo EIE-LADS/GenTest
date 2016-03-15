@@ -1,5 +1,5 @@
 #!/bin/bash
-NAME=
+NAME=jesus
 TESTS="$(ls test/ | sed -r -e '/([a-z]+_test_[0-9]+\.c)/!d' | sed -r -e 's%([a-z]+_test_[0-9]+).c%\1%')"
 
 X=1
@@ -22,8 +22,9 @@ done
 		ANSW_GCC="$(echo $?)"
 	
 		#Run my assembly
-		mips-linux-gnu -c -S -static test/driver.c -o test/driver.s
-		mips_linux-gcc -static test/${NAME}_test_${NUM}.s test/driver.s -o bin/test_mips
+		mips-linux-gnu-gcc -c -static test/driver.c -o bin/driver.o
+		mips-linux-gnu-gcc -c -static test/${NAME}_test_${NUM}.s -o bin/assm.o
+		mips-linux-gnu-gcc -static bin/assm.o bin/driver.o -o bin/test_mips
 		qemu-mips bin/test_mips $X $Y
 		ANSW_MIPS="$(echo $?)"
 
