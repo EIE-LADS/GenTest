@@ -6,7 +6,7 @@ int f (int a, int b)
 	x >= 13;
 	x << y;
 	x++;
-	x += 15;
+	x+=15;
 	x --;
 	y = 4;
 	x <<= y;

@@ -3,79 +3,71 @@
 	.ent f
 	.type f, @function
 f:
-	move $fp, $sp
-	move $t0, $a0
-	sw $t0, 4($fp)
-	move $t0, $a1
-	sw $t0, 8($fp)
+	move $fp, $sp		# func 
+	sw $a0, 4($fp)
+	sw $a1, 8($fp)
 SCOPE_1:
-	li $t0, 7
-	lw $t1, 44($fp)
-	move $t1, $t0
-	move $t2, $t1
+	li $t0, 7		# int_leaf var: 7
+	lw $t1, 44($fp)		# string_leaf var: f
+	move $t1, $t0	# expr op: =
+	move $t2, $t1		# expr assignment save out 
 	sw $t1, 44($fp)
-	lw $t0, 48($fp)
-	move $t0, $t2
-	move $t1, $t0
+	lw $t0, 48($fp)		# string_leaf var: g
+	move $t0, $t2	# expr op: =
+	move $t1, $t0		# expr assignment save out 
 	sw $t0, 48($fp)
-	lw $t0, 40($fp)
-	move $t0, $t1
-	move $t2, $t0
+	lw $t0, 40($fp)		# string_leaf var: d
+	move $t0, $t1	# expr op: =
+	move $t2, $t0		# expr assignment save out 
 	sw $t0, 40($fp)
-	lw $t0, 36($fp)
-	move $t0, $t2
-	move $t1, $t0
+	lw $t0, 36($fp)		# string_leaf var: s
+	move $t0, $t2	# expr op: =
+	move $t1, $t0		# expr assignment save out 
 	sw $t0, 36($fp)
-	lw $t0, 28($fp)
-	move $t0, $t1
-	move $t2, $t0
+	lw $t0, 28($fp)		# string_leaf var: p
+	move $t0, $t1	# expr op: =
+	move $t2, $t0		# expr assignment save out 
 	sw $t0, 28($fp)
-	lw $t0, 24($fp)
-	move $t0, $t2
-	move $t1, $t0
+	lw $t0, 24($fp)		# string_leaf var: w
+	move $t0, $t2	# expr op: =
+	move $t1, $t0		# expr assignment save out 
 	sw $t0, 24($fp)
-	lw $t0, 20($fp)
-	move $t0, $t1
-	move $t2, $t0
+	lw $t0, 20($fp)		# string_leaf var: z
+	move $t0, $t1	# expr op: =
+	move $t2, $t0		# expr assignment save out 
 	sw $t0, 20($fp)
-	lw $t0, 16($fp)
-	move $t0, $t2
-	move $t1, $t0
+	lw $t0, 16($fp)		# string_leaf var: y
+	move $t0, $t2	# expr op: =
+	move $t1, $t0		# expr assignment save out 
 	sw $t0, 16($fp)
-	lw $t0, 12($fp)
-	move $t0, $t1
-	move $t2, $t0
+	lw $t0, 12($fp)		# string_leaf var: x
+	move $t0, $t1	# expr op: =
+	move $t2, $t0		# expr assignment save out 
 	sw $t0, 12($fp)
-	lw $t0, 8($fp)
-	move $t0, $t2
-	move $t1, $t0
+	lw $t0, 8($fp)		# string_leaf var: b
+	move $t0, $t2	# expr op: =
+	move $t1, $t0		# expr assignment save out 
 	sw $t0, 8($fp)
-	lw $t0, 4($fp)
-	move $t0, $t1
-	move $t2, $t0
+	lw $t0, 4($fp)		# string_leaf var: a
+	move $t0, $t1	# expr op: =
+	move $t2, $t0		# expr assignment save out 
 	sw $t0, 4($fp)
-	li $t0, 7
-	lw $t1, 24($fp)
-	lw $t2, 20($fp)
-	lw $t3, 16($fp)
-	lw $t4, 12($fp)
-	lw $t5, 8($fp)
-	lw $t6, 4($fp)
-	add $t7, $t6, $t5
-	sw $t6, 4($fp)
-	sw $t5, 8($fp)
-	add $t5, $t7, $t4
-	sw $t4, 12($fp)
-	add $t4, $t5, $t3
-	sw $t3, 16($fp)
-	add $t3, $t4, $t2
-	sw $t2, 20($fp)
-	add $t2, $t3, $t1
-	sw $t1, 24($fp)
-	add $t1, $t2, $t0
-	move $v0, $t1
-	j $31
-	nop 
+	li $t0, 7		# int_leaf var: 7
+	lw $t1, 24($fp)		# string_leaf var: w
+	lw $t2, 20($fp)		# string_leaf var: z
+	lw $t3, 16($fp)		# string_leaf var: y
+	lw $t4, 12($fp)		# string_leaf var: x
+	lw $t5, 8($fp)		# string_leaf var: b
+	lw $t6, 4($fp)		# string_leaf var: a
+	add $t7, $t6, $t5	# expr op: +
+	add $t5, $t7, $t4	# expr op: +
+	add $t4, $t5, $t3	# expr op: +
+	add $t3, $t4, $t2	# expr op: +
+	add $t2, $t3, $t1	# expr op: +
+	add $t1, $t2, $t0	# expr op: +
+	move $v0, $t1		# statement return 
+	j $31		# statement return 
+	nop 		# statement return 
 	.end f
 
 	#end of f
