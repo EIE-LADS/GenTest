@@ -41,6 +41,7 @@ mul	$8,$8,$9
 nop
 nop
 sw	$8,36($fp)
+sw	$8,44($fp)
 lw	$8,16($fp)
 sw	$8,16($fp)
 lw	$2,16($fp)
