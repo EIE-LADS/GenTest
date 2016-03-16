@@ -1,4 +1,4 @@
-int main()
+int f()
 {
 	int x = 12;
 	int y = 14;

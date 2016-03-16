@@ -1,4 +1,4 @@
-int main (int x, int y)
+int f (int a, int b)
 {
 	int x, y = 12, z;
 	int ;

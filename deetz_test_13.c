@@ -1,4 +1,4 @@
-int main()
+int f ()
 {
 	int x = 12;
 	int y = 445;
@@ -31,5 +31,12 @@ int main()
 	x <= 4;
 	y < 7;
 	x >= 13;
+	x << y;
+	x >> (y / 2);
+	x++;
+	x += 15;
+	x--;
+	y = 4;
+	x <<= y;
 	return x;
 }
