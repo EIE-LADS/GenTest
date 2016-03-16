@@ -8,10 +8,8 @@ f:
 	sw	$31,52($sp)
 	sw	$fp,48($sp)
 	move	$fp,$sp
-	move	$8,$4
-	sw	$8,16($fp)
-	move	$8,$5
-	sw	$8,20($fp)
+	sw	$a0,16($fp)
+	sw	$a1,20($fp)
 	lw	$8,28($fp)
 	sw	$8,28($fp)
 	lw	$8,40($fp)

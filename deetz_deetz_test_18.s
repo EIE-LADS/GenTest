@@ -12,13 +12,12 @@ f:
 	sw	$a1,20($fp)
 	lw	$8,16($fp)
 	sw	$8,16($fp)
-	lw	$8,20($fp)
-	sw	$8,20($fp)
-	lw	$8,20($fp)
-	lw	$9,16($fp)
-	slt	$8,$8,$9
+	lw	$8,16($fp)
+	addi	$8,$8,1
 	sw	$8,28($fp)
-	lw	$2,28($fp)
+	lw	$8,16($fp)
+	sw	$8,16($fp)
+	lw	$2,16($fp)
 	move	$sp,$fp
 	lw	$fp,36($sp)
 	lw	$31,40($sp)
