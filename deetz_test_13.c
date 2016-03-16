@@ -32,10 +32,9 @@ int f (int a, int b)
 	y < 7;
 	x >= 13;
 	x << y;
-	x >> (y / 2);
 	x++;
 	x += 15;
-	x--;
+	x --;
 	y = 4;
 	x <<= y;
 	return x;

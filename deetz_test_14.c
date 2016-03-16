@@ -1,6 +1,6 @@
 int f(int x, int y)
 {
-	x = x + y;
-	return x * y;
+	y = x + 3;
+	return y;
 }
 
