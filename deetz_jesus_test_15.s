@@ -8,10 +8,8 @@ f:
 	sw	$31,44($sp)
 	sw	$fp,40($sp)
 	move	$fp,$sp
-	move	$8,$4
-	sw	$8,16($fp)
-	move	$8,$5
-	sw	$8,20($fp)
+	sw	$a0,16($fp)
+	sw	$a1,20($fp)
 	lw	$8,20($fp)
 	sw	$8,20($fp)
 	lw	$8,16($fp)
@@ -23,7 +21,7 @@ f:
 	lw	$10,0($fp)
 	lw	$8,0($fp)
 	movn	$8,$9,$8
-	movz	8,$10,$8
+	movz	$8,$10,$8
 	sw	$8,28($fp)
 	lw	$2,28($fp)
 	move	$sp,$fp
