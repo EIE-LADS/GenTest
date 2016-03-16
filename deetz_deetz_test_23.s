@@ -24,7 +24,7 @@ f:
 	addi	$8,$8,1
 	sw	$8,16($fp)
 	lw	$8,48($fp)
-	lw	$9,0($fp)
+	lw	$9,52($fp)
 	mul	$8,$8,$9
 	nop
 	nop
@@ -47,16 +47,16 @@ f:
 	sub	$8,$8,$9
 	sw	$8,60($fp)
 	lw	$8,60($fp)
-	lw	$9,0($fp)
+	lw	$9,40($fp)
 	sllv	$8,$8,$9
 	sw	$8,36($fp)
 	lw	$8,16($fp)
-	lw	$9,0($fp)
+	lw	$9,36($fp)
 	rem	$8,$8,$9
 	nop
 	nop
 	sw	$8,32($fp)
-	lw	$8,0($fp)
+	lw	$8,32($fp)
 	sw	$8,20($fp)
 	sw	$8,28($fp)
 	lw	$8,16($fp)
