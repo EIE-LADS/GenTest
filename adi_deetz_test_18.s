@@ -4,9 +4,9 @@
 	.ent	f
 	.type	f, @function
 f:
-addiu	$sp,$sp,-36
-sw	$fp,28($sp)
-sw	$31,32($sp)
+addiu	$sp,$sp,-32
+sw	$fp,24($sp)
+sw	$31,28($sp)
 move	$fp,$sp
 sw	$a0,8($fp)
 sw	$a1,12($fp)
@@ -14,14 +14,14 @@ lw	$8,8($fp)
 sw	$8,8($fp)
 lw	$8,8($fp)
 addi	$8,$8,1
-sw	$8,20($fp)
+sw	$8,8($fp)
 lw	$8,8($fp)
 sw	$8,8($fp)
 lw	$2,8($fp)
 move	$sp,$fp
-lw	$fp,28($sp)
-lw	$31,32($sp)
-addiu	$sp,$sp,36
+lw	$fp,24($sp)
+lw	$31,28($sp)
+addiu	$sp,$sp,32
 j	$31
 nop
 	.end	f
