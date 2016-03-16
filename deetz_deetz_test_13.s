@@ -4,9 +4,9 @@
 	.ent	f
 	.type	f, @function
 f: 
-	addiu	$sp,$sp,-272
-	sw	$31,268($sp)
-	sw	$fp,264($sp)
+	addiu	$sp,$sp,-276
+	sw	$31,272($sp)
+	sw	$fp,268($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
@@ -93,7 +93,7 @@ f:
 	lw	$8,36($fp)
 	lw	$9,36($fp)
 	mul	$8,$8,$9
-	sw	$8,96($fp)
+	sw	$8,36($fp)
 	lw	$8,36($fp)
 	sw	$8,36($fp)
 	lw	$8,60($fp)
@@ -118,7 +118,7 @@ f:
 	lw	$8,36($fp)
 	lw	$9,40($fp)
 	div	$8,$8,$9
-	sw	$8,112($fp)
+	sw	$8,36($fp)
 	lw	$8,36($fp)
 	sw	$8,36($fp)
 	lw	$8,40($fp)
@@ -142,7 +142,7 @@ f:
 	lw	$8,36($fp)
 	lw	$9,28($fp)
 	rem	$8,$8,$9
-	sw	$8,124($fp)
+	sw	$8,36($fp)
 	lw	$8,36($fp)
 	sw	$8,36($fp)
 	lw	$8,60($fp)
@@ -163,7 +163,7 @@ f:
 	lw	$8,36($fp)
 	lw	$9,36($fp)
 	sllv	$8,$8,$9
-	sw	$8,136($fp)
+	sw	$8,36($fp)
 	lw	$8,36($fp)
 	sw	$8,36($fp)
 	lw	$8,60($fp)
@@ -185,7 +185,7 @@ f:
 	lw	$8,36($fp)
 	lw	$9,60($fp)
 	srav	$8,$8,$9
-	sw	$8,148($fp)
+	sw	$8,36($fp)
 	lw	$8,36($fp)
 	sw	$8,36($fp)
 	lw	$8,40($fp)
@@ -194,7 +194,7 @@ f:
 	lw	$8,36($fp)
 	lw	$9,40($fp)
 	and	$8,$8,$9
-	sw	$8,152($fp)
+	sw	$8,36($fp)
 	lw	$8,36($fp)
 	sw	$8,36($fp)
 	lw	$8,60($fp)
@@ -216,7 +216,7 @@ f:
 	lw	$8,36($fp)
 	lw	$9,48($fp)
 	or	$8,$8,$9
-	sw	$8,164($fp)
+	sw	$8,36($fp)
 	lw	$8,36($fp)
 	sw	$8,36($fp)
 	lw	$8,176($fp)
@@ -238,7 +238,7 @@ f:
 	lw	$8,36($fp)
 	lw	$9,184($fp)
 	xor	$8,$8,$9
-	sw	$8,180($fp)
+	sw	$8,36($fp)
 	lw	$8,36($fp)
 	sw	$8,36($fp)
 	lw	$8,60($fp)
@@ -368,11 +368,19 @@ f:
 	sw	$8,28($fp)
 	lw	$8,36($fp)
 	sw	$8,36($fp)
+	lw	$8,28($fp)
+	sw	$8,28($fp)
+	lw	$8,36($fp)
+	lw	$9,28($fp)
+	srav	$8,$8,$9
+	sw	$8,36($fp)
+	lw	$8,36($fp)
+	sw	$8,36($fp)
 	lw	$2,36($fp)
 	move	$sp,$fp
-	lw	$fp,264($sp)
-	lw	$31,268($sp)
-	addiu	$sp,$sp,272
+	lw	$fp,268($sp)
+	lw	$31,272($sp)
+	addiu	$sp,$sp,276
 	j	$31
 	nop
 

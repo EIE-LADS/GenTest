@@ -36,5 +36,6 @@ int f (int a, int b)
 	x += 15;
 	x --;
 	y = 4;
+	x >>= y;
 	return x;
 }
