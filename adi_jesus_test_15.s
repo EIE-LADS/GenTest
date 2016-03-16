@@ -8,10 +8,6 @@ addiu	$sp,$sp,-40
 sw	$fp,32($sp)
 sw	$31,36($sp)
 move	$fp,$sp
-sw	$a0,12($fp)
-sw	$a1,16($fp)
-sw	$a2,0($fp)
-sw	$a3,0($fp)
 lw	$8,0($fp)
 lw	$9,0($fp)
 lw	$10,0($fp)
