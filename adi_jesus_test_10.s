@@ -8,6 +8,8 @@ addiu	$sp,$sp,-76
 sw	$fp,68($sp)
 sw	$31,72($sp)
 move	$fp,$sp
+sw	$a0,8($fp)
+sw	$a1,12($fp)
 lw	$8,24($fp)
 li	$8,3
 sw	$8,24($fp)
