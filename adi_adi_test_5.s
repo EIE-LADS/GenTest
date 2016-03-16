@@ -1,9 +1,9 @@
 	.text
 	.align	2
-	.globl	main
-	.ent	main
-	.type	main, @function
-main:
+	.globl	f
+	.ent	f
+	.type	f, @function
+f:
 addiu	$sp,$sp,-44
 sw	$fp,36($sp)
 sw	$31,40($sp)
@@ -27,6 +27,6 @@ lw	$31,40($sp)
 addiu	$sp,$sp,44
 j	$31
 nop
-	.end	main
-	.size	main, .-main
+	.end	f
+	.size	f, .-f
 
