@@ -9,8 +9,8 @@ f:
 	move $t0, $a1
 	sw $t0, 8($fp)
 SCOPE_1:
-	li $t0, 2
-	li $t1, 1
+	li $t0, 4
+	li $t1, 3
 	add $t2, $t1, $t0
 	move $v0, $t2
 	j $31

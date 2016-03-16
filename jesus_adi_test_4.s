@@ -9,10 +9,15 @@ f:
 	move $t0, $a1
 	sw $t0, 8($fp)
 SCOPE_1:
-	li $t0, 2
-	li $t1, 1
-	add $t2, $t1, $t0
-	move $v0, $t2
+	lw $t0, 8($fp)
+	lw $t1, 4($fp)
+	move $t1, $t0
+	move $t2, $t1
+	sw $t1, 4($fp)
+	sw $t0, 8($fp)
+	lw $t0, 8($fp)
+	sw $t0, 8($fp)
+	move $v0, $t0
 	j $31
 	nop 
 	.end f

@@ -9,29 +9,31 @@ f:
 	move $t0, $a1
 	sw $t0, 8($fp)
 SCOPE_1:
+	li $t0, 29
+	li $t1, 35
+	and $t2, $t1, $t0
+	li $t0, 1
+	or $t1, $t0, $t2
 	lw $t0, 4($fp)
-	li $t1, 1
-	li $t2, 35
-	li $t3, 29
-	and $t4,	$t2,	$t3
-	or $t2,	$t1,	$t4
-	move $t0,	$t2
+	move $t0, $t1
+	move $t2, $t0
 	sw $t0, 4($fp)
+	li $t0, 29
+	li $t1, 35
+	and $t2, $t1, $t0
+	li $t0, 1
+	or $t1, $t0, $t2
 	lw $t0, 8($fp)
-	li $t1, 1
-	li $t2, 35
-	li $t3, 29
-	and $t4,	$t2,	$t3
-	or $t2,	$t1,	$t4
-	move $t0,	$t2
+	move $t0, $t1
+	move $t2, $t0
 	sw $t0, 8($fp)
-	lw $t0, 4($fp)
-	lw $t1, 8($fp)
-	mul $t2,	$t0,	$t1
+	lw $t0, 8($fp)
+	lw $t1, 4($fp)
+	mul $t2, $t1, $t0
 	nop 
 	nop 
-	sw $t0, 4($fp)
-	sw $t1, 8($fp)
+	sw $t1, 4($fp)
+	sw $t0, 8($fp)
 	move $v0, $t2
 	j $31
 	nop 
