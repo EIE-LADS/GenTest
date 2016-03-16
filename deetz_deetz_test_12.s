@@ -1,266 +1,45 @@
-f ( a , b ) {
-x = 12 ;
-{
-x = 13 ;
-x = 14 ;
-}
-return x ;
-}
+	.text
+	.align	2
+	.globl	f
+	.ent	f
+	.type	f, @function
+f: 
+	addiu	$sp,$sp,-64
+	sw	$31,60($sp)
+	sw	$fp,56($sp)
+	move	$fp,$sp
+	move	$8,$4
+	sw	$8,16($fp)
+	move	$8,$5
+	sw	$8,20($fp)
+	lw	$8,32($fp)
+	li	$8,12
+	sw	$8,32($fp)
+	lw	$8,32($fp)
+	sw	$8,28($fp)
+	lw	$8,40($fp)
+	li	$8,13
+	sw	$8,40($fp)
+	lw	$8,40($fp)
+	sw	$8,36($fp)
+	lw	$8,36($fp)
+	sw	$8,36($fp)
+	lw	$8,48($fp)
+	li	$8,14
+	sw	$8,48($fp)
+	lw	$8,48($fp)
+	sw	$8,36($fp)
+	lw	$8,36($fp)
+	sw	$8,36($fp)
+	lw	$2,36($fp)
+	move	$sp,$fp
+	lw	$fp,56($sp)
+	lw	$31,60($sp)
+	addiu	$sp,$sp,64
+	j	$31
+	nop
 
-TAG: T_16
-ID: a
+	.end	f
+	.size	f, .-f
 
-TAG: T_20
-ID: b
 
-TAG: T_24
-ID: f
-
-TAG: 
-ID: 
-
-TAG: T_28
-ID: x
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_32
-VAL: 12
-
-TAG: T_36
-ID: x
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_40
-VAL: 13
-
-TAG: T_44
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_36
-VAL: x
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_48
-VAL: 14
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_36
-VAL: x

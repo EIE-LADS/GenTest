@@ -1,157 +1,41 @@
-f ( a , b ) {
-x ;
-x = ( x - 4 ) ;
-return x ;
-}
+	.text
+	.align	2
+	.globl	f
+	.ent	f
+	.type	f, @function
+f: 
+	addiu	$sp,$sp,-56
+	sw	$31,52($sp)
+	sw	$fp,48($sp)
+	move	$fp,$sp
+	move	$8,$4
+	sw	$8,16($fp)
+	move	$8,$5
+	sw	$8,20($fp)
+	lw	$8,28($fp)
+	sw	$8,28($fp)
+	lw	$8,40($fp)
+	li	$8,4
+	sw	$8,40($fp)
+	lw	$8,28($fp)
+	sw	$8,28($fp)
+	lw	$8,28($fp)
+	lw	$9,40($fp)
+	sub	$8,$8,$9
+	sw	$8,36($fp)
+	lw	$8,36($fp)
+	sw	$8,28($fp)
+	lw	$8,28($fp)
+	sw	$8,28($fp)
+	lw	$2,28($fp)
+	move	$sp,$fp
+	lw	$fp,48($sp)
+	lw	$31,52($sp)
+	addiu	$sp,$sp,56
+	j	$31
+	nop
 
-TAG: T_16
-ID: a
+	.end	f
+	.size	f, .-f
 
-TAG: T_20
-ID: b
 
-TAG: T_24
-ID: f
-
-TAG: 
-ID: 
-
-TAG: T_28
-ID: x
-
-TAG: T_32
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_28
-VAL: x
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_36
-OP: -
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_40
-VAL: 4
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_28
-VAL: x
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_28
-VAL: x

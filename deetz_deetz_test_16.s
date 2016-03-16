@@ -1,1657 +1,287 @@
-f1 ( x , y ) {
-x = f6 ;
-y = f2 ;
-}
-f2 ( a , b ) {
-b = f8 ;
-return b ;
-}
-f6 ( a , b , c , d , e , f ) {
-a = b = c = d = e = f ;
-return e ;
-}
-f8 ( a , b , c , d , e , f , g , h ) {
-a = b = c = d ;
-e = f = g = h ;
-return a ;
-}
+	.text
+	.align	2
+	.globl	f1
+	.ent	f1
+	.type	f1, @function
+f1: 
+	addiu	$sp,$sp,-88
+	sw	$31,84($sp)
+	sw	$fp,80($sp)
+	move	$fp,$sp
+	move	$8,$4
+	sw	$8,24($fp)
+	move	$8,$5
+	sw	$8,28($fp)
+	lw	$8,24($fp)
+	sw	$8,24($fp)
+	lw	$8,40($fp)
+	sw	$8,40($fp)
+	lw	$8,44($fp)
+	li	$8,1
+	sw	$8,44($fp)
+	lw	$8,44($fp)
+	lw	$4,44($fp)
+	sw	$8,0($fp)
+	lw	$8,48($fp)
+	li	$8,2
+	sw	$8,48($fp)
+	lw	$8,48($fp)
+	lw	$5,48($fp)
+	sw	$8,4($fp)
+	lw	$8,52($fp)
+	li	$8,3
+	sw	$8,52($fp)
+	lw	$8,52($fp)
+	lw	$6,52($fp)
+	sw	$8,8($fp)
+	lw	$8,56($fp)
+	li	$8,4
+	sw	$8,56($fp)
+	lw	$8,56($fp)
+	lw	$7,56($fp)
+	sw	$8,12($fp)
+	lw	$8,60($fp)
+	li	$8,5
+	sw	$8,60($fp)
+	lw	$8,60($fp)
+	sw	$8,16($fp)
+	lw	$8,64($fp)
+	li	$8,6
+	sw	$8,64($fp)
+	lw	$8,64($fp)
+	sw	$8,20($fp)
+	jal	f6
+	nop
+	lw	$8,0($fp)
+	sw	$8,24($fp)
+	lw	$8,28($fp)
+	sw	$8,28($fp)
+	lw	$8,72($fp)
+	sw	$8,72($fp)
+	lw	$8,44($fp)
+	li	$8,1
+	sw	$8,44($fp)
+	lw	$8,44($fp)
+	lw	$4,44($fp)
+	sw	$8,0($fp)
+	lw	$8,48($fp)
+	li	$8,2
+	sw	$8,48($fp)
+	lw	$8,48($fp)
+	lw	$5,48($fp)
+	sw	$8,4($fp)
+	jal	f2
+	nop
+	lw	$8,0($fp)
+	sw	$8,28($fp)
+	move	$sp,$fp
+	lw	$fp,80($sp)
+	lw	$31,84($sp)
+	addiu	$sp,$sp,88
+	j	$31
+	nop
+
+	.end	f1
+	.size	f1, .-f1
+
+	.align	2
+	.globl	f2
+	.ent	f2
+	.type	f2, @function
+f2: 
+	addiu	$sp,$sp,-72
+	sw	$31,68($sp)
+	sw	$fp,64($sp)
+	move	$fp,$sp
+	move	$8,$4
+	sw	$8,32($fp)
+	move	$8,$5
+	sw	$8,36($fp)
+	lw	$8,36($fp)
+	sw	$8,36($fp)
+	lw	$8,48($fp)
+	sw	$8,48($fp)
+	lw	$8,44($fp)
+	li	$8,1
+	sw	$8,44($fp)
+	lw	$8,44($fp)
+	lw	$4,44($fp)
+	sw	$8,0($fp)
+	lw	$8,48($fp)
+	li	$8,2
+	sw	$8,48($fp)
+	lw	$8,48($fp)
+	lw	$5,48($fp)
+	sw	$8,4($fp)
+	lw	$8,52($fp)
+	li	$8,3
+	sw	$8,52($fp)
+	lw	$8,52($fp)
+	lw	$6,52($fp)
+	sw	$8,8($fp)
+	lw	$8,56($fp)
+	li	$8,4
+	sw	$8,56($fp)
+	lw	$8,56($fp)
+	lw	$7,56($fp)
+	sw	$8,12($fp)
+	lw	$8,60($fp)
+	li	$8,5
+	sw	$8,60($fp)
+	lw	$8,60($fp)
+	sw	$8,16($fp)
+	lw	$8,64($fp)
+	li	$8,6
+	sw	$8,64($fp)
+	lw	$8,64($fp)
+	sw	$8,20($fp)
+	lw	$8,52($fp)
+	li	$8,7
+	sw	$8,52($fp)
+	lw	$8,52($fp)
+	sw	$8,24($fp)
+	lw	$8,56($fp)
+	li	$8,8
+	sw	$8,56($fp)
+	lw	$8,56($fp)
+	sw	$8,28($fp)
+	jal	f8
+	nop
+	lw	$8,0($fp)
+	sw	$8,36($fp)
+	lw	$8,36($fp)
+	sw	$8,36($fp)
+	lw	$2,36($fp)
+	move	$sp,$fp
+	lw	$fp,64($sp)
+	lw	$31,68($sp)
+	addiu	$sp,$sp,72
+	j	$31
+	nop
+
+	.end	f2
+	.size	f2, .-f2
+
+	.align	2
+	.globl	f6
+	.ent	f6
+	.type	f6, @function
+f6: 
+	addiu	$sp,$sp,-76
+	sw	$31,72($sp)
+	sw	$fp,68($sp)
+	move	$fp,$sp
+	move	$8,$4
+	sw	$8,16($fp)
+	move	$8,$5
+	sw	$8,20($fp)
+	move	$8,$6
+	sw	$8,24($fp)
+	move	$8,$7
+	sw	$8,28($fp)
+	lw	$8,80($fp)
+	sw	$8,32($fp)
+	lw	$8,84($fp)
+	sw	$8,36($fp)
+	lw	$8,16($fp)
+	sw	$8,16($fp)
+	lw	$8,20($fp)
+	sw	$8,20($fp)
+	lw	$8,24($fp)
+	sw	$8,24($fp)
+	lw	$8,28($fp)
+	sw	$8,28($fp)
+	lw	$8,32($fp)
+	sw	$8,32($fp)
+	lw	$8,36($fp)
+	sw	$8,36($fp)
+	lw	$8,36($fp)
+	sw	$8,32($fp)
+	lw	$8,60($fp)
+	sw	$8,28($fp)
+	lw	$8,56($fp)
+	sw	$8,24($fp)
+	lw	$8,52($fp)
+	sw	$8,20($fp)
+	lw	$8,48($fp)
+	sw	$8,16($fp)
+	lw	$8,32($fp)
+	sw	$8,32($fp)
+	lw	$2,32($fp)
+	move	$sp,$fp
+	lw	$fp,68($sp)
+	lw	$31,72($sp)
+	addiu	$sp,$sp,76
+	j	$31
+	nop
+
+	.end	f6
+	.size	f6, .-f6
+
+	.align	2
+	.globl	f8
+	.ent	f8
+	.type	f8, @function
+f8: 
+	addiu	$sp,$sp,-88
+	sw	$31,84($sp)
+	sw	$fp,80($sp)
+	move	$fp,$sp
+	move	$8,$4
+	sw	$8,16($fp)
+	move	$8,$5
+	sw	$8,20($fp)
+	move	$8,$6
+	sw	$8,24($fp)
+	move	$8,$7
+	sw	$8,28($fp)
+	lw	$8,92($fp)
+	sw	$8,32($fp)
+	lw	$8,96($fp)
+	sw	$8,36($fp)
+	lw	$8,100($fp)
+	sw	$8,40($fp)
+	lw	$8,104($fp)
+	sw	$8,44($fp)
+	lw	$8,16($fp)
+	sw	$8,16($fp)
+	lw	$8,20($fp)
+	sw	$8,20($fp)
+	lw	$8,24($fp)
+	sw	$8,24($fp)
+	lw	$8,28($fp)
+	sw	$8,28($fp)
+	lw	$8,28($fp)
+	sw	$8,24($fp)
+	lw	$8,60($fp)
+	sw	$8,20($fp)
+	lw	$8,56($fp)
+	sw	$8,16($fp)
+	lw	$8,32($fp)
+	sw	$8,32($fp)
+	lw	$8,36($fp)
+	sw	$8,36($fp)
+	lw	$8,40($fp)
+	sw	$8,40($fp)
+	lw	$8,44($fp)
+	sw	$8,44($fp)
+	lw	$8,44($fp)
+	sw	$8,40($fp)
+	lw	$8,72($fp)
+	sw	$8,36($fp)
+	lw	$8,68($fp)
+	sw	$8,32($fp)
+	lw	$8,16($fp)
+	sw	$8,16($fp)
+	lw	$2,16($fp)
+	move	$sp,$fp
+	lw	$fp,80($sp)
+	lw	$31,84($sp)
+	addiu	$sp,$sp,88
+	j	$31
+	nop
+
+	.end	f8
+	.size	f8, .-f8
 
-TAG: T_24
-ID: x
 
-TAG: T_28
-ID: y
-
-TAG: T_32
-ID: f1
-
-TAG: 
-ID: 
-
-TAG: T_36
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_24
-VAL: x
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_40
-VAL: f6
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_44
-VAL: 1
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_48
-VAL: 2
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_52
-VAL: 3
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_56
-VAL: 4
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_60
-VAL: 5
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_64
-VAL: 6
-
-TAG: T_68
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_28
-VAL: y
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_72
-VAL: f2
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_44
-VAL: 1
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_48
-VAL: 2
-
-TAG: T_32
-ID: a
-
-TAG: T_36
-ID: b
-
-TAG: T_40
-ID: f2
-
-TAG: 
-ID: 
-
-TAG: T_44
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_36
-VAL: b
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_48
-VAL: f8
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_44
-VAL: 1
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_48
-VAL: 2
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_52
-VAL: 3
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_56
-VAL: 4
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_60
-VAL: 5
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_64
-VAL: 6
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_52
-VAL: 7
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_56
-VAL: 8
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_36
-VAL: b
-
-TAG: T_16
-ID: a
-
-TAG: T_20
-ID: b
-
-TAG: T_24
-ID: c
-
-TAG: T_28
-ID: d
-
-TAG: T_32
-ID: e
-
-TAG: T_36
-ID: f
-
-TAG: T_40
-ID: f6
-
-TAG: 
-ID: 
-
-TAG: T_44
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_16
-VAL: a
-
-TAG: T_48
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_20
-VAL: b
-
-TAG: T_52
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_24
-VAL: c
-
-TAG: T_56
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_28
-VAL: d
-
-TAG: T_60
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_32
-VAL: e
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_36
-VAL: f
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_32
-VAL: e
-
-TAG: T_16
-ID: a
-
-TAG: T_20
-ID: b
-
-TAG: T_24
-ID: c
-
-TAG: T_28
-ID: d
-
-TAG: T_32
-ID: e
-
-TAG: T_36
-ID: f
-
-TAG: T_40
-ID: g
-
-TAG: T_44
-ID: h
-
-TAG: T_48
-ID: f8
-
-TAG: 
-ID: 
-
-TAG: T_52
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_16
-VAL: a
-
-TAG: T_56
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_20
-VAL: b
-
-TAG: T_60
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_24
-VAL: c
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_28
-VAL: d
-
-TAG: T_64
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_32
-VAL: e
-
-TAG: T_68
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_36
-VAL: f
-
-TAG: T_72
-OP: =
-LHS: 
-RHS: 
-
-TAG: T_40
-VAL: g
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_44
-VAL: h
-
-TAG: 
-OP: 
-LHS: 
-RHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: 
-OP: 
-RHS: 
-LHS: 
-
-TAG: T_16
-VAL: a
