@@ -4,9 +4,9 @@
 	.ent	f
 	.type	f, @function
 f:
-addiu	$sp,$sp,-276
-sw	$fp,268($sp)
-sw	$31,272($sp)
+addiu	$sp,$sp,-284
+sw	$fp,276($sp)
+sw	$31,280($sp)
 move	$fp,$sp
 sw	$a0,16($fp)
 sw	$a1,20($fp)
@@ -372,21 +372,23 @@ sw	$8,28($fp)
 lw	$8,28($fp)
 addi	$8,$8,1
 sw	$8,28($fp)
+sw	$8,248($fp)
 lw	$8,28($fp)
 sw	$8,28($fp)
-lw	$8,252($fp)
+lw	$8,256($fp)
 li	$8,15
-sw	$8,252($fp)
+sw	$8,256($fp)
 lw	$8,28($fp)
-lw	$9,252($fp)
+lw	$9,256($fp)
 add	$8,$8,$9
 sw	$8,28($fp)
-sw	$8,248($fp)
+sw	$8,252($fp)
 lw	$8,28($fp)
 sw	$8,28($fp)
 lw	$8,28($fp)
 addi	$8,$8,-1
 sw	$8,28($fp)
+sw	$8,260($fp)
 lw	$8,36($fp)
 sw	$8,36($fp)
 lw	$8,60($fp)
@@ -394,7 +396,7 @@ li	$8,4
 sw	$8,60($fp)
 lw	$8,60($fp)
 sw	$8,36($fp)
-sw	$8,256($fp)
+sw	$8,264($fp)
 lw	$8,28($fp)
 sw	$8,28($fp)
 lw	$8,36($fp)
@@ -403,14 +405,14 @@ lw	$8,28($fp)
 lw	$9,36($fp)
 srav	$8,$8,$9
 sw	$8,28($fp)
-sw	$8,260($fp)
+sw	$8,268($fp)
 lw	$8,28($fp)
 sw	$8,28($fp)
 lw	$2,28($fp)
 move	$sp,$fp
-lw	$fp,268($sp)
-lw	$31,272($sp)
-addiu	$sp,$sp,276
+lw	$fp,276($sp)
+lw	$31,280($sp)
+addiu	$sp,$sp,284
 j	$31
 nop
 	.end	f
