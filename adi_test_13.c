@@ -1,4 +1,4 @@
 int f(int a, int b)
 {
-	return x-3; 
+	return a-3; 
 }
