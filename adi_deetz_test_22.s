@@ -10,10 +10,6 @@ sw	$31,44($sp)
 move	$fp,$sp
 sw	$a0,16($fp)
 sw	$a1,20($fp)
-lw	$8,20($fp)
-sw	$8,20($fp)
-lw	$8,16($fp)
-sw	$8,16($fp)
 lw	$8,32($fp)
 li	$8,5
 sw	$8,32($fp)
