@@ -23,12 +23,12 @@ sw	$8,36($fp)
 lw	$8,48($fp)
 li	$8,2
 sw	$8,48($fp)
-lw	$8,0($fp)
+lw	$8,36($fp)
 lw	$9,48($fp)
 rem	$8,$8,$9
 nop
 nop
-sw	$8,0($fp)
+sw	$8,36($fp)
 sw	$8,44($fp)
 lw	$2,16($fp)
 move	$sp,$fp
