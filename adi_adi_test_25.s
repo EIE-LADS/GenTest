@@ -68,7 +68,7 @@ lw	$8,32($fp)
 li	$8,3
 sw	$8,32($fp)
 lw	$8,32($fp)
-lw	$9,28($fp)
+lw	$9,16($fp)
 mult	$8,$9
 mflo	$8
 sw	$8,92($fp)
