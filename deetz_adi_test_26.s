@@ -63,7 +63,7 @@ f:
 	lw	$8,0($fp)
 	sw	$8,0($fp)
 	lw	$8,0($fp)
-	lw	$9,52($fp)
+	lw	$9,0($fp)
 	mul	$8,$8,$9
 	nop
 	nop
@@ -84,15 +84,15 @@ f:
 	add	$8,$8,$9
 	sw	$8,88($fp)
 	lw	$8,88($fp)
-	lw	$9,0($fp)
+	lw	$9,48($fp)
 	sub	$8,$8,$9
 	sw	$8,84($fp)
 	lw	$8,0($fp)
 	sw	$8,0($fp)
-	lw	$8,52($fp)
+	lw	$8,0($fp)
 	sw	$8,108($fp)
 	addi	$8,$8,1
-	sw	$8,52($fp)
+	sw	$8,0($fp)
 	lw	$8,0($fp)
 	li	$8,12
 	sw	$8,0($fp)
