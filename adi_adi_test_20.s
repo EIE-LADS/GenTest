@@ -15,10 +15,6 @@ li	$8,3
 sw	$8,32($fp)
 lw	$8,32($fp)
 sw	$8,28($fp)
-lw	$8,16($fp)
-sw	$8,16($fp)
-lw	$8,28($fp)
-sw	$8,28($fp)
 lw	$8,28($fp)
 movn	$10,$0,$8
 li	$9,1
@@ -27,8 +23,6 @@ sw	$10,40($fp)
 lw	$8,40($fp)
 sw	$8,16($fp)
 sw	$8,36($fp)
-lw	$8,16($fp)
-sw	$8,16($fp)
 lw	$2,16($fp)
 move	$sp,$fp
 lw	$fp,48($sp)
