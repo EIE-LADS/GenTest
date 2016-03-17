@@ -4,9 +4,9 @@
 	.type f, @function
 f:
 	move $fp, $sp		# func 
-	sw $a0, 4($fp)
-	sw $a1, 8($fp)
-SCOPE_1:
+	sw $a0, -4($fp)
+	sw $a1, -8($fp)
+SCOPE_2:
 	li $t0, 2		# int_leaf var: 2
 	li $t1, 1		# int_leaf var: 1
 	add $t2, $t1, $t0	# expr op: +

@@ -4,21 +4,21 @@
 	.type f, @function
 f:
 	move $fp, $sp		# func 
-	sw $a0, 4($fp)
-	sw $a1, 8($fp)
-SCOPE_1:
-	lw $t1, 8($fp)		# string_leaf var: b
+	sw $a0, -4($fp)
+	sw $a1, -8($fp)
+SCOPE_2:
+	lw $t1, -8($fp)		# string_leaf var: b
 	move $t0, $t1		# expr op: ++ 
 	addi $t1, $t1, 1		# expr op: ++ 
-	sw $t1, 8($fp)
-	lw $t1, 4($fp)		# string_leaf var: a
+	sw $t1, -8($fp)
+	lw $t1, -4($fp)		# string_leaf var: a
 	move $t1, $t0	# expr op: =
 	move $t2, $t1		# expr assignment save out 
-	sw $t1, 4($fp)
-	lw $t1, 4($fp)		# string_leaf var: a
+	sw $t1, -4($fp)
+	lw $t1, -4($fp)		# string_leaf var: a
 	move $t0, $t1		# expr op: ++ 
 	addi $t1, $t1, 1		# expr op: ++ 
-	sw $t1, 4($fp)
+	sw $t1, -4($fp)
 	li $t1, 5		# int_leaf var: 5
 	mul $t2, $t1, $t0	# expr op: *
 	nop 	# expr op: *
@@ -29,16 +29,16 @@ SCOPE_1:
 	li $t2, 2		# int_leaf var: 2
 	sub $t3, $t2, $t0	# expr op: -
 	sllv $t0, $t3, $t1	# expr op: <<
-	lw $t1, 4($fp)		# string_leaf var: a
+	lw $t1, -4($fp)		# string_leaf var: a
 	rem $t2, $t1, $t0	# expr op: %
 	nop 	# expr op: %
 	nop 	# expr op: %
-	lw $t0, 8($fp)		# string_leaf var: b
+	lw $t0, -8($fp)		# string_leaf var: b
 	move $t0, $t2	# expr op: =
 	move $t1, $t0		# expr assignment save out 
-	sw $t0, 8($fp)
-	lw $t0, 8($fp)		# string_leaf var: b
-	lw $t1, 4($fp)		# string_leaf var: a
+	sw $t0, -8($fp)
+	lw $t0, -8($fp)		# string_leaf var: b
+	lw $t1, -4($fp)		# string_leaf var: a
 	mul $t2, $t1, $t0	# expr op: *
 	nop 	# expr op: *
 	nop 	# expr op: *
