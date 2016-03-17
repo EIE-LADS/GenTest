@@ -32,9 +32,9 @@ lw	$9,56($fp)
 div	$8,$9
 mflo	$8
 sw	$8,52($fp)
-lw	$8,0($fp)
+lw	$8,32($fp)
 li	$8,3
-sw	$8,0($fp)
+sw	$8,32($fp)
 lw	$8,36($fp)
 lw	$9,32($fp)
 add	$8,$8,$9
