@@ -51,7 +51,7 @@ f:
 	lw	$8,28($fp)
 	not	$8,$8
 	sw	$8,72($fp)
-	lw	$2,28($fp)
+	lw	$2,72($fp)
 	move	$sp,$fp
 	lw	$fp,80($sp)
 	lw	$31,84($sp)
