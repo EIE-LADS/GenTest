@@ -35,20 +35,20 @@ sw	$8,44($fp)
 lw	$8,0($fp)
 li	$8,3
 sw	$8,0($fp)
-lw	$8,36($fp)
-lw	$9,0($fp)
+lw	$8,0($fp)
+lw	$9,32($fp)
 add	$8,$8,$9
-sw	$8,36($fp)
+sw	$8,0($fp)
 sw	$8,64($fp)
 lw	$8,72($fp)
 li	$8,2
 sw	$8,72($fp)
-lw	$8,36($fp)
+lw	$8,0($fp)
 lw	$9,72($fp)
 rem	$8,$8,$9
 nop
 nop
-sw	$8,36($fp)
+sw	$8,0($fp)
 sw	$8,68($fp)
 lw	$8,0($fp)
 li	$8,12
@@ -65,8 +65,8 @@ sw	$8,88($fp)
 lw	$8,0($fp)
 li	$8,3
 sw	$8,0($fp)
-lw	$8,36($fp)
-lw	$9,0($fp)
+lw	$8,0($fp)
+lw	$9,32($fp)
 add	$8,$8,$9
 sw	$8,96($fp)
 lw	$8,96($fp)
@@ -79,7 +79,7 @@ sw	$8,0($fp)
 lw	$8,0($fp)
 li	$8,3
 sw	$8,0($fp)
-lw	$8,0($fp)
+lw	$8,32($fp)
 lw	$9,0($fp)
 mult	$8,$9
 mflo	$8
@@ -87,7 +87,7 @@ sw	$8,108($fp)
 lw	$8,72($fp)
 li	$8,2
 sw	$8,72($fp)
-lw	$8,36($fp)
+lw	$8,0($fp)
 lw	$9,72($fp)
 div	$8,$9
 mflo	$8
