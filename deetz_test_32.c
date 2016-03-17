@@ -4,7 +4,7 @@ int f(int a, int b)
 	int y=1;
 	{
 		y %= 3;				
-		a = (y+3-(x++/12))|(y/2+3*x-1); 
+		a = (y+3-(x++/12))|(y/2+3*b-1); 
 	}
 	return a; 
 }
