@@ -21,12 +21,8 @@ f:
 	lw	$8,40($fp)
 	sw	$8,36($fp)
 	lw	$8,36($fp)
-	sw	$8,36($fp)
-	lw	$8,36($fp)
 	sw	$8,44($fp)
 	addi	$8,$8,1
-	sw	$8,36($fp)
-	lw	$8,36($fp)
 	sw	$8,36($fp)
 	lw	$2,36($fp)
 	move	$sp,$fp

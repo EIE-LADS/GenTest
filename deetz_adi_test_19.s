@@ -15,18 +15,13 @@ f:
 	sw	$8,32($fp)
 	lw	$8,32($fp)
 	sw	$8,28($fp)
-	lw	$8,16($fp)
-	sw	$8,16($fp)
-	lw	$8,28($fp)
-	sw	$8,28($fp)
+RHS: T_28
 	lw	$8,28($fp)
 	neg	$8,$8
 	sw	$8,40($fp)
 	lw	$8,0($fp)
 	sw	$8,16($fp)
 	sw	$8,36($fp)
-	lw	$8,28($fp)
-	sw	$8,28($fp)
 	lw	$2,28($fp)
 	move	$sp,$fp
 	lw	$fp,48($sp)

@@ -21,16 +21,8 @@ f:
 	lw	$8,40($fp)
 	sw	$8,36($fp)
 	lw	$8,16($fp)
-	sw	$8,16($fp)
-	lw	$8,16($fp)
 	sw	$8,44($fp)
 	addi	$8,$8,1
-	sw	$8,16($fp)
-	lw	$8,28($fp)
-	sw	$8,28($fp)
-	lw	$8,20($fp)
-	sw	$8,20($fp)
-	lw	$8,16($fp)
 	sw	$8,16($fp)
 	lw	$8,16($fp)
 	lw	$9,20($fp)
@@ -41,8 +33,6 @@ f:
 	mul	$8,$8,$9
 	sw	$8,28($fp)
 	sw	$8,48($fp)
-	lw	$8,16($fp)
-	sw	$8,16($fp)
 	lw	$2,16($fp)
 	move	$sp,$fp
 	lw	$fp,60($sp)

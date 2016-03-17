@@ -20,8 +20,6 @@ f:
 	sw	$8,40($fp)
 	lw	$8,40($fp)
 	sw	$8,36($fp)
-	lw	$8,36($fp)
-	sw	$8,36($fp)
 	lw	$8,48($fp)
 	li	$8,15
 	sw	$8,48($fp)
@@ -31,21 +29,15 @@ f:
 	sw	$8,36($fp)
 	sw	$8,44($fp)
 	lw	$8,36($fp)
-	sw	$8,36($fp)
-	lw	$8,36($fp)
 	addi	$8,$8,-1
 	sw	$8,36($fp)
 	sw	$8,52($fp)
-	lw	$8,28($fp)
-	sw	$8,28($fp)
 	lw	$8,60($fp)
 	li	$8,4
 	sw	$8,60($fp)
 	lw	$8,60($fp)
 	sw	$8,28($fp)
 	sw	$8,56($fp)
-	lw	$8,36($fp)
-	sw	$8,36($fp)
 	lw	$2,36($fp)
 	move	$sp,$fp
 	lw	$fp,68($sp)
