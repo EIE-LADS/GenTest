@@ -48,7 +48,7 @@ for_start_1:
 	lw	$8,60($fp)
 	beq	$8,$0,for_end_1
 	nop
-if_start_1
+if_start_1:
 	lw	$8,36($fp)
 	lw	$9,28($fp)
 	slt	$8,$8,$9

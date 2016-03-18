@@ -20,7 +20,7 @@ f:
 	sw	$8,40($fp)
 	lw	$8,40($fp)
 	sw	$8,36($fp)
-if_start_1
+if_start_1:
 	lw	$8,48($fp)
 	li	$8,10
 	sw	$8,48($fp)
@@ -37,7 +37,7 @@ if_start_1
 	sw	$8,36($fp)
 	sw	$8,52($fp)
 else_1:
-if_start_2
+if_start_2:
 	lw	$8,48($fp)
 	li	$8,10
 	sw	$8,48($fp)
