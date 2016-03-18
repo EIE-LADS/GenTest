@@ -42,7 +42,7 @@ sne	$9,$9,0
 and	$8,$8,$9
 sw	$8,44($fp)
 lw	$8,44($fp)
-beq	$8,$0,endif_1
+beq	$8,$0,else_1
 nop
 lw	$8,64($fp)
 li	$8,2
