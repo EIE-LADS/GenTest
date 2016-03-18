@@ -2,13 +2,15 @@ int f(int a, int b)
 {
 	int x=5;
 	int y=0x452;
-	if(x > 10)
+	while(x >= 0)
 	{
-		x = 2; 
+		int i; 
+		for (i=0; i<4; i++)
+		{
+			if(x < y)
+				x = y; 
+		}
+		x--;
 	}
-	else
-	{
-		x = 10;
-	}
-	return x; 
+	return y; 
 }
