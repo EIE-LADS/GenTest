@@ -1,6 +1,7 @@
 int f(int a, int b)
 {
 	int x=3;
+	int c = 2;
 	if(x>3)
 	{
 		a=5; 
@@ -23,7 +24,6 @@ int f(int a, int b)
 		}
 		while(c >= 0);
 	}
-	int c = 2;
 	for(c; c>=0;)
 	{
 		b++; 
