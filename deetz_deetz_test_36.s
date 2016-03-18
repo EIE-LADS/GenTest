@@ -15,13 +15,13 @@ f:
 	sw	$8,32($fp)
 	lw	$8,32($fp)
 	sw	$8,28($fp)
-for_start_1:
 	lw	$8,44($fp)
 	li	$8,0
 	sw	$8,44($fp)
 	lw	$8,44($fp)
 	sw	$8,36($fp)
 	sw	$8,40($fp)
+for_start_1:
 	lw	$8,52($fp)
 	li	$8,12
 	sw	$8,52($fp)
