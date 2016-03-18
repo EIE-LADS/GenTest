@@ -14,9 +14,7 @@ f:
 	sw	$8,48($fp)
 	addi	$8,$8,1
 	sw	$8,16($fp)
-	lw	$8,52($fp)
 	li	$8,5
-	sw	$8,52($fp)
 	lw	$8,52($fp)
 	lw	$9,48($fp)
 	mult	$8,$9
@@ -24,19 +22,13 @@ f:
 	nop
 	nop
 	sw	$8,44($fp)
-	lw	$8,56($fp)
 	li	$8,7
-	sw	$8,56($fp)
 	lw	$8,56($fp)
 	lw	$9,44($fp)
 	sub	$8,$8,$9
 	sw	$8,40($fp)
-	lw	$8,64($fp)
 	li	$8,4
-	sw	$8,64($fp)
-	lw	$8,68($fp)
 	li	$8,2
-	sw	$8,68($fp)
 	lw	$8,68($fp)
 	lw	$9,64($fp)
 	sub	$8,$8,$9

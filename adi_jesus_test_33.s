@@ -10,19 +10,13 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,32($fp)
 	li	$8,12
-	sw	$8,32($fp)
 	lw	$8,32($fp)
 	sw	$8,28($fp)
-	lw	$8,40($fp)
 	li	$8,445
-	sw	$8,40($fp)
 	lw	$8,40($fp)
 	sw	$8,36($fp)
-	lw	$8,32($fp)
 	li	$8,12
-	sw	$8,32($fp)
 	lw	$8,28($fp)
 	lw	$9,32($fp)
 	div	$8,$8,$9
@@ -30,12 +24,8 @@ f:
 	nop
 	sw	$8,28($fp)
 	sw	$8,44($fp)
-	lw	$8,56($fp)
 	li	$8,5
-	sw	$8,56($fp)
-	lw	$8,32($fp)
 	li	$8,12
-	sw	$8,32($fp)
 	lw	$8,32($fp)
 	lw	$9,56($fp)
 	div	$8,$9
@@ -53,9 +43,7 @@ f:
 	nop
 	sw	$8,28($fp)
 	sw	$8,60($fp)
-	lw	$8,72($fp)
 	li	$8,4
-	sw	$8,72($fp)
 	lw	$8,36($fp)
 	lw	$9,72($fp)
 	sllv	$8,$8,$9
@@ -68,9 +56,7 @@ f:
 	sllv	$8,$8,$9
 	sw	$8,28($fp)
 	sw	$8,76($fp)
-	lw	$8,72($fp)
 	li	$8,4
-	sw	$8,72($fp)
 	lw	$8,36($fp)
 	lw	$9,72($fp)
 	srav	$8,$8,$9
@@ -78,25 +64,19 @@ f:
 	lw	$8,84($fp)
 	sw	$8,28($fp)
 	sw	$8,80($fp)
-	lw	$8,72($fp)
 	li	$8,4
-	sw	$8,72($fp)
 	lw	$8,28($fp)
 	lw	$9,72($fp)
 	srav	$8,$8,$9
 	sw	$8,28($fp)
 	sw	$8,88($fp)
-	lw	$8,32($fp)
 	li	$8,12
-	sw	$8,32($fp)
 	lw	$8,28($fp)
 	lw	$9,32($fp)
 	and	$8,$8,$9
 	sw	$8,28($fp)
 	sw	$8,92($fp)
-	lw	$8,72($fp)
 	li	$8,4
-	sw	$8,72($fp)
 	lw	$8,36($fp)
 	lw	$9,72($fp)
 	and	$8,$8,$9

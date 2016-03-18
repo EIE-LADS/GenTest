@@ -10,15 +10,9 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,36($fp)
 	li	$8,1
-	sw	$8,36($fp)
-	lw	$8,44($fp)
 	li	$8,29
-	sw	$8,44($fp)
-	lw	$8,48($fp)
 	li	$8,35
-	sw	$8,48($fp)
 	lw	$8,48($fp)
 	lw	$9,44($fp)
 	and	$8,$8,$9
@@ -30,21 +24,15 @@ f:
 	lw	$8,32($fp)
 	sw	$8,16($fp)
 	sw	$8,28($fp)
-	lw	$8,44($fp)
 	li	$8,29
-	sw	$8,44($fp)
-	lw	$8,48($fp)
 	li	$8,35
-	sw	$8,48($fp)
 	lw	$8,48($fp)
 	lw	$9,44($fp)
 	sne	$8,$8,0
 	sne	$9,$9,0
 	and	$8,$8,$9
 	sw	$8,60($fp)
-	lw	$8,36($fp)
 	li	$8,1
-	sw	$8,36($fp)
 	lw	$8,36($fp)
 	lw	$9,60($fp)
 	sne	$8,$8,0

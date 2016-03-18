@@ -10,9 +10,7 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,36($fp)
 	li	$8,3
-	sw	$8,36($fp)
 	lw	$8,16($fp)
 	lw	$9,36($fp)
 	add	$8,$8,$9

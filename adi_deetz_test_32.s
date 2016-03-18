@@ -10,19 +10,13 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,32($fp)
 	li	$8,4
-	sw	$8,32($fp)
 	lw	$8,32($fp)
 	sw	$8,28($fp)
-	lw	$8,40($fp)
 	li	$8,1
-	sw	$8,40($fp)
 	lw	$8,40($fp)
 	sw	$8,36($fp)
-	lw	$8,48($fp)
 	li	$8,3
-	sw	$8,48($fp)
 	lw	$8,36($fp)
 	lw	$9,48($fp)
 	rem	$8,$8,$9
@@ -30,9 +24,7 @@ f:
 	nop
 	sw	$8,36($fp)
 	sw	$8,44($fp)
-	lw	$8,68($fp)
 	li	$8,12
-	sw	$8,68($fp)
 	lw	$8,28($fp)
 	sw	$8,72($fp)
 	addi	$8,$8,1
@@ -44,9 +36,7 @@ f:
 	nop
 	nop
 	sw	$8,64($fp)
-	lw	$8,48($fp)
 	li	$8,3
-	sw	$8,48($fp)
 	lw	$8,36($fp)
 	lw	$9,48($fp)
 	add	$8,$8,$9
@@ -55,12 +45,8 @@ f:
 	lw	$9,64($fp)
 	sub	$8,$8,$9
 	sw	$8,60($fp)
-	lw	$8,40($fp)
 	li	$8,1
-	sw	$8,40($fp)
-	lw	$8,48($fp)
 	li	$8,3
-	sw	$8,48($fp)
 	lw	$8,48($fp)
 	lw	$9,20($fp)
 	mult	$8,$9
@@ -68,9 +54,7 @@ f:
 	nop
 	nop
 	sw	$8,88($fp)
-	lw	$8,96($fp)
 	li	$8,2
-	sw	$8,96($fp)
 	lw	$8,36($fp)
 	lw	$9,96($fp)
 	div	$8,$9
