@@ -53,12 +53,16 @@ if_start_1:
 	lw	$9,28($fp)
 	slt	$8,$8,$9
 	sw	$8,68($fp)
-	lw	$8,68
+	lw	$8,68($fp)
 	beq	$8,$0,else_1
+	nop
 	lw	$8,36($fp)
 	sw	$8,28($fp)
 	sw	$8,72($fp)
+	b	if_end_1
+	nop
 else_1:
+if_end_1:
 	lw	$8,52($fp)
 	sw	$8,76($fp)
 	addi	$8,$8,1

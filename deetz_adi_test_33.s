@@ -41,8 +41,9 @@ if_start_1:
 	sne	$9,$9,0
 	and	$8,$8,$9
 	sw	$8,44($fp)
-	lw	$8,44
+	lw	$8,44($fp)
 	beq	$8,$0,else_1
+	nop
 	lw	$8,64($fp)
 	li	$8,2
 	sw	$8,64($fp)
@@ -55,7 +56,10 @@ if_start_1:
 	lw	$8,72($fp)
 	sw	$8,28($fp)
 	sw	$8,68($fp)
+	b	if_end_1
+	nop
 else_1:
+if_end_1:
 	lw	$8,36($fp)
 	lw	$9,28($fp)
 	add	$8,$8,$9

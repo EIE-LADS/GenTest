@@ -28,14 +28,17 @@ if_start_1:
 	lw	$9,48($fp)
 	sgt	$8,$8,$9
 	sw	$8,44($fp)
-	lw	$8,44
+	lw	$8,44($fp)
 	beq	$8,$0,else_1
+	nop
 	lw	$8,56($fp)
 	li	$8,2
 	sw	$8,56($fp)
 	lw	$8,56($fp)
 	sw	$8,36($fp)
 	sw	$8,52($fp)
+	b	if_end_1
+	nop
 else_1:
 	lw	$8,48($fp)
 	li	$8,10
@@ -43,6 +46,7 @@ else_1:
 	lw	$8,48($fp)
 	sw	$8,36($fp)
 	sw	$8,60($fp)
+if_end_1:
 	lw	$2,36($fp)
 	move	$sp,$fp
 	lw	$fp,68($sp)
