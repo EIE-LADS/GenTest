@@ -23,13 +23,13 @@ f:
 	sw	$8,44($fp)
 	lw	$8,44($fp)
 	sw	$8,36($fp)
-while_start_1
+while_start_1:
 	lw	$8,36($fp)
 	sw	$8,48($fp)
 	addi	$8,$8,1
 	sw	$8,36($fp)
 	lw	$8,48($fp)
-	beq	$8,$0,while_end_1:
+	beq	$8,$0,while_end_1
 	nop
 	lw	$8,28($fp)
 	sw	$8,52($fp)
