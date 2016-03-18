@@ -13,7 +13,7 @@ int f(int a, int b)
 			a = 10; 	
 		}
 	}
-	for(x; x>=0; x--)
+	for(x=2; x>=0; x--)
 	{
 		int c = 2; 
 		b++;
@@ -24,7 +24,7 @@ int f(int a, int b)
 		}
 		while(c >= 0);
 	}
-	for(c; c>=0;)
+	for(c=1; c>=0;)
 	{
 		b++; 
 		c--;
