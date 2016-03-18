@@ -15,12 +15,12 @@ int f(int a, int b)
 	}
 	for(x=2; x>=0; x--)
 	{
-		int c = 2; 
+		int d = 2; 
 		b++;
 		do
 		{
 			a--;
-			c--;
+			d--;
 		}
 		while(c >= 0);
 	}
