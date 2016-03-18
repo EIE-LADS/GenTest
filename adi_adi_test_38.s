@@ -112,13 +112,13 @@ end_loop_1:
 	li	$8,1
 	sw	$8,116($fp)
 	lw	$8,116($fp)
-	sw	$8,28($fp)
+	sw	$8,36($fp)
 	sw	$8,108($fp)
 for_loop_3:
 	lw	$8,80($fp)
 	li	$8,0
 	sw	$8,80($fp)
-	lw	$8,28($fp)
+	lw	$8,36($fp)
 	lw	$9,80($fp)
 	sge	$8,$8,$9
 	sw	$8,120($fp)
