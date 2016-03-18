@@ -22,7 +22,7 @@ int f(int a, int b)
 			a--;
 			d--;
 		}
-		while(c >= 0);
+		while(d >= 0);
 	}
 	for(c=1; c>=0;)
 	{
