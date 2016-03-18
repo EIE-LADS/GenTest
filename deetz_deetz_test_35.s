@@ -33,7 +33,7 @@ do_while_start_1:
 	addi	$8,$8,1
 	sw	$8,36($fp)
 	lw	$8,52($fp)
-	beq	$8,$0,do_while_start_1
+	bne	$8,$0,do_while_start_1
 	nop
 	lw	$2,28($fp)
 	move	$sp,$fp
