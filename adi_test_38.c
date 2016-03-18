@@ -24,7 +24,7 @@ int f(int a, int b)
 		}
 		while(c >= 0);
 	}
-	for(c=1; c>=0;)
+	for(x=1; x>=0;)
 	{
 		b++; 
 		c--;

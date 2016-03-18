@@ -35,7 +35,6 @@ dw_loop_1:
 	lw	$8,52($fp)
 	bne	$8,$0,dw_loop_1
 	nop
-end_loop_1:
 	lw	$2,40($fp)
 	move	$sp,$fp
 	lw	$fp,60($sp)
