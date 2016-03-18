@@ -23,21 +23,21 @@ li	$8,0
 sw	$8,44($fp)
 lw	$8,44($fp)
 sw	$8,40($fp)
-while_loop1:
+while_loop_1:
 lw	$8,28($fp)
 sw	$8,48($fp)
 addi	$8,$8,1
 sw	$8,28($fp)
 lw	$8,48($fp)
-beq	$8,$0,end_loop1
+beq	$8,$0,end_loop_1
 nop
 lw	$8,40($fp)
 sw	$8,52($fp)
 addi	$8,$8,1
 sw	$8,40($fp)
-b	while_loop1
+b	while_loop_1
 nop
-end_loop1:
+end_loop_1:
 lw	$2,40($fp)
 move	$sp,$fp
 lw	$fp,60($sp)

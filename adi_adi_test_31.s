@@ -20,13 +20,13 @@ li	$8,298
 sw	$8,40($fp)
 lw	$8,40($fp)
 sw	$8,36($fp)
-while_loop1:
+while_loop_1:
 lw	$8,28($fp)
 addi	$8,$8,-1
 sw	$8,28($fp)
 sw	$8,44($fp)
 lw	$8,44($fp)
-beq	$8,$0,end_loop1
+beq	$8,$0,end_loop_1
 nop
 lw	$8,52($fp)
 li	$8,3
@@ -38,9 +38,9 @@ nop
 nop
 sw	$8,36($fp)
 sw	$8,48($fp)
-b	while_loop1
+b	while_loop_1
 nop
-end_loop1:
+end_loop_1:
 lw	$8,28($fp)
 lw	$9,36($fp)
 sllv	$8,$8,$9
