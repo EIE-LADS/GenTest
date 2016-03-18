@@ -38,7 +38,7 @@ lw	$8,56($fp)
 sw	$8,28($fp)
 sw	$8,52($fp)
 else_1:
-if_2:
+if_3:
 lw	$8,48($fp)
 li	$8,10
 sw	$8,48($fp)
@@ -47,7 +47,7 @@ lw	$9,48($fp)
 slt	$8,$8,$9
 sw	$8,60($fp)
 lw	$8,60($fp)
-beq	$8,$0,else_2
+beq	$8,$0,else_3
 nop
 lw	$8,68($fp)
 li	$8,23
@@ -55,7 +55,7 @@ sw	$8,68($fp)
 lw	$8,68($fp)
 sw	$8,28($fp)
 sw	$8,64($fp)
-else_2:
+else_3:
 lw	$2,28($fp)
 move	$sp,$fp
 lw	$fp,76($sp)
