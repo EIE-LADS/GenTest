@@ -10,10 +10,14 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
+	lw	$8,32($fp)
 	li	$8,12
+	sw	$8,32($fp)
 	lw	$8,32($fp)
 	sw	$8,28($fp)
+	lw	$8,44($fp)
 	li	$8,4
+	sw	$8,44($fp)
 	lw	$8,28($fp)
 	lw	$9,44($fp)
 	sub	$8,$8,$9

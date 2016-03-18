@@ -10,15 +10,21 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
+	lw	$8,36($fp)
 	li	$8,3
+	sw	$8,36($fp)
 	lw	$8,36($fp)
 	sw	$8,32($fp)
+	lw	$8,44($fp)
 	li	$8,0
+	sw	$8,44($fp)
 	lw	$8,44($fp)
 	sw	$8,28($fp)
 	sw	$8,40($fp)
 for_loop_1:
+	lw	$8,52($fp)
 	li	$8,12
+	sw	$8,52($fp)
 	lw	$8,28($fp)
 	lw	$9,52($fp)
 	slt	$8,$8,$9
