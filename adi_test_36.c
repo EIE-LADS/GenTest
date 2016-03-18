@@ -8,7 +8,7 @@ int f(int a, int b)
 		for (i=0; i<4; i++)
 		{
 			if(x < y)
-				x = y; 
+				y = x; 
 		}
 		x--;
 	}

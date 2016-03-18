@@ -56,8 +56,8 @@ sw	$8,68($fp)
 lw	$8,68($fp)
 beq	$8,$0,else_1
 nop
-lw	$8,36($fp)
-sw	$8,28($fp)
+lw	$8,28($fp)
+sw	$8,36($fp)
 sw	$8,72($fp)
 else_1:
 lw	$8,52($fp)
