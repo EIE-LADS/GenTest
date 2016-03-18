@@ -23,7 +23,7 @@ int f(int a, int b)
 		}
 		while(c >= 0);
 	}
-	c = 2;
+	int c = 2;
 	for(c; c>=0;)
 	{
 		b++; 
