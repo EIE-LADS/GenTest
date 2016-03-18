@@ -20,7 +20,7 @@ li	$8,1106
 sw	$8,40($fp)
 lw	$8,40($fp)
 sw	$8,36($fp)
-if_0:
+if_1:
 lw	$8,48($fp)
 li	$8,10
 sw	$8,48($fp)
@@ -29,7 +29,7 @@ lw	$9,48($fp)
 sgt	$8,$8,$9
 sw	$8,44($fp)
 lw	$8,44($fp)
-beq	$8,$0,endif_0
+beq	$8,$0,endif_1
 nop
 lw	$8,56($fp)
 li	$8,2
@@ -37,7 +37,7 @@ sw	$8,56($fp)
 lw	$8,56($fp)
 sw	$8,28($fp)
 sw	$8,52($fp)
-else_0:
+else_1:
 lw	$8,48($fp)
 li	$8,10
 sw	$8,48($fp)
