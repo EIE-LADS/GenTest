@@ -40,6 +40,8 @@ lw	$8,28($fp)
 sw	$8,60($fp)
 addi	$8,$8,1
 sw	$8,28($fp)
+b	for_loop_1
+nop
 end_loop_1:
 lw	$8,28($fp)
 lw	$9,32($fp)
