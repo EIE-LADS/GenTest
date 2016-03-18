@@ -20,16 +20,12 @@ li	$8,13
 sw	$8,40($fp)
 lw	$8,40($fp)
 sw	$8,36($fp)
-lw	$8,36($fp)
-sw	$8,36($fp)
 lw	$8,48($fp)
 li	$8,14
 sw	$8,48($fp)
 lw	$8,48($fp)
 sw	$8,36($fp)
 sw	$8,44($fp)
-lw	$8,28($fp)
-sw	$8,28($fp)
 lw	$2,28($fp)
 move	$sp,$fp
 lw	$fp,56($sp)

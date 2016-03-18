@@ -10,10 +10,6 @@ sw	$31,84($sp)
 move	$fp,$sp
 sw	$a0,16($fp)
 sw	$a1,20($fp)
-lw	$8,20($fp)
-sw	$8,20($fp)
-lw	$8,16($fp)
-sw	$8,16($fp)
 lw	$8,16($fp)
 sw	$8,48($fp)
 addi	$8,$8,1
@@ -48,8 +44,6 @@ lw	$9,40($fp)
 sllv	$8,$8,$9
 sw	$8,36($fp)
 lw	$8,16($fp)
-sw	$8,16($fp)
-lw	$8,16($fp)
 lw	$9,36($fp)
 div	$8,$9
 mflo	$8
@@ -57,10 +51,6 @@ sw	$8,32($fp)
 lw	$8,32($fp)
 sw	$8,20($fp)
 sw	$8,28($fp)
-lw	$8,20($fp)
-sw	$8,20($fp)
-lw	$8,16($fp)
-sw	$8,16($fp)
 lw	$8,16($fp)
 lw	$9,20($fp)
 mult	$8,$9
