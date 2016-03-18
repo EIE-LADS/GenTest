@@ -23,7 +23,7 @@ li	$8,0
 sw	$8,44($fp)
 lw	$8,44($fp)
 sw	$8,40($fp)
-do_while_loop1:
+dw_loop1:
 lw	$8,40($fp)
 sw	$8,48($fp)
 addi	$8,$8,1
@@ -33,7 +33,7 @@ sw	$8,52($fp)
 addi	$8,$8,1
 sw	$8,28($fp)
 lw	$8,52($fp)
-bne	$8,$0,do_while_loop1
+bne	$8,$0,dw_loop1
 nop
 end_loop1:
 lw	$2,40($fp)
