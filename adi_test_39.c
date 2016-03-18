@@ -24,5 +24,11 @@ int f(int a, int b)
 		}
 		while(c >= 0);
 	}
+	for(c=1; c>=0;)
+	{
+		b++; 
+		c--;
+	}
+	
 	return a+b;
 }
