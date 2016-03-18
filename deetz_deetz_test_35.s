@@ -4,9 +4,9 @@
 	.ent	f
 	.type	f, @function
 f: 
-	addiu	$sp,$sp,-60
-	sw	$31,56($sp)
-	sw	$fp,52($sp)
+	addiu	$sp,$sp,-68
+	sw	$31,64($sp)
+	sw	$fp,60($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
@@ -23,11 +23,23 @@ f:
 	sw	$8,44($fp)
 	lw	$8,44($fp)
 	sw	$8,36($fp)
+do_while_start_1:
+	lw	$8,28($fp)
+	sw	$8,48($fp)
+	addi	$8,$8,1
+	sw	$8,28($fp)
+	lw	$8,36($fp)
+	sw	$8,52($fp)
+	addi	$8,$8,1
+	sw	$8,36($fp)
+	lw	$8,52($fp)
+	beq	$8,$0,do_while_start_1
+	nop
 	lw	$2,28($fp)
 	move	$sp,$fp
-	lw	$fp,52($sp)
-	lw	$31,56($sp)
-	addiu	$sp,$sp,60
+	lw	$fp,60($sp)
+	lw	$31,64($sp)
+	addiu	$sp,$sp,68
 	j	$31
 	nop
 
