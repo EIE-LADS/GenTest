@@ -1,8 +1,8 @@
 int f (int a, int b)
 {
-	int a;
+	int x;
 	int y = 3;
-	for (a = 0; a < 12; a++)
+	for (x = 0; x < 12; x++)
 	{
 		y++;
 	}
