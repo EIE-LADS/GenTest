@@ -151,6 +151,7 @@ end_loop_3:
 	addiu	$sp,$sp,148
 	j	$31
 	nop
+	.cprestore	16
 	.end	f
 	.size	f, .-f
 

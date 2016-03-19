@@ -24,7 +24,8 @@ f:
 	lw	$8,20($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
-	jal	f1
+	la	$8,f1
+	jalr	$8
 	nop
 	sw	$2,32($fp)
 	lw	$2,32($fp)
@@ -34,6 +35,7 @@ f:
 	addiu	$sp,$sp,52
 	j	$31
 	nop
+	.cprestore	16
 	.end	f
 	.size	f, .-f
 
@@ -98,6 +100,7 @@ f1:
 	addiu	$sp,$sp,92
 	j	$31
 	nop
+	.cprestore	16
 	.end	f1
 	.size	f1, .-f1
 
@@ -151,6 +154,7 @@ f2:
 	addiu	$sp,$sp,84
 	j	$31
 	nop
+	.cprestore	16
 	.end	f2
 	.size	f2, .-f2
 
