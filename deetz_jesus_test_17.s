@@ -1,4 +1,3 @@
-Func: f Offset: 88
 	.text
 	.align	2
 	.globl	f
@@ -75,6 +74,7 @@ f:
 	j	$31
 	nop
 
+	.cprestore	16
 	.end	f
 	.size	f, .-f
 

@@ -1,6 +1,3 @@
-Func: f Offset: 40
-Func: f1 Offset: 80
-Func: f2 Offset: 72
 	.text
 
 
@@ -54,6 +51,7 @@ f:
 	j	$31
 	nop
 
+	.cprestore	16
 	.end	f
 	.size	f, .-f
 
@@ -116,6 +114,7 @@ f1:
 	j	$31
 	nop
 
+	.cprestore	16
 	.end	f1
 	.size	f1, .-f1
 
@@ -165,6 +164,7 @@ f2:
 	j	$31
 	nop
 
+	.cprestore	16
 	.end	f2
 	.size	f2, .-f2
 
