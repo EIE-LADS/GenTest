@@ -46,7 +46,8 @@ f:
 	lw	$8,44($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
-	jal	f1
+	la	$8,f1
+	jalr	$8
 	nop
 	sw	$2,40($fp)
 	lw	$2,40($fp)
@@ -130,7 +131,8 @@ if_start_1:
 	lw	$8,44($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
-	jal	f1
+	la	$8,f1
+	jalr	$8
 	nop
 	sw	$2,96($fp)
 	lw	$8,96($fp)
@@ -159,7 +161,8 @@ if_end_1:
 	sw	$8,16($fp)
 	lw	$8,44($fp)
 	sw	$8,20($fp)
-	jal	f2
+	la	$8,f2
+	jalr	$8
 	nop
 	sw	$2,112($fp)
 	lw	$8,112($fp)
