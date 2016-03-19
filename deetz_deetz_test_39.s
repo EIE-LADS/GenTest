@@ -1,11 +1,5 @@
-Func: f Offset: 3
-Func: f Offset: 4
-Func: f Offset: 20
-Func: f Offset: 44
-Func: f1 Offset: 0
-Func: f1 Offset: 4
-Func: f1 Offset: 20
-Func: f1 Offset: 104
+Func: f Offset: 48
+Func: f1 Offset: 108
 	.text
 
 	.align	2
@@ -13,15 +7,15 @@ Func: f1 Offset: 104
 	.ent	f
 	.type	f, @function
 f: 
-	addiu	$sp,$sp,-56
-	sw	$31,52($sp)
-	sw	$fp,48($sp)
+	addiu	$sp,$sp,-60
+	sw	$31,56($sp)
+	sw	$fp,52($sp)
 	move	$fp,$sp
 	sw	$a0,0($fp)
 	sw	$a1,4($fp)
 	sw	$a2,8($fp)
 	sw	$a3,20($fp)
-	lw	$8,60($fp)
+	lw	$8,64($fp)
 	sw	$8,24($fp)
 	lw	$8,36($fp)
 	li	$8,12
@@ -35,19 +29,20 @@ f:
 	lw	$8,24($fp)
 	move	$a1,$8
 	sw	$8,4($fp)
-	lw	$8,40($fp)
+	lw	$8,44($fp)
 	li	$8,33
-	sw	$8,40($fp)
-	lw	$8,40($fp)
+	sw	$8,44($fp)
+	lw	$8,44($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
 	jal	f1
 	nop
-	move	$2,$0
+	sw	$2,40($fp)
+	lw	$2,40($fp)
 	move	$sp,$fp
-	lw	$fp,48($sp)
-	lw	$31,52($sp)
-	addiu	$sp,$sp,56
+	lw	$fp,52($sp)
+	lw	$31,56($sp)
+	addiu	$sp,$sp,60
 	j	$31
 	nop
 
@@ -59,9 +54,9 @@ f:
 	.ent	f1
 	.type	f1, @function
 f1: 
-	addiu	$sp,$sp,-116
-	sw	$31,112($sp)
-	sw	$fp,108($sp)
+	addiu	$sp,$sp,-120
+	sw	$31,116($sp)
+	sw	$fp,112($sp)
 	move	$fp,$sp
 	sw	$a0,20($fp)
 	sw	$a1,24($fp)
@@ -108,16 +103,16 @@ if_start_1:
 	lw	$8,76($fp)
 	beq	$8,$0,else_1
 	nop
-	lw	$8,88($fp)
-	li	$8,2
-	sw	$8,88($fp)
-	lw	$8,88($fp)
-	move	$a0,$8
-	sw	$8,0($fp)
 	lw	$8,92($fp)
-	li	$8,4
+	li	$8,2
 	sw	$8,92($fp)
 	lw	$8,92($fp)
+	move	$a0,$8
+	sw	$8,0($fp)
+	lw	$8,96($fp)
+	li	$8,4
+	sw	$8,96($fp)
+	lw	$8,96($fp)
 	move	$a1,$8
 	sw	$8,4($fp)
 	lw	$8,36($fp)
@@ -125,7 +120,8 @@ if_start_1:
 	sw	$8,8($fp)
 	jal	f1
 	nop
-	lw	$8,0($fp)
+	sw	$2,88($fp)
+	lw	$8,88($fp)
 	sw	$8,20($fp)
 	sw	$8,84($fp)
 	b	if_end_1
@@ -135,16 +131,16 @@ if_end_1:
 	lw	$8,20($fp)
 	lw	$9,24($fp)
 	add	$8,$8,$9
-	sw	$8,100($fp)
-	lw	$8,100($fp)
+	sw	$8,104($fp)
+	lw	$8,104($fp)
 	lw	$9,36($fp)
 	add	$8,$8,$9
-	sw	$8,96($fp)
-	lw	$2,96($fp)
+	sw	$8,100($fp)
+	lw	$2,100($fp)
 	move	$sp,$fp
-	lw	$fp,108($sp)
-	lw	$31,112($sp)
-	addiu	$sp,$sp,116
+	lw	$fp,112($sp)
+	lw	$31,116($sp)
+	addiu	$sp,$sp,120
 	j	$31
 	nop
 

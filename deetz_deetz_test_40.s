@@ -1,14 +1,5 @@
-Func: f Offset: 3
-Func: f Offset: 4
-Func: f Offset: 20
-Func: f Offset: 36
-Func: f1 Offset: 0
-Func: f1 Offset: 4
-Func: f1 Offset: 20
+Func: f Offset: 40
 Func: f1 Offset: 80
-Func: f2 Offset: 0
-Func: f2 Offset: 4
-Func: f2 Offset: 20
 Func: f2 Offset: 72
 	.text
 
@@ -18,27 +9,27 @@ Func: f2 Offset: 72
 	.ent	f
 	.type	f, @function
 f: 
-	addiu	$sp,$sp,-48
-	sw	$31,44($sp)
-	sw	$fp,40($sp)
+	addiu	$sp,$sp,-52
+	sw	$31,48($sp)
+	sw	$fp,44($sp)
 	move	$fp,$sp
 	sw	$a0,0($fp)
 	sw	$a1,4($fp)
 	sw	$a2,8($fp)
 	sw	$a3,16($fp)
-	lw	$8,52($fp)
-	sw	$8,20($fp)
 	lw	$8,56($fp)
-	sw	$8,24($fp)
-	lw	$8,60($fp)
-	sw	$8,28($fp)
-	lw	$8,64($fp)
-	sw	$8,32($fp)
-	lw	$8,68($fp)
-	sw	$8,36($fp)
-	lw	$8,72($fp)
 	sw	$8,20($fp)
+	lw	$8,60($fp)
+	sw	$8,24($fp)
+	lw	$8,64($fp)
+	sw	$8,28($fp)
+	lw	$8,68($fp)
+	sw	$8,32($fp)
+	lw	$8,72($fp)
+	sw	$8,36($fp)
 	lw	$8,76($fp)
+	sw	$8,20($fp)
+	lw	$8,80($fp)
 	sw	$8,24($fp)
 	lw	$8,20($fp)
 	move	$a0,$8
@@ -46,19 +37,20 @@ f:
 	lw	$8,24($fp)
 	move	$a1,$8
 	sw	$8,4($fp)
-	lw	$8,32($fp)
+	lw	$8,36($fp)
 	li	$8,33
-	sw	$8,32($fp)
-	lw	$8,32($fp)
+	sw	$8,36($fp)
+	lw	$8,36($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
 	jal	f1
 	nop
-	move	$2,$0
+	sw	$2,32($fp)
+	lw	$2,32($fp)
 	move	$sp,$fp
-	lw	$fp,40($sp)
-	lw	$31,44($sp)
-	addiu	$sp,$sp,48
+	lw	$fp,44($sp)
+	lw	$31,48($sp)
+	addiu	$sp,$sp,52
 	j	$31
 	nop
 
