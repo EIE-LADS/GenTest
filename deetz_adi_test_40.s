@@ -4,9 +4,9 @@
 	.ent	f
 	.type	f, @function
 f: 
-	addiu	$sp,$sp,-144
-	sw	$31,140($sp)
-	sw	$fp,136($sp)
+	addiu	$sp,$sp,-124
+	sw	$31,120($sp)
+	sw	$fp,116($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
@@ -79,10 +79,10 @@ for_start_1:
 	lw	$8,76($fp)
 	beq	$8,$0,for_end_1
 	nop
-	lw	$8,32($fp)
-	li	$8,2
-	sw	$8,32($fp)
-	lw	$8,32($fp)
+	lw	$8,40($fp)
+	li	$8,3
+	sw	$8,40($fp)
+	lw	$8,40($fp)
 	sw	$8,84($fp)
 	lw	$8,20($fp)
 	sw	$8,88($fp)
@@ -114,43 +114,15 @@ do_while_start_1:
 	b	for_start_1
 	nop
 for_end_1:
-	lw	$8,112($fp)
-	li	$8,1
-	sw	$8,112($fp)
-	lw	$8,112($fp)
-	sw	$8,28($fp)
-	sw	$8,108($fp)
-for_start_2:
-	lw	$8,80($fp)
-	li	$8,0
-	sw	$8,80($fp)
-	lw	$8,28($fp)
-	lw	$9,80($fp)
-	sge	$8,$8,$9
-	sw	$8,116($fp)
-	lw	$8,116($fp)
-	beq	$8,$0,for_end_2
-	nop
-	lw	$8,20($fp)
-	sw	$8,120($fp)
-	addi	$8,$8,1
-	sw	$8,20($fp)
-	lw	$8,84($fp)
-	addi	$8,$8,-1
-	sw	$8,84($fp)
-	sw	$8,124($fp)
-	b	for_start_2
-	nop
-for_end_2:
 	lw	$8,16($fp)
 	lw	$9,20($fp)
 	add	$8,$8,$9
-	sw	$8,128($fp)
-	lw	$2,128($fp)
+	sw	$8,108($fp)
+	lw	$2,108($fp)
 	move	$sp,$fp
-	lw	$fp,136($sp)
-	lw	$31,140($sp)
-	addiu	$sp,$sp,144
+	lw	$fp,116($sp)
+	lw	$31,120($sp)
+	addiu	$sp,$sp,124
 	j	$31
 	nop
 
