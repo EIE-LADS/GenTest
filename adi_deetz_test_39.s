@@ -21,16 +21,16 @@ f:
 	lw	$8,36($fp)
 	sw	$8,20($fp)
 	sw	$8,32($fp)
-	lw	$8,44($fp)
-	li	$8,33
-	sw	$8,44($fp)
-	lw	$8,44($fp)
+	lw	$8,20($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
 	lw	$8,24($fp)
 	move	$a1,$8
 	sw	$8,4($fp)
-	lw	$8,20($fp)
+	lw	$8,44($fp)
+	li	$8,33
+	sw	$8,44($fp)
+	lw	$8,44($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
 	la	$8,f1
@@ -108,19 +108,19 @@ if_1:
 	lw	$8,76($fp)
 	beq	$8,$0,else_1
 	nop
-	lw	$8,60($fp)
-	move	$a0,$8
-	sw	$8,0($fp)
 	lw	$8,92($fp)
-	li	$8,4
+	li	$8,2
 	sw	$8,92($fp)
 	lw	$8,92($fp)
-	move	$a1,$8
-	sw	$8,4($fp)
+	move	$a0,$8
+	sw	$8,0($fp)
 	lw	$8,96($fp)
-	li	$8,2
+	li	$8,4
 	sw	$8,96($fp)
 	lw	$8,96($fp)
+	move	$a1,$8
+	sw	$8,4($fp)
+	lw	$8,60($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
 	la	$8,f1

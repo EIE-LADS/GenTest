@@ -28,16 +28,16 @@ f:
 	sw	$8,20($fp)
 	lw	$8,80($fp)
 	sw	$8,24($fp)
-	lw	$8,36($fp)
-	li	$8,33
-	sw	$8,36($fp)
-	lw	$8,36($fp)
+	lw	$8,20($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
 	lw	$8,24($fp)
 	move	$a1,$8
 	sw	$8,4($fp)
-	lw	$8,20($fp)
+	lw	$8,36($fp)
+	li	$8,33
+	sw	$8,36($fp)
+	lw	$8,36($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
 	la	$8,f1
