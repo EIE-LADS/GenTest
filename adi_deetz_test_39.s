@@ -29,7 +29,8 @@ f:
 	lw	$8,20($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
-	jal	f1
+	la	$8,f1
+	jalr	$8
 	nop
 	sw	$2,40($fp)
 	lw	$2,40($fp)
@@ -115,7 +116,8 @@ if_1:
 	lw	$8,96($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
-	jal	f1
+	la	$8,f1
+	jalr	$8
 	nop
 	sw	$2,88($fp)
 	lw	$8,88($fp)

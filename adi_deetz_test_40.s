@@ -24,7 +24,8 @@ f:
 	lw	$8,20($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
-	jal	f1
+	la	$8,f1
+	jalr	$8
 	nop
 	sw	$2,32($fp)
 	lw	$2,32($fp)
