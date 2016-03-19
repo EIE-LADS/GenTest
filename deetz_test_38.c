@@ -5,24 +5,23 @@ int f(int a, int b)
 {
 	a = 12;
 	return f1(a, b, 33);
-	
 }
 
 int f1(int a, int b, int c)
 {
 	int d = 12;
 	int e = 33/12;
-	int f = a + b;
+	int g = a + b;
 	a = 155;
-	if (a == 12) a = f1(2, 4, f);
-	c = f2(a, 12, c, d, e, f);
+	if (a == 12) a = f1(2, 4, g);
+	c = f2(a, 12, c, d, e, g);
 	return a + b + f;
 }
 
-int f2(int a, int b, int c, int d, int e, int f)
+int f2(int a, int b, int c, int d, int e, int g)
 {
 	a = b + c;
 	c = d + e;
-	f = a + c;
-	return f;
+	g = a + c;
+	return g;
 }
