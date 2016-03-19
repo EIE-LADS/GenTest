@@ -1,5 +1,3 @@
-Func: f Offset: 48
-Func: f1 Offset: 108
 	.text
 
 	.align	2
@@ -46,6 +44,7 @@ f:
 	j	$31
 	nop
 
+	.cprestore	16
 	.end	f
 	.size	f, .-f
 
@@ -144,6 +143,7 @@ if_end_1:
 	j	$31
 	nop
 
+	.cprestore	16
 	.end	f1
 	.size	f1, .-f1
 
