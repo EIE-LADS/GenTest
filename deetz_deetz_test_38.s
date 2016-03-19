@@ -64,9 +64,9 @@ f:
 	.ent	f1
 	.type	f1, @function
 f1: 
-	addiu	$sp,$sp,-272
-	sw	$31,268($sp)
-	sw	$fp,264($sp)
+	addiu	$sp,$sp,-280
+	sw	$31,276($sp)
+	sw	$fp,272($sp)
 	move	$fp,$sp
 	sw	$a0,176($fp)
 	sw	$a1,180($fp)
@@ -102,16 +102,27 @@ f1:
 	lw	$8,228($fp)
 	sw	$8,176($fp)
 	sw	$8,224($fp)
+if_start_1:
 	lw	$8,236($fp)
-	li	$8,2
+	li	$8,12
 	sw	$8,236($fp)
-	lw	$8,236($fp)
+	lw	$8,176($fp)
+	lw	$9,236($fp)
+	seq	$8,$8,$9
+	sw	$8,232($fp)
+	lw	$8,232($fp)
+	beq	$8,$0,else_1
+	nop
+	lw	$8,244($fp)
+	li	$8,2
+	sw	$8,244($fp)
+	lw	$8,244($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
-	lw	$8,240($fp)
+	lw	$8,248($fp)
 	li	$8,4
-	sw	$8,240($fp)
-	lw	$8,240($fp)
+	sw	$8,248($fp)
+	lw	$8,248($fp)
 	move	$a1,$8
 	sw	$8,4($fp)
 	lw	$8,192($fp)
@@ -121,14 +132,18 @@ f1:
 	nop
 	lw	$8,0($fp)
 	sw	$8,176($fp)
-	sw	$8,232($fp)
+	sw	$8,240($fp)
+	b	if_end_1
+	nop
+else_1:
+if_end_1:
 	lw	$8,176($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
-	lw	$8,248($fp)
+	lw	$8,256($fp)
 	li	$8,12
-	sw	$8,248($fp)
-	lw	$8,248($fp)
+	sw	$8,256($fp)
+	lw	$8,256($fp)
 	move	$a1,$8
 	sw	$8,4($fp)
 	lw	$8,184($fp)
@@ -145,20 +160,20 @@ f1:
 	nop
 	lw	$8,0($fp)
 	sw	$8,184($fp)
-	sw	$8,244($fp)
+	sw	$8,252($fp)
 	lw	$8,176($fp)
 	lw	$9,180($fp)
 	add	$8,$8,$9
-	sw	$8,256($fp)
-	lw	$8,256($fp)
+	sw	$8,264($fp)
+	lw	$8,264($fp)
 	lw	$9,192($fp)
 	add	$8,$8,$9
-	sw	$8,252($fp)
-	lw	$2,252($fp)
+	sw	$8,260($fp)
+	lw	$2,260($fp)
 	move	$sp,$fp
-	lw	$fp,264($sp)
-	lw	$31,268($sp)
-	addiu	$sp,$sp,272
+	lw	$fp,272($sp)
+	lw	$31,276($sp)
+	addiu	$sp,$sp,280
 	j	$31
 	nop
 
