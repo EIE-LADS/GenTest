@@ -77,10 +77,10 @@ for_loop_1:
 	lw	$8,76($fp)
 	beq	$8,$0,end_loop_1
 	nop
-	lw	$8,40($fp)
-	li	$8,2
-	sw	$8,40($fp)
-	lw	$8,40($fp)
+	lw	$8,32($fp)
+	li	$8,3
+	sw	$8,32($fp)
+	lw	$8,32($fp)
 	sw	$8,84($fp)
 	lw	$8,20($fp)
 	sw	$8,88($fp)
