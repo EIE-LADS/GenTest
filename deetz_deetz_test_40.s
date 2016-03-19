@@ -2,10 +2,10 @@
 
 
 	.align	2
-	.globl	f
-	.ent	f
-	.type	f, @function
-f: 
+	.globl	main
+	.ent	main
+	.type	main, @function
+main: 
 	addiu	$sp,$sp,-212
 	sw	$31,208($sp)
 	sw	$fp,204($sp)
@@ -24,17 +24,17 @@ f:
 	sw	$8,32($fp)
 	lw	$8,232($fp)
 	sw	$8,36($fp)
-	lw	$8,236($fp)
-	sw	$8,176($fp)
-	lw	$8,240($fp)
+	lw	$8,184($fp)
+	li	$8,13
+	sw	$8,184($fp)
+	lw	$8,184($fp)
 	sw	$8,180($fp)
 	lw	$8,192($fp)
 	li	$8,12
 	sw	$8,192($fp)
 	lw	$8,192($fp)
-	sw	$8,176($fp)
 	sw	$8,188($fp)
-	lw	$8,176($fp)
+	lw	$8,188($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
 	lw	$8,180($fp)
@@ -56,17 +56,17 @@ f:
 	j	$31
 	nop
 
-	.end	f
-	.size	f, .-f
+	.end	main
+	.size	main, .-main
 
 	.align	2
 	.globl	f1
 	.ent	f1
 	.type	f1, @function
 f1: 
-	addiu	$sp,$sp,-264
-	sw	$31,260($sp)
-	sw	$fp,256($sp)
+	addiu	$sp,$sp,-252
+	sw	$31,248($sp)
+	sw	$fp,244($sp)
 	move	$fp,$sp
 	sw	$a0,176($fp)
 	sw	$a1,180($fp)
@@ -102,39 +102,19 @@ f1:
 	lw	$8,228($fp)
 	sw	$8,176($fp)
 	sw	$8,224($fp)
-	lw	$8,236($fp)
-	li	$8,2
-	sw	$8,236($fp)
-	lw	$8,236($fp)
-	move	$a0,$8
-	sw	$8,0($fp)
-	lw	$8,240($fp)
-	li	$8,4
-	sw	$8,240($fp)
-	lw	$8,240($fp)
-	move	$a1,$8
-	sw	$8,4($fp)
-	lw	$8,192($fp)
-	move	$a2,$8
-	sw	$8,8($fp)
-	jal	f1
-	nop
-	lw	$8,0($fp)
-	sw	$8,176($fp)
-	sw	$8,232($fp)
 	lw	$8,176($fp)
 	lw	$9,180($fp)
 	add	$8,$8,$9
-	sw	$8,248($fp)
-	lw	$8,248($fp)
+	sw	$8,236($fp)
+	lw	$8,236($fp)
 	lw	$9,192($fp)
 	add	$8,$8,$9
-	sw	$8,244($fp)
-	lw	$2,244($fp)
+	sw	$8,232($fp)
+	lw	$2,232($fp)
 	move	$sp,$fp
-	lw	$fp,256($sp)
-	lw	$31,260($sp)
-	addiu	$sp,$sp,264
+	lw	$fp,244($sp)
+	lw	$31,248($sp)
+	addiu	$sp,$sp,252
 	j	$31
 	nop
 
