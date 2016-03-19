@@ -135,9 +135,9 @@ for_start_2:
 	sw	$8,120($fp)
 	addi	$8,$8,1
 	sw	$8,20($fp)
-	lw	$8,84($fp)
+	lw	$8,28($fp)
 	addi	$8,$8,-1
-	sw	$8,84($fp)
+	sw	$8,28($fp)
 	sw	$8,124($fp)
 	b	for_start_2
 	nop
