@@ -89,6 +89,7 @@ f:
 	addiu	$sp,$sp,108
 	j	$31
 	nop
+	.cprestore	16
 	.end	f
 	.size	f, .-f
 

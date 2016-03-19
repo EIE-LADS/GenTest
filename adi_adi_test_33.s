@@ -70,6 +70,7 @@ if_out_1:
 	addiu	$sp,$sp,96
 	j	$31
 	nop
+	.cprestore	16
 	.end	f
 	.size	f, .-f
 
