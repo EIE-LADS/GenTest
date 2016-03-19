@@ -133,10 +133,10 @@ for_loop_3:
 	sw	$8,120($fp)
 	addi	$8,$8,1
 	sw	$8,20($fp)
-	lw	$8,84($fp)
+	lw	$8,36($fp)
 	sw	$8,124($fp)
 	addi	$8,$8,-1
-	sw	$8,84($fp)
+	sw	$8,36($fp)
 	b	for_loop_3
 	nop
 end_loop_3:
