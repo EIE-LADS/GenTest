@@ -15,7 +15,7 @@ int f1(int a, int b, int c)
 	a = 155;
 	if (a == 12) a = f1(2, 4, g);
 	c = f2(a, 12, c, d, e, g);
-	return a + b + f;
+	return a + b + g;
 }
 
 int f2(int a, int b, int c, int d, int e, int g)
