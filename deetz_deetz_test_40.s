@@ -1,165 +1,3 @@
-ExPrS: 0
-AL: 1
-AL: 2
-AL: 3
-PF: 3
-U: 3
-TC: 3
-P: 3
-P: 3
-P: 3
-P: 3
-P: 3
-P: 3
-P: 3
-P: 3
-P: 3
-P: 3
-TER: 3
-ASS: 3
-ExPr: 3
-Offset: 44
-ExPrS: 0
-PF: 0
-U: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-TER: 0
-ASS: 0
-ASS: 0
-ExPr: 0
-ExPrS: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-TER: 0
-ASS: 0
-ExPr: 0
-Offset: 44
-ExPrS: 0
-PF: 0
-U: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-TER: 0
-ASS: 0
-ASS: 0
-ExPr: 0
-ExPrS: 0
-PF: 0
-U: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-TER: 0
-ASS: 0
-ASS: 0
-ExPr: 0
-ExPrS: 0
-PF: 0
-U: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-TER: 0
-ASS: 0
-ASS: 0
-ExPr: 0
-ExPrS: 0
-PF: 0
-U: 0
-TC: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-P: 0
-TER: 0
-ASS: 0
-ExPr: 0
-Offset: 44
 	.text
 
 
@@ -168,47 +6,47 @@ Offset: 44
 	.ent	f
 	.type	f, @function
 f: 
-	addiu	$sp,$sp,-204
-	sw	$31,200($sp)
-	sw	$fp,196($sp)
+	addiu	$sp,$sp,-44
+	sw	$31,40($sp)
+	sw	$fp,36($sp)
 	move	$fp,$sp
 	sw	$a0,0($fp)
 	sw	$a1,4($fp)
 	sw	$a2,8($fp)
 	sw	$a3,16($fp)
-	lw	$8,208($fp)
+	lw	$8,48($fp)
 	sw	$8,20($fp)
-	lw	$8,212($fp)
+	lw	$8,52($fp)
 	sw	$8,24($fp)
-	lw	$8,216($fp)
+	lw	$8,56($fp)
 	sw	$8,28($fp)
-	lw	$8,220($fp)
+	lw	$8,60($fp)
 	sw	$8,32($fp)
-	lw	$8,224($fp)
+	lw	$8,64($fp)
 	sw	$8,36($fp)
-	lw	$8,228($fp)
-	sw	$8,176($fp)
-	lw	$8,232($fp)
-	sw	$8,180($fp)
-	lw	$8,176($fp)
+	lw	$8,68($fp)
+	sw	$8,16($fp)
+	lw	$8,72($fp)
+	sw	$8,20($fp)
+	lw	$8,16($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
-	lw	$8,180($fp)
+	lw	$8,20($fp)
 	move	$a1,$8
 	sw	$8,4($fp)
-	lw	$8,188($fp)
+	lw	$8,28($fp)
 	li	$8,33
-	sw	$8,188($fp)
-	lw	$8,188($fp)
+	sw	$8,28($fp)
+	lw	$8,28($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
 	jal	f1
 	nop
 	move	$2,$0
 	move	$sp,$fp
-	lw	$fp,196($sp)
-	lw	$31,200($sp)
-	addiu	$sp,$sp,204
+	lw	$fp,36($sp)
+	lw	$31,40($sp)
+	addiu	$sp,$sp,44
 	j	$31
 	nop
 
@@ -220,57 +58,57 @@ f:
 	.ent	f1
 	.type	f1, @function
 f1: 
-	addiu	$sp,$sp,-248
-	sw	$31,244($sp)
-	sw	$fp,240($sp)
+	addiu	$sp,$sp,-88
+	sw	$31,84($sp)
+	sw	$fp,80($sp)
 	move	$fp,$sp
-	sw	$a0,176($fp)
-	sw	$a1,180($fp)
-	sw	$a2,184($fp)
-	lw	$8,176($fp)
-	lw	$9,180($fp)
+	sw	$a0,16($fp)
+	sw	$a1,20($fp)
+	sw	$a2,24($fp)
+	lw	$8,16($fp)
+	lw	$9,20($fp)
 	add	$8,$8,$9
-	sw	$8,196($fp)
-	lw	$8,196($fp)
-	sw	$8,192($fp)
-	lw	$8,208($fp)
+	sw	$8,36($fp)
+	lw	$8,36($fp)
+	sw	$8,32($fp)
+	lw	$8,48($fp)
 	li	$8,33
-	sw	$8,208($fp)
-	lw	$8,212($fp)
+	sw	$8,48($fp)
+	lw	$8,52($fp)
 	li	$8,12
-	sw	$8,212($fp)
-	lw	$8,208($fp)
-	lw	$9,212($fp)
+	sw	$8,52($fp)
+	lw	$8,48($fp)
+	lw	$9,52($fp)
 	div	$8,$8,$9
 	nop
 	nop
-	sw	$8,204($fp)
-	lw	$8,204($fp)
-	sw	$8,200($fp)
-	lw	$8,212($fp)
+	sw	$8,44($fp)
+	lw	$8,44($fp)
+	sw	$8,40($fp)
+	lw	$8,52($fp)
 	li	$8,12
-	sw	$8,212($fp)
-	lw	$8,212($fp)
-	sw	$8,216($fp)
-	lw	$8,224($fp)
+	sw	$8,52($fp)
+	lw	$8,52($fp)
+	sw	$8,56($fp)
+	lw	$8,64($fp)
 	li	$8,155
-	sw	$8,224($fp)
-	lw	$8,224($fp)
-	sw	$8,176($fp)
-	sw	$8,220($fp)
-	lw	$8,176($fp)
-	lw	$9,180($fp)
+	sw	$8,64($fp)
+	lw	$8,64($fp)
+	sw	$8,16($fp)
+	sw	$8,60($fp)
+	lw	$8,16($fp)
+	lw	$9,20($fp)
 	add	$8,$8,$9
-	sw	$8,232($fp)
-	lw	$8,232($fp)
-	lw	$9,192($fp)
+	sw	$8,72($fp)
+	lw	$8,72($fp)
+	lw	$9,32($fp)
 	add	$8,$8,$9
-	sw	$8,228($fp)
-	lw	$2,228($fp)
+	sw	$8,68($fp)
+	lw	$2,68($fp)
 	move	$sp,$fp
-	lw	$fp,240($sp)
-	lw	$31,244($sp)
-	addiu	$sp,$sp,248
+	lw	$fp,80($sp)
+	lw	$31,84($sp)
+	addiu	$sp,$sp,88
 	j	$31
 	nop
 
@@ -282,44 +120,44 @@ f1:
 	.ent	f2
 	.type	f2, @function
 f2: 
-	addiu	$sp,$sp,-240
-	sw	$31,236($sp)
-	sw	$fp,232($sp)
+	addiu	$sp,$sp,-80
+	sw	$31,76($sp)
+	sw	$fp,72($sp)
 	move	$fp,$sp
-	sw	$a0,176($fp)
-	sw	$a1,180($fp)
-	sw	$a2,184($fp)
-	sw	$a3,188($fp)
-	lw	$8,244($fp)
-	sw	$8,192($fp)
-	lw	$8,248($fp)
-	sw	$8,196($fp)
-	lw	$8,180($fp)
-	lw	$9,184($fp)
+	sw	$a0,16($fp)
+	sw	$a1,20($fp)
+	sw	$a2,24($fp)
+	sw	$a3,28($fp)
+	lw	$8,84($fp)
+	sw	$8,32($fp)
+	lw	$8,88($fp)
+	sw	$8,36($fp)
+	lw	$8,20($fp)
+	lw	$9,24($fp)
 	add	$8,$8,$9
-	sw	$8,208($fp)
-	lw	$8,208($fp)
-	sw	$8,176($fp)
-	sw	$8,204($fp)
-	lw	$8,188($fp)
-	lw	$9,192($fp)
+	sw	$8,48($fp)
+	lw	$8,48($fp)
+	sw	$8,16($fp)
+	sw	$8,44($fp)
+	lw	$8,28($fp)
+	lw	$9,32($fp)
 	add	$8,$8,$9
-	sw	$8,216($fp)
-	lw	$8,216($fp)
-	sw	$8,184($fp)
-	sw	$8,212($fp)
-	lw	$8,176($fp)
-	lw	$9,184($fp)
+	sw	$8,56($fp)
+	lw	$8,56($fp)
+	sw	$8,24($fp)
+	sw	$8,52($fp)
+	lw	$8,16($fp)
+	lw	$9,24($fp)
 	add	$8,$8,$9
-	sw	$8,224($fp)
-	lw	$8,224($fp)
-	sw	$8,196($fp)
-	sw	$8,220($fp)
-	lw	$2,196($fp)
+	sw	$8,64($fp)
+	lw	$8,64($fp)
+	sw	$8,36($fp)
+	sw	$8,60($fp)
+	lw	$2,36($fp)
 	move	$sp,$fp
-	lw	$fp,232($sp)
-	lw	$31,236($sp)
-	addiu	$sp,$sp,240
+	lw	$fp,72($sp)
+	lw	$31,76($sp)
+	addiu	$sp,$sp,80
 	j	$31
 	nop
 
