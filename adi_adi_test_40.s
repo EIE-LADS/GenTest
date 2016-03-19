@@ -26,7 +26,7 @@ if_1:
 	sw	$8,32($fp)
 	lw	$8,28($fp)
 	lw	$9,32($fp)
-	sgt	$8,$8,$9
+	seq	$8,$8,$9
 	sw	$8,44($fp)
 	lw	$8,44($fp)
 	beq	$8,$0,else_1
@@ -133,10 +133,10 @@ for_loop_3:
 	sw	$8,120($fp)
 	addi	$8,$8,1
 	sw	$8,20($fp)
-	lw	$8,36($fp)
+	lw	$8,84($fp)
 	sw	$8,124($fp)
 	addi	$8,$8,-1
-	sw	$8,36($fp)
+	sw	$8,84($fp)
 	b	for_loop_3
 	nop
 end_loop_3:

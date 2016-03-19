@@ -59,7 +59,9 @@ if_1:
 	lw	$8,28($fp)
 	sw	$8,36($fp)
 	sw	$8,72($fp)
+	b	if_out_1
 else_1:
+if_out_1:
 	lw	$8,52($fp)
 	sw	$8,76($fp)
 	addi	$8,$8,1

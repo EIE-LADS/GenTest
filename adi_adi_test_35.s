@@ -48,7 +48,10 @@ if_2:
 	lw	$8,64($fp)
 	sw	$8,28($fp)
 	sw	$8,60($fp)
+	b	if_out_2
 else_2:
+if_out_2:
+	b	if_out_1
 else_1:
 if_3:
 	lw	$8,68($fp)
@@ -63,7 +66,10 @@ if_3:
 	lw	$8,48($fp)
 	sw	$8,28($fp)
 	sw	$8,72($fp)
+	b	if_out_3
 else_3:
+if_out_3:
+if_out_1:
 	lw	$2,28($fp)
 	move	$sp,$fp
 	lw	$fp,80($sp)
