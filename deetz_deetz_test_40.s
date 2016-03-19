@@ -6,57 +6,47 @@
 	.ent	f
 	.type	f, @function
 f: 
-	addiu	$sp,$sp,-220
-	sw	$31,216($sp)
-	sw	$fp,212($sp)
+	addiu	$sp,$sp,-204
+	sw	$31,200($sp)
+	sw	$fp,196($sp)
 	move	$fp,$sp
 	sw	$a0,0($fp)
 	sw	$a1,4($fp)
 	sw	$a2,8($fp)
 	sw	$a3,16($fp)
-	lw	$8,224($fp)
+	lw	$8,208($fp)
 	sw	$8,20($fp)
-	lw	$8,228($fp)
+	lw	$8,212($fp)
 	sw	$8,24($fp)
-	lw	$8,232($fp)
+	lw	$8,216($fp)
 	sw	$8,28($fp)
-	lw	$8,236($fp)
+	lw	$8,220($fp)
 	sw	$8,32($fp)
-	lw	$8,240($fp)
+	lw	$8,224($fp)
 	sw	$8,36($fp)
-	lw	$8,244($fp)
+	lw	$8,228($fp)
 	sw	$8,176($fp)
-	lw	$8,248($fp)
+	lw	$8,232($fp)
 	sw	$8,180($fp)
-	lw	$8,192($fp)
-	li	$8,13
-	sw	$8,192($fp)
-	lw	$8,192($fp)
-	sw	$8,188($fp)
-	lw	$8,200($fp)
-	li	$8,12
-	sw	$8,200($fp)
-	lw	$8,200($fp)
-	sw	$8,196($fp)
-	lw	$8,196($fp)
+	lw	$8,176($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
-	lw	$8,188($fp)
+	lw	$8,180($fp)
 	move	$a1,$8
 	sw	$8,4($fp)
-	lw	$8,204($fp)
+	lw	$8,188($fp)
 	li	$8,33
-	sw	$8,204($fp)
-	lw	$8,204($fp)
+	sw	$8,188($fp)
+	lw	$8,188($fp)
 	move	$a2,$8
 	sw	$8,8($fp)
 	jal	f1
 	nop
 	move	$2,$0
 	move	$sp,$fp
-	lw	$fp,212($sp)
-	lw	$31,216($sp)
-	addiu	$sp,$sp,220
+	lw	$fp,196($sp)
+	lw	$31,200($sp)
+	addiu	$sp,$sp,204
 	j	$31
 	nop
 
@@ -68,9 +58,9 @@ f:
 	.ent	f1
 	.type	f1, @function
 f1: 
-	addiu	$sp,$sp,-252
-	sw	$31,248($sp)
-	sw	$fp,244($sp)
+	addiu	$sp,$sp,-248
+	sw	$31,244($sp)
+	sw	$fp,240($sp)
 	move	$fp,$sp
 	sw	$a0,176($fp)
 	sw	$a1,180($fp)
@@ -95,30 +85,30 @@ f1:
 	sw	$8,204($fp)
 	lw	$8,204($fp)
 	sw	$8,200($fp)
-	lw	$8,220($fp)
+	lw	$8,212($fp)
 	li	$8,12
-	sw	$8,220($fp)
-	lw	$8,220($fp)
+	sw	$8,212($fp)
+	lw	$8,212($fp)
 	sw	$8,216($fp)
-	lw	$8,228($fp)
+	lw	$8,224($fp)
 	li	$8,155
-	sw	$8,228($fp)
-	lw	$8,228($fp)
-	sw	$8,176($fp)
 	sw	$8,224($fp)
+	lw	$8,224($fp)
+	sw	$8,176($fp)
+	sw	$8,220($fp)
 	lw	$8,176($fp)
 	lw	$9,180($fp)
 	add	$8,$8,$9
-	sw	$8,236($fp)
-	lw	$8,236($fp)
+	sw	$8,232($fp)
+	lw	$8,232($fp)
 	lw	$9,192($fp)
 	add	$8,$8,$9
-	sw	$8,232($fp)
-	lw	$2,232($fp)
+	sw	$8,228($fp)
+	lw	$2,228($fp)
 	move	$sp,$fp
-	lw	$fp,244($sp)
-	lw	$31,248($sp)
-	addiu	$sp,$sp,252
+	lw	$fp,240($sp)
+	lw	$31,244($sp)
+	addiu	$sp,$sp,248
 	j	$31
 	nop
 
