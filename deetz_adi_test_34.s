@@ -69,8 +69,6 @@ if_end_1:
 	addiu	$sp,$sp,88
 	j	$31
 	nop
-
-	.cprestore	16
 	.end	f
 	.size	f, .-f
 

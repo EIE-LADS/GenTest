@@ -153,8 +153,6 @@ for_end_2:
 	addiu	$sp,$sp,148
 	j	$31
 	nop
-
-	.cprestore	16
 	.end	f
 	.size	f, .-f
 
