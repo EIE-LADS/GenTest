@@ -21,7 +21,6 @@ f:
 	addiu	$sp,$sp,48
 	j	$31
 	nop
-	.cprestore	16
 	.end	f
 	.size	f, .-f
 

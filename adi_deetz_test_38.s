@@ -41,7 +41,6 @@ f:
 	addiu	$sp,$sp,60
 	j	$31
 	nop
-	.cprestore	16
 	.end	f
 	.size	f, .-f
 
@@ -168,7 +167,6 @@ if_out_1:
 	addiu	$sp,$sp,140
 	j	$31
 	nop
-	.cprestore	16
 	.end	f1
 	.size	f1, .-f1
 
@@ -222,7 +220,6 @@ f2:
 	addiu	$sp,$sp,84
 	j	$31
 	nop
-	.cprestore	16
 	.end	f2
 	.size	f2, .-f2
 
