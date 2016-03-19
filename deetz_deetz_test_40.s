@@ -1,3 +1,15 @@
+Func: f Offset: 3
+Func: f Offset: 4
+Func: f Offset: 20
+Func: f Offset: 36
+Func: f1 Offset: 0
+Func: f1 Offset: 4
+Func: f1 Offset: 20
+Func: f1 Offset: 80
+Func: f2 Offset: 0
+Func: f2 Offset: 4
+Func: f2 Offset: 20
+Func: f2 Offset: 72
 	.text
 
 

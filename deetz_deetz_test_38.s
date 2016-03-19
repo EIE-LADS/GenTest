@@ -1,3 +1,15 @@
+Func: f Offset: 3
+Func: f Offset: 4
+Func: f Offset: 20
+Func: f Offset: 44
+Func: f1 Offset: 6
+Func: f1 Offset: 6
+Func: f1 Offset: 28
+Func: f1 Offset: 120
+Func: f2 Offset: 0
+Func: f2 Offset: 4
+Func: f2 Offset: 20
+Func: f2 Offset: 72
 	.text
 
 
@@ -166,7 +178,7 @@ if_end_1:
 	add	$8,$8,$9
 	sw	$8,116($fp)
 	lw	$8,116($fp)
-	lw	$9,36($fp)
+	lw	$9,44($fp)
 	add	$8,$8,$9
 	sw	$8,112($fp)
 	lw	$2,112($fp)

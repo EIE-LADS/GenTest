@@ -1,3 +1,7 @@
+Func: f Offset: 0
+Func: f Offset: 4
+Func: f Offset: 20
+Func: f Offset: 112
 	.text
 	.align	2
 	.globl	f

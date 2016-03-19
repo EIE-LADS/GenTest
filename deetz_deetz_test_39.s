@@ -1,3 +1,11 @@
+Func: f Offset: 3
+Func: f Offset: 4
+Func: f Offset: 20
+Func: f Offset: 44
+Func: f1 Offset: 0
+Func: f1 Offset: 4
+Func: f1 Offset: 20
+Func: f1 Offset: 104
 	.text
 
 	.align	2
