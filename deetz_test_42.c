@@ -15,14 +15,10 @@ int f1(int a, int b, int c)
 	int g;
 	if (c == 33)
 	{
-		f2(a, 12, c = 12, d, e, b);
+		a = f2(a, 12, c = 12, d, e, b);
 	}
 	g = a + b;
 	a = 155;
-	if (a != f1(0,0,3))
-	{
-		b = f1(1, 2, 3);
-	}
 	return a + b + g;
 }
 
@@ -33,7 +29,7 @@ int f2(int a, int b, int c, int d, int e, int g)
 	g = a + c;
 	if (b == 12)
 	{
-		f1(a, g, c);
+		f1(a, g, 12);
 	}
 	return g;
 }
