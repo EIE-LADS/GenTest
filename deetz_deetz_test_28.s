@@ -11,19 +11,19 @@ f:
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
 	lw	$8,32($fp)
-	li	$8,3
+	li	$8,1
 	sw	$8,32($fp)
 	lw	$8,32($fp)
 	sw	$8,28($fp)
 	lw	$8,40($fp)
-	li	$8,1
+	li	$8,3
 	sw	$8,40($fp)
 	lw	$8,40($fp)
 	sw	$8,36($fp)
-	lw	$8,28($fp)
+	lw	$8,36($fp)
 	sw	$8,56($fp)
 	addi	$8,$8,1
-	sw	$8,28($fp)
+	sw	$8,36($fp)
 	lw	$8,60($fp)
 	li	$8,12
 	sw	$8,60($fp)
@@ -33,11 +33,11 @@ f:
 	nop
 	nop
 	sw	$8,52($fp)
-	lw	$8,32($fp)
+	lw	$8,40($fp)
 	li	$8,3
-	sw	$8,32($fp)
-	lw	$8,36($fp)
-	lw	$9,32($fp)
+	sw	$8,40($fp)
+	lw	$8,28($fp)
+	lw	$9,40($fp)
 	add	$8,$8,$9
 	sw	$8,64($fp)
 	lw	$8,64($fp)

@@ -11,19 +11,19 @@ f:
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
 	lw	$8,32($fp)
-	li	$8,298
+	li	$8,5
 	sw	$8,32($fp)
 	lw	$8,32($fp)
 	sw	$8,28($fp)
 	lw	$8,40($fp)
-	li	$8,5
+	li	$8,298
 	sw	$8,40($fp)
 	lw	$8,40($fp)
 	sw	$8,36($fp)
 while_start_1:
-	lw	$8,36($fp)
+	lw	$8,28($fp)
 	addi	$8,$8,-1
-	sw	$8,36($fp)
+	sw	$8,28($fp)
 	sw	$8,44($fp)
 	lw	$8,44($fp)
 	beq	$8,$0,while_end_1
@@ -31,16 +31,16 @@ while_start_1:
 	lw	$8,52($fp)
 	li	$8,3
 	sw	$8,52($fp)
-	lw	$8,28($fp)
+	lw	$8,36($fp)
 	lw	$9,52($fp)
 	rem	$8,$8,$9
-	sw	$8,28($fp)
+	sw	$8,36($fp)
 	sw	$8,48($fp)
 	b	while_start_1
 	nop
 while_end_1:
-	lw	$8,36($fp)
-	lw	$9,28($fp)
+	lw	$8,28($fp)
+	lw	$9,36($fp)
 	sllv	$8,$8,$9
 	sw	$8,56($fp)
 	lw	$2,56($fp)

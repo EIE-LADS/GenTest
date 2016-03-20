@@ -11,10 +11,6 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	sw	$a2,8($fp)
-	sw	$a3,0($fp)
-	lw	$8,52($fp)
-	sw	$8,0($fp)
 	lw	$8,16($fp)
 	move	$a0,$8
 	sw	$8,0($fp)

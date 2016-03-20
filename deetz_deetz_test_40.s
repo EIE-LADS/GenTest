@@ -12,22 +12,6 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	sw	$a2,8($fp)
-	sw	$a3,16($fp)
-	lw	$8,52($fp)
-	sw	$8,20($fp)
-	lw	$8,56($fp)
-	sw	$8,24($fp)
-	lw	$8,60($fp)
-	sw	$8,28($fp)
-	lw	$8,64($fp)
-	sw	$8,32($fp)
-	lw	$8,68($fp)
-	sw	$8,36($fp)
-	lw	$8,72($fp)
-	sw	$8,0($fp)
-	lw	$8,76($fp)
-	sw	$8,0($fp)
 	lw	$8,16($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
@@ -66,31 +50,31 @@ f1:
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
 	sw	$a2,24($fp)
-	lw	$8,16($fp)
-	lw	$9,20($fp)
-	add	$8,$8,$9
+	lw	$8,36($fp)
+	li	$8,12
 	sw	$8,36($fp)
 	lw	$8,36($fp)
 	sw	$8,32($fp)
 	lw	$8,48($fp)
 	li	$8,33
 	sw	$8,48($fp)
-	lw	$8,52($fp)
+	lw	$8,36($fp)
 	li	$8,12
-	sw	$8,52($fp)
+	sw	$8,36($fp)
 	lw	$8,48($fp)
-	lw	$9,52($fp)
+	lw	$9,36($fp)
 	div	$8,$8,$9
 	nop
 	nop
 	sw	$8,44($fp)
 	lw	$8,44($fp)
 	sw	$8,40($fp)
-	lw	$8,52($fp)
-	li	$8,12
-	sw	$8,52($fp)
-	lw	$8,52($fp)
+	lw	$8,16($fp)
+	lw	$9,20($fp)
+	add	$8,$8,$9
 	sw	$8,56($fp)
+	lw	$8,56($fp)
+	sw	$8,52($fp)
 	lw	$8,64($fp)
 	li	$8,155
 	sw	$8,64($fp)
@@ -102,7 +86,7 @@ f1:
 	add	$8,$8,$9
 	sw	$8,72($fp)
 	lw	$8,72($fp)
-	lw	$9,32($fp)
+	lw	$9,52($fp)
 	add	$8,$8,$9
 	sw	$8,68($fp)
 	lw	$2,68($fp)
