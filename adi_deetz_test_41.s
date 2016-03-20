@@ -48,8 +48,6 @@ f1:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	sw	$a0,16($fp)
-	sw	$a1,20($fp)
 	sw	$a2,24($fp)
 	lw	$8,36($fp)
 	li	$8,13

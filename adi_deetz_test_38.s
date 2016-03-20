@@ -53,8 +53,6 @@ f1:
 	sw	$fp,128($sp)
 	sw	$31,132($sp)
 	move	$fp,$sp
-	sw	$a0,16($fp)
-	sw	$a1,20($fp)
 	sw	$a0,24($fp)
 	sw	$a1,28($fp)
 	sw	$a2,32($fp)
@@ -179,11 +177,6 @@ f2:
 	sw	$fp,72($sp)
 	sw	$31,76($sp)
 	move	$fp,$sp
-	sw	$a0,16($fp)
-	sw	$a1,20($fp)
-	sw	$a0,24($fp)
-	sw	$a1,28($fp)
-	sw	$a2,32($fp)
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
 	sw	$a2,24($fp)
