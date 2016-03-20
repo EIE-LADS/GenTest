@@ -25,9 +25,6 @@ int f2(int a, int b, int c, int d, int e, int g)
 	a = b + c;
 	c = d + e;
 	g = a + c;
-	if (b == 12)
-	{
 		f1(a, g, 12);
-	}
 	return g;
 }
