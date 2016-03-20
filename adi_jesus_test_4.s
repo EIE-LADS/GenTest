@@ -5,15 +5,15 @@
 	.type	f, @function
 f:
 	addiu	$sp,$sp,-40
-	sw	$fp,32($sp)
-	sw	$31,36($sp)
+	sw	$fp,36($sp)
+	sw	$31,32($sp)
 	move	$fp,$sp
-	sw	$a0,16($fp)
-	sw	$a1,20($fp)
-	lw	$2,16($fp)
+	sw	$a0,28($fp)
+	sw	$a1,32($fp)
+	lw	$2,28($fp)
 	move	$sp,$fp
-	lw	$fp,32($sp)
-	lw	$31,36($sp)
+	lw	$fp,36($sp)
+	lw	$31,32($sp)
 	addiu	$sp,$sp,40
 	j	$31
 	nop
