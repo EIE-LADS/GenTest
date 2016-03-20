@@ -149,17 +149,17 @@ if_end_1:
 	.ent	f2
 	.type	f2, @function
 f2: 
-	addiu	$sp,$sp,-96
-	sw	$31,92($sp)
-	sw	$fp,88($sp)
+	addiu	$sp,$sp,-80
+	sw	$31,76($sp)
+	sw	$fp,72($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
 	sw	$a2,24($fp)
 	sw	$a3,28($fp)
-	lw	$8,100($fp)
+	lw	$8,84($fp)
 	sw	$8,32($fp)
-	lw	$8,104($fp)
+	lw	$8,88($fp)
 	sw	$8,36($fp)
 	lw	$8,20($fp)
 	lw	$9,24($fp)
@@ -182,42 +182,11 @@ f2:
 	lw	$8,64($fp)
 	sw	$8,36($fp)
 	sw	$8,60($fp)
-if_start_2:
-	lw	$8,72($fp)
-	li	$8,12
-	sw	$8,72($fp)
-	lw	$8,20($fp)
-	lw	$9,72($fp)
-	seq	$8,$8,$9
-	sw	$8,68($fp)
-	lw	$8,68($fp)
-	beq	$8,$0,else_2
-	nop
-	lw	$8,16($fp)
-	move	$a0,$8
-	sw	$8,0($fp)
-	lw	$8,36($fp)
-	move	$a1,$8
-	sw	$8,4($fp)
-	lw	$8,80($fp)
-	li	$8,12
-	sw	$8,80($fp)
-	lw	$8,80($fp)
-	move	$a2,$8
-	sw	$8,8($fp)
-	la	$8,f1
-	jalr	$8
-	nop
-	sw	$2,76($fp)
-	b	if_end_2
-	nop
-else_2:
-if_end_2:
 	lw	$2,36($fp)
 	move	$sp,$fp
-	lw	$fp,88($sp)
-	lw	$31,92($sp)
-	addiu	$sp,$sp,96
+	lw	$fp,72($sp)
+	lw	$31,76($sp)
+	addiu	$sp,$sp,80
 	j	$31
 	nop
 	.end	f2
