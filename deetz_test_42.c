@@ -1,10 +1,8 @@
 int f1(int a, int b, int c);
 int f2(int a, int b, int c, int d, int e, int g);
 
-int main()
+int f(int a, int b)
 {
-	int a = 1;
-	int b = 3;
 	return f1(a, b, 33);
 }
 
