@@ -2,10 +2,11 @@ int fib(int a);
 
 int f(int a, int b)
 {
+	int fib_a, fib_b;
 	a+=10; 
 	b+=12; 
-	int fib_a = fib(a); 
-	int fib_b = fib(b);
+	fib_a = fib(a); 
+	fib_b = fib(b);
 
 	return fib_a+fib_b;
 }
