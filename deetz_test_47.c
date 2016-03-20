@@ -16,7 +16,7 @@ int f1(int a, int b, int c)
 
 int f2(int a, int b, int c, int d, int e, int g)
 {
-	a = b + c;
+	c = d + e;
 	g = a + c;
 	return g;
 }
