@@ -1,8 +1,9 @@
-int f1(int pp, int p, int r);
+int f1(int pp, int p);
 
 int f(int a, int b)
 {
-	int prevPrev = prev = 1; 
+	int prevPrev = 1;
+	int prev = 1; 
 	int result = 0; 
 
 	if(b == 0 || b == 1) return 1; 
@@ -18,5 +19,5 @@ int f(int a, int b)
 
 int f1(int pp, int p)
 {
-	return pp + p 
+	return pp + p; 
 }
