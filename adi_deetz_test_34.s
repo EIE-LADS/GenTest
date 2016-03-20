@@ -4,45 +4,45 @@
 	.ent	f
 	.type	f, @function
 f:
-	addiu	$sp,$sp,-1473621748
-	sw	$fp,1473621740($sp)
-	sw	$31,1473621744($sp)
+	addiu	$sp,$sp,-68
+	sw	$fp,60($sp)
+	sw	$31,64($sp)
 	move	$fp,$sp
-	sw	$a0,1473621696($fp)
-	sw	$a1,1473621700($fp)
-	lw	$8,1473621716($fp)
+	sw	$a0,16($fp)
+	sw	$a1,20($fp)
+	lw	$8,36($fp)
 	li	$8,3
-	sw	$8,1473621716($fp)
-	lw	$8,1473621716($fp)
+	sw	$8,36($fp)
+	lw	$8,36($fp)
 	neg	$8,$8
-	sw	$8,1473621712($fp)
-	lw	$8,1473621712($fp)
-	sw	$8,1473621708($fp)
-	lw	$8,1473621724($fp)
+	sw	$8,32($fp)
+	lw	$8,32($fp)
+	sw	$8,28($fp)
+	lw	$8,44($fp)
 	li	$8,0
-	sw	$8,1473621724($fp)
-	lw	$8,1473621724($fp)
-	sw	$8,1473621720($fp)
+	sw	$8,44($fp)
+	lw	$8,44($fp)
+	sw	$8,40($fp)
 while_loop_1:
-	lw	$8,1473621708($fp)
-	sw	$8,1473621728($fp)
+	lw	$8,28($fp)
+	sw	$8,48($fp)
 	addi	$8,$8,1
-	sw	$8,1473621708($fp)
-	lw	$8,1473621728($fp)
+	sw	$8,28($fp)
+	lw	$8,48($fp)
 	beq	$8,$0,end_loop_1
 	nop
-	lw	$8,1473621720($fp)
-	sw	$8,1473621732($fp)
+	lw	$8,40($fp)
+	sw	$8,52($fp)
 	addi	$8,$8,1
-	sw	$8,1473621720($fp)
+	sw	$8,40($fp)
 	b	while_loop_1
 	nop
 end_loop_1:
-	lw	$2,1473621720($fp)
+	lw	$2,40($fp)
 	move	$sp,$fp
-	lw	$fp,1473621740($sp)
-	lw	$31,1473621744($sp)
-	addiu	$sp,$sp,1473621748
+	lw	$fp,60($sp)
+	lw	$31,64($sp)
+	addiu	$sp,$sp,68
 	j	$31
 	nop
 	.end	f

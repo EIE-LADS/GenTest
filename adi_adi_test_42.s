@@ -5,39 +5,39 @@
 	.ent	f
 	.type	f, @function
 f:
-	addiu	$sp,$sp,--2073986708
-	sw	$fp,-2073986716($sp)
-	sw	$31,-2073986712($sp)
+	addiu	$sp,$sp,-60
+	sw	$fp,52($sp)
+	sw	$31,56($sp)
 	move	$fp,$sp
-	sw	$a0,-2073986752($fp)
-	sw	$a1,-2073986748($fp)
-	lw	$8,-2073986752($fp)
+	sw	$a0,16($fp)
+	sw	$a1,20($fp)
+	lw	$8,16($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
 	la	$8,fib
 	jalr	$8
 	nop
-	sw	$2,-2073986736($fp)
-	lw	$8,-2073986736($fp)
-	sw	$8,-2073986740($fp)
-	lw	$8,-2073986748($fp)
+	sw	$2,32($fp)
+	lw	$8,32($fp)
+	sw	$8,28($fp)
+	lw	$8,20($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
 	la	$8,fib
 	jalr	$8
 	nop
-	sw	$2,-2073986728($fp)
-	lw	$8,-2073986728($fp)
-	sw	$8,-2073986732($fp)
-	lw	$8,-2073986740($fp)
-	lw	$9,-2073986732($fp)
+	sw	$2,40($fp)
+	lw	$8,40($fp)
+	sw	$8,36($fp)
+	lw	$8,28($fp)
+	lw	$9,36($fp)
 	add	$8,$8,$9
-	sw	$8,-2073986724($fp)
-	lw	$2,-2073986724($fp)
+	sw	$8,44($fp)
+	lw	$2,44($fp)
 	move	$sp,$fp
-	lw	$fp,-2073986716($sp)
-	lw	$31,-2073986712($sp)
-	addiu	$sp,$sp,-2073986708
+	lw	$fp,52($sp)
+	lw	$31,56($sp)
+	addiu	$sp,$sp,60
 	j	$31
 	nop
 	.end	f
@@ -48,79 +48,79 @@ f:
 	.ent	fib
 	.type	fib, @function
 fib:
-	addiu	$sp,$sp,-1534708384
-	sw	$fp,1534708376($sp)
-	sw	$31,1534708380($sp)
+	addiu	$sp,$sp,-80
+	sw	$fp,72($sp)
+	sw	$31,76($sp)
 	move	$fp,$sp
-	sw	$a0,1534708320($fp)
+	sw	$a0,16($fp)
 if_1:
-	lw	$8,1534708336($fp)
+	lw	$8,32($fp)
 	li	$8,1
-	sw	$8,1534708336($fp)
-	lw	$8,1534708320($fp)
-	lw	$9,1534708336($fp)
+	sw	$8,32($fp)
+	lw	$8,16($fp)
+	lw	$9,32($fp)
 	seq	$8,$8,$9
-	sw	$8,1534708332($fp)
-	lw	$8,1534708344($fp)
+	sw	$8,28($fp)
+	lw	$8,40($fp)
 	li	$8,0
-	sw	$8,1534708344($fp)
-	lw	$8,1534708320($fp)
-	lw	$9,1534708344($fp)
+	sw	$8,40($fp)
+	lw	$8,16($fp)
+	lw	$9,40($fp)
 	seq	$8,$8,$9
-	sw	$8,1534708340($fp)
-	lw	$8,1534708340($fp)
-	lw	$9,1534708332($fp)
+	sw	$8,36($fp)
+	lw	$8,36($fp)
+	lw	$9,28($fp)
 	sne	$8,$8,0
 	sne	$9,$9,0
 	or	$8,$8,$9
-	sw	$8,1534708328($fp)
-	lw	$8,1534708328($fp)
+	sw	$8,24($fp)
+	lw	$8,24($fp)
 	beq	$8,$0,else_1
 	nop
-	lw	$8,1534708336($fp)
+	lw	$8,32($fp)
 	li	$8,1
-	sw	$8,1534708336($fp)
-	lw	$2,1534708336($fp)
+	sw	$8,32($fp)
+	lw	$2,32($fp)
 	b	if_out_1
 else_1:
-	lw	$8,1534708360($fp)
+	lw	$8,56($fp)
 	li	$8,2
-	sw	$8,1534708360($fp)
-	lw	$8,1534708320($fp)
-	lw	$9,1534708360($fp)
+	sw	$8,56($fp)
+	lw	$8,16($fp)
+	lw	$9,56($fp)
 	sub	$8,$8,$9
-	sw	$8,1534708356($fp)
-	lw	$8,1534708356($fp)
+	sw	$8,52($fp)
+	lw	$8,52($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
 	la	$8,fib
 	jalr	$8
 	nop
-	sw	$2,1534708352($fp)
-	lw	$8,1534708336($fp)
+	sw	$2,48($fp)
+	lw	$8,32($fp)
 	li	$8,1
-	sw	$8,1534708336($fp)
-	lw	$8,1534708320($fp)
-	lw	$9,1534708336($fp)
+	sw	$8,32($fp)
+	lw	$8,16($fp)
+	lw	$9,32($fp)
 	sub	$8,$8,$9
-	sw	$8,1534708368($fp)
-	lw	$8,1534708368($fp)
+	sw	$8,64($fp)
+	lw	$8,64($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
 	la	$8,fib
 	jalr	$8
 	nop
-	sw	$2,1534708364($fp)
-	lw	$8,1534708364($fp)
-	lw	$9,1534708352($fp)
+	sw	$2,60($fp)
+	lw	$8,60($fp)
+	lw	$9,48($fp)
 	add	$8,$8,$9
-	sw	$8,1534708348($fp)
-	lw	$2,1534708348($fp)
+	sw	$8,44($fp)
+	lw	$2,44($fp)
 if_out_1:
 	move	$sp,$fp
-	lw	$fp,1534708376($sp)
-	lw	$31,1534708380($sp)
-	addiu	$sp,$sp,1534708384
+	lw	$fp,72($sp)
+	lw	$31,76($sp)
+	addiu	$sp,$sp,80
 	j	$31
 	nop
 	.end	fib

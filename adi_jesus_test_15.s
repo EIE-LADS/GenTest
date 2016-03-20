@@ -4,25 +4,25 @@
 	.ent	f
 	.type	f, @function
 f:
-	addiu	$sp,$sp,--2028042192
-	sw	$fp,-2028042200($sp)
-	sw	$31,-2028042196($sp)
+	addiu	$sp,$sp,-48
+	sw	$fp,40($sp)
+	sw	$31,44($sp)
 	move	$fp,$sp
-	sw	$a0,-2028042224($fp)
-	sw	$a1,-2028042220($fp)
-	lw	$8,-2028042208($fp)
+	sw	$a0,16($fp)
+	sw	$a1,20($fp)
+	lw	$8,32($fp)
 	li	$8,0
-	sw	$8,-2028042208($fp)
-	lw	$8,-2028042220($fp)
-	lw	$9,-2028042224($fp)
-	lw	$10,-2028042208($fp)
+	sw	$8,32($fp)
+	lw	$8,20($fp)
+	lw	$9,16($fp)
+	lw	$10,32($fp)
 	movz	$9,$10,$8
-	sw	$9,-2028042212($fp)
-	lw	$2,-2028042212($fp)
+	sw	$9,28($fp)
+	lw	$2,28($fp)
 	move	$sp,$fp
-	lw	$fp,-2028042200($sp)
-	lw	$31,-2028042196($sp)
-	addiu	$sp,$sp,-2028042192
+	lw	$fp,40($sp)
+	lw	$31,44($sp)
+	addiu	$sp,$sp,48
 	j	$31
 	nop
 	.end	f
