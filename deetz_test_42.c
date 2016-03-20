@@ -13,7 +13,7 @@ int f1(int a, int b, int c)
 	int g;
 	if (c == 33)
 	{
-		a = f2(a, 12, c = 12, d, e, b);
+		a = f2(a, 12, 13, d, e, b);
 	}
 	g = a + b;
 	a = 155;

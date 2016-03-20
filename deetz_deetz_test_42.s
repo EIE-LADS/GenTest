@@ -89,11 +89,8 @@ if_start_1:
 	lw	$8,36($fp)
 	move	$a1,$8
 	sw	$8,4($fp)
-	lw	$8,36($fp)
-	li	$8,12
-	sw	$8,36($fp)
-	lw	$8,36($fp)
-	sw	$8,24($fp)
+	lw	$8,72($fp)
+	li	$8,13
 	sw	$8,72($fp)
 	lw	$8,72($fp)
 	move	$a2,$8
