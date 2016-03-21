@@ -44,7 +44,7 @@ if_1:
 	lw	$8,60($fp)
 	sw	$8,28($fp)
 	sw	$8,56($fp)
-	j	break_2
+	j	break_1
 	b	if_out_1
 else_1:
 if_out_1:
@@ -55,7 +55,7 @@ if_out_1:
 	b	for_loop_1
 	nop
 end_loop_1:
-break_2:
+break_1:
 	lw	$2,28($fp)
 	move	$sp,$fp
 	lw	$fp,72($sp)
