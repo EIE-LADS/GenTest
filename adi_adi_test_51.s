@@ -15,7 +15,7 @@ case_0:
 	lw	$8,32($fp)
 	li	$8,0
 	sw	$8,32($fp)
-	lw	$8,32
+	lw	$8,32($fp)
 	bne	$8,$12,case_1
 	nop
 body_0:
@@ -32,7 +32,7 @@ case_1:
 	lw	$8,44($fp)
 	li	$8,1
 	sw	$8,44($fp)
-	lw	$8,44
+	lw	$8,44($fp)
 	bne	$8,$12,case_2
 	nop
 body_1:
@@ -49,7 +49,7 @@ case_2:
 	lw	$8,56($fp)
 	li	$8,3
 	sw	$8,56($fp)
-	lw	$8,56
+	lw	$8,56($fp)
 	bne	$8,$12,case_3
 	nop
 body_2:
