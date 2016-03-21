@@ -26,7 +26,6 @@ f:
 	add	$8,$8,$9
 	sw	$8,48($fp)
 	lw	$2,48($fp)
-break_1:
 	move	$sp,$fp
 	lw	$fp,56($sp)
 	lw	$31,60($sp)

@@ -11,7 +11,6 @@ f:
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
 	lw	$2,16($fp)
-break_1:
 	move	$sp,$fp
 	lw	$fp,32($sp)
 	lw	$31,36($sp)

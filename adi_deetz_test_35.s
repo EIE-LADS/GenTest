@@ -28,7 +28,6 @@ dw_loop_1:
 	sw	$8,48($fp)
 	addi	$8,$8,1
 	sw	$8,40($fp)
-break_2:
 	lw	$8,28($fp)
 	sw	$8,52($fp)
 	addi	$8,$8,1
@@ -36,8 +35,8 @@ break_2:
 	lw	$8,52($fp)
 	bne	$8,$0,dw_loop_1
 	nop
-	lw	$2,40($fp)
 break_1:
+	lw	$2,40($fp)
 	move	$sp,$fp
 	lw	$fp,60($sp)
 	lw	$31,64($sp)

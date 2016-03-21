@@ -36,7 +36,6 @@ for_loop_1:
 	sw	$8,56($fp)
 	addi	$8,$8,1
 	sw	$8,32($fp)
-break_2:
 	lw	$8,28($fp)
 	sw	$8,60($fp)
 	addi	$8,$8,1
@@ -44,12 +43,12 @@ break_2:
 	b	for_loop_1
 	nop
 end_loop_1:
+break_1:
 	lw	$8,28($fp)
 	lw	$9,32($fp)
 	add	$8,$8,$9
 	sw	$8,64($fp)
 	lw	$2,64($fp)
-break_1:
 	move	$sp,$fp
 	lw	$fp,72($sp)
 	lw	$31,76($sp)

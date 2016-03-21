@@ -37,7 +37,6 @@ if_1:
 	lw	$8,56($fp)
 	sw	$8,28($fp)
 	sw	$8,52($fp)
-break_2:
 	b	if_out_1
 else_1:
 	lw	$8,48($fp)
@@ -46,10 +45,8 @@ else_1:
 	lw	$8,48($fp)
 	sw	$8,28($fp)
 	sw	$8,60($fp)
-break_3:
 if_out_1:
 	lw	$2,28($fp)
-break_1:
 	move	$sp,$fp
 	lw	$fp,68($sp)
 	lw	$31,72($sp)
