@@ -29,6 +29,8 @@ body_0:
 	j	body_1
 	nop
 case_1:
+body_1:
+case_1:
 	lw	$8,44($fp)
 	li	$8,1
 	sw	$8,44($fp)
@@ -45,6 +47,8 @@ body_1:
 	j	break_1
 	j	body_2
 	nop
+case_2:
+body_2:
 case_2:
 	lw	$8,56($fp)
 	li	$8,3
