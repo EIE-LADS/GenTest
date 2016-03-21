@@ -55,4 +55,5 @@ break_1:
 	nop
 	.end	f
 	.size	f, .-f
+.data
 

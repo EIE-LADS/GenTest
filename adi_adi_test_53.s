@@ -78,4 +78,5 @@ f:
 	nop
 	.end	f
 	.size	f, .-f
-arr_32:		t_36	t_40	t_44	t_48	t_52	t_56	t_60	t_64	t_68	t_32
+.data
+arr_32:	
