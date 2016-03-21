@@ -78,6 +78,6 @@ f:
 	nop
 	.end	f
 	.size	f, .-f
-.dataarray_data_28:
+array_data_28:
 
 

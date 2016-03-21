@@ -1,5 +1,5 @@
 	.text
-.data
+
 	.align	2
 	.globl	f
 	.ent	f
@@ -29,7 +29,7 @@ f:
 	nop
 	.end	f
 	.size	f, .-f
-.data
+
 	.align	2
 	.globl	f1
 	.ent	f1
@@ -53,5 +53,5 @@ f1:
 	nop
 	.end	f1
 	.size	f1, .-f1
-.data
+
 
