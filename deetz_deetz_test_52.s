@@ -48,11 +48,11 @@ f:
 	lw	$8,64($fp)
 	sw	$8,56($fp)
 	sw	$8,52($fp)
-	lw	$8,60($fp)
-	li	$8,10
-	sw	$8,60($fp)
+	lw	$8,44($fp)
+	li	$8,3
+	sw	$8,44($fp)
 	la	$11,array_data_28
-	lw	$8,60($fp)
+	lw	$8,44($fp)
 	li	$9,4
 	mul	$8,$8,$9
 	nop
