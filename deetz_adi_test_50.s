@@ -11,7 +11,6 @@ f:
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
 	lw	$12,16($fp)
-case_test_0: 
 	lw	$8,32($fp)
 	li	$8,0
 	sw	$8,32($fp)
@@ -38,6 +37,7 @@ case_test_2:
 	nop
 	b	case_body_2
 	nop
+case_test_3: 
 case_body_0:
 	lw	$8,48($fp)
 	li	$8,1
