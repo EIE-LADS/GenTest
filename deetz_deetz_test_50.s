@@ -40,9 +40,9 @@ f:
 	li	$8,2
 	sw	$8,52($fp)
 	lw	$8,52($fp)
-	la	$11,32
+	la	$11,32($fp)
 	add	$11,$11,$8
-	sw	$11,48
+	sw	$11,48($fp)
 	lw	$2,48($fp)
 	move	$sp,$fp
 	lw	$fp,60($sp)
