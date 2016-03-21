@@ -134,4 +134,6 @@ f1:
 	.end	f1
 	.size	f1, .-f1
 
+.data
+
 

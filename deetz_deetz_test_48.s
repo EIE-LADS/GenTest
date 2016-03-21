@@ -211,4 +211,6 @@ f2:
 	.end	f2
 	.size	f2, .-f2
 
+.data
+
 

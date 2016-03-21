@@ -62,4 +62,6 @@ f:
 	.end	f
 	.size	f, .-f
 
+.data
+
 

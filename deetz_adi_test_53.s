@@ -78,6 +78,8 @@ f:
 	nop
 	.end	f
 	.size	f, .-f
+
+.data
 array_data_28:	.word	
 
 

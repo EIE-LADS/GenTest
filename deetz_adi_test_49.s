@@ -57,4 +57,6 @@ break_exit_1:
 	.end	f
 	.size	f, .-f
 
+.data
+
 

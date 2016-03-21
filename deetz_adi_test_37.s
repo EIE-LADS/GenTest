@@ -57,4 +57,6 @@ if_end_1:
 	.end	f
 	.size	f, .-f
 
+.data
+
 

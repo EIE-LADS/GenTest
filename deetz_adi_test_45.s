@@ -107,4 +107,6 @@ if_end_1:
 	.end	fac
 	.size	fac, .-fac
 
+.data
+
 

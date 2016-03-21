@@ -127,4 +127,6 @@ if_end_1:
 	.end	fib
 	.size	fib, .-fib
 
+.data
+
 

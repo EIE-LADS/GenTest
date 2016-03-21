@@ -159,4 +159,6 @@ break_exit_3:
 	.end	f
 	.size	f, .-f
 
+.data
+
 
