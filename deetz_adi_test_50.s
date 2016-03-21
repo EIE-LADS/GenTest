@@ -18,7 +18,7 @@ case_test_0:
 	lw	$8,32($fp)
 	bne	$8,$12,case_test_1
 	nop
-	b	$case_body_0
+	b	case_body_0
 	nop
 case_test_1: 
 	lw	$8,36($fp)
@@ -27,7 +27,7 @@ case_test_1:
 	lw	$8,36($fp)
 	bne	$8,$12,case_test_2
 	nop
-	b	$case_body_1
+	b	case_body_1
 	nop
 case_test_2: 
 	lw	$8,40($fp)
@@ -36,7 +36,7 @@ case_test_2:
 	lw	$8,40($fp)
 	bne	$8,$12,case_test_3
 	nop
-	b	$case_body_2
+	b	case_body_2
 	nop
 case_body_0:
 	lw	$8,48($fp)
@@ -45,7 +45,6 @@ case_body_0:
 	lw	$8,48($fp)
 	sw	$8,28($fp)
 	sw	$8,44($fp)
-	b	case_body_1
 	nop
 case_body_1:
 	lw	$8,56($fp)
@@ -54,7 +53,6 @@ case_body_1:
 	lw	$8,56($fp)
 	sw	$8,28($fp)
 	sw	$8,52($fp)
-	b	case_body_2
 	nop
 case_body_2:
 	lw	$8,64($fp)
@@ -63,7 +61,6 @@ case_body_2:
 	lw	$8,64($fp)
 	sw	$8,28($fp)
 	sw	$8,60($fp)
-	b	case_body_3
 	nop
 case_test_3: 
 case_body_3: 

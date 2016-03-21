@@ -23,7 +23,7 @@ case_test_0:
 	lw	$8,32($fp)
 	bne	$8,$12,case_test_1
 	nop
-	b	$case_body_0
+	b	case_body_0
 	nop
 case_test_1: 
 	lw	$8,36($fp)
@@ -32,7 +32,7 @@ case_test_1:
 	lw	$8,36($fp)
 	bne	$8,$12,case_test_2
 	nop
-	b	$case_body_1
+	b	case_body_1
 	nop
 case_test_2: 
 	lw	$8,40($fp)
@@ -41,7 +41,7 @@ case_test_2:
 	lw	$8,40($fp)
 	bne	$8,$12,case_test_3
 	nop
-	b	$case_body_2
+	b	case_body_2
 	nop
 case_body_0:
 	lw	$8,48($fp)
@@ -79,12 +79,10 @@ while_end_1:
 break_exit_2: 
 	b	break_exit_1
 	nop
-	b	case_body_1
 	nop
 case_body_1:
 	b	break_exit_1
 	nop
-	b	case_body_2
 	nop
 case_body_2:
 	lw	$8,16($fp)
@@ -94,7 +92,6 @@ case_body_2:
 	sw	$8,72($fp)
 	b	break_exit_1
 	nop
-	b	case_body_3
 	nop
 break_exit_1:
 	lw	$2,16($fp)
