@@ -10,9 +10,9 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,28($fp)
+	lw	$8,32($fp)
 	li	$8,10
-	sw	$8,28($fp)
+	sw	$8,32($fp)
 	la	$11,array_data_28
 	lw	$8,36($fp)
 	li	$8,1
@@ -59,13 +59,13 @@ f:
 	sw	$8,68($fp)
 	lw	$8,68($fp)
 	sw	$8,32($11)
-	lw	$8,28($fp)
+	lw	$8,32($fp)
 	li	$8,10
-	sw	$8,28($fp)
-	lw	$8,28($fp)
+	sw	$8,32($fp)
+	lw	$8,32($fp)
 	sw	$8,36($11)
 	lw	$8,36($fp)
-	sw	$8,32($fp)
+	sw	$8,28($fp)
 	lw	$8,72($fp)
 	li	$8,0
 	sw	$8,72($fp)
