@@ -90,7 +90,7 @@ case_body_2:
 	nop
 	b	case_body_3
 	nop
-break_exit_1
+break_exit_1:
 	lw	$2,16($fp)
 	move	$sp,$fp
 	lw	$fp,80($sp)

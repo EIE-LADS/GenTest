@@ -76,7 +76,7 @@ case_body_3:
 	lw	$8,68($fp)
 	sw	$8,28($fp)
 	sw	$8,64($fp)
-break_exit_1
+break_exit_1:
 	lw	$2,28($fp)
 	move	$sp,$fp
 	lw	$fp,76($sp)
