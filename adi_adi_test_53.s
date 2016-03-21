@@ -13,7 +13,7 @@ f:
 	lw	$8,32($fp)
 	li	$8,10
 	sw	$8,32($fp)
-	la	$11,arr_32
+	la	$11,arr_28
 	lw	$8,36($fp)
 	li	$8,1
 	sw	$8,36($fp)
@@ -80,4 +80,4 @@ f:
 	.size	f, .-f
 
 	.data
-arr_32:	
+arr_28:	
