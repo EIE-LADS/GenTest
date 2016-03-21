@@ -37,7 +37,7 @@ if_1:
 	sw	$8,44($fp)
 	addi	$8,$8,1
 	sw	$8,20($fp)
-	j	break_1
+	j	break_2
 	b	if_out_1
 else_1:
 if_out_1:
@@ -48,7 +48,7 @@ if_out_1:
 	b	while_loop_1
 	nop
 end_loop_1:
-break_1:
+break_2:
 	lw	$8,16($fp)
 	lw	$9,20($fp)
 	add	$8,$8,$9

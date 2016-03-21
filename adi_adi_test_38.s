@@ -105,7 +105,7 @@ dw_loop_2:
 	lw	$8,100($fp)
 	bne	$8,$0,dw_loop_2
 	nop
-break_2:
+break_4:
 	lw	$8,28($fp)
 	sw	$8,104($fp)
 	addi	$8,$8,-1
@@ -113,7 +113,7 @@ break_2:
 	b	for_loop_1
 	nop
 end_loop_1:
-break_1:
+break_3:
 	lw	$8,16($fp)
 	lw	$9,20($fp)
 	add	$8,$8,$9

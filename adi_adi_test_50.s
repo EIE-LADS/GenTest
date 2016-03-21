@@ -70,6 +70,7 @@ body_3:
 	lw	$8,64($fp)
 	sw	$8,28($fp)
 	sw	$8,60($fp)
+break_1:
 	lw	$2,28($fp)
 	move	$sp,$fp
 	lw	$fp,72($sp)

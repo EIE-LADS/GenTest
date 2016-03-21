@@ -30,7 +30,7 @@ if_1:
 	lw	$8,40($fp)
 	beq	$8,$0,else_1
 	nop
-	j	break_1
+	j	break_2
 	b	if_out_1
 else_1:
 if_out_1:
@@ -44,7 +44,7 @@ if_out_1:
 	lw	$8,48($fp)
 	bne	$8,$0,dw_loop_1
 	nop
-break_1:
+break_2:
 	lw	$2,28($fp)
 	move	$sp,$fp
 	lw	$fp,60($sp)
