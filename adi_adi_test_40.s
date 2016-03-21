@@ -156,5 +156,6 @@ break_3:
 	nop
 	.end	f
 	.size	f, .-f
+
 	.data
 

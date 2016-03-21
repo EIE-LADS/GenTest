@@ -1,5 +1,4 @@
 	.text
-	.data
 
 	.align	2
 	.globl	f
@@ -63,5 +62,6 @@ break_1:
 	nop
 	.end	f
 	.size	f, .-f
+
 	.data
 

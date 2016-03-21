@@ -31,5 +31,6 @@ f:
 	nop
 	.end	f
 	.size	f, .-f
+
 	.data
 
