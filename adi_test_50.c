@@ -1,6 +1,6 @@
 int f(int a, int b)
 {
-	int output; 
+	int output=1; 
 	switch(a) 
 	{
 		case 0: output = 1; 
