@@ -51,6 +51,7 @@ if_2:
 	b	if_out_2
 else_2:
 if_out_2:
+break_2:
 	b	if_out_1
 else_1:
 if_3:
@@ -69,8 +70,10 @@ if_3:
 	b	if_out_3
 else_3:
 if_out_3:
+break_3:
 if_out_1:
 	lw	$2,28($fp)
+break_1:
 	move	$sp,$fp
 	lw	$fp,80($sp)
 	lw	$31,84($sp)
