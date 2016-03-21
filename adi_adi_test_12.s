@@ -25,7 +25,7 @@ f:
 	nop
 	sw	$8,36($fp)
 	lw	$2,36($fp)
-break_131072:
+break_1:
 	move	$sp,$fp
 	lw	$fp,44($sp)
 	lw	$31,48($sp)

@@ -29,7 +29,7 @@ f:
 	nop
 	sw	$2,28($fp)
 	lw	$2,28($fp)
-break_0:
+break_1:
 	move	$sp,$fp
 	lw	$fp,40($sp)
 	lw	$31,44($sp)
@@ -111,7 +111,7 @@ if_1:
 	lw	$8,76($fp)
 	sw	$8,24($fp)
 	sw	$8,72($fp)
-break_32703:
+break_3:
 	b	if_out_1
 else_1:
 if_out_1:
@@ -137,7 +137,7 @@ if_out_1:
 	add	$8,$8,$9
 	sw	$8,100($fp)
 	lw	$2,100($fp)
-break_32703:
+break_2:
 	move	$sp,$fp
 	lw	$fp,112($sp)
 	lw	$31,116($sp)
@@ -186,7 +186,7 @@ f2:
 	sw	$8,36($fp)
 	sw	$8,60($fp)
 	lw	$2,36($fp)
-break_32703:
+break_4:
 	move	$sp,$fp
 	lw	$fp,72($sp)
 	lw	$31,76($sp)

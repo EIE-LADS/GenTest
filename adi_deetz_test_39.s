@@ -34,7 +34,7 @@ f:
 	nop
 	sw	$2,36($fp)
 	lw	$2,36($fp)
-break_32731:
+break_1:
 	move	$sp,$fp
 	lw	$fp,48($sp)
 	lw	$31,52($sp)
@@ -121,7 +121,7 @@ if_1:
 	lw	$8,84($fp)
 	sw	$8,16($fp)
 	sw	$8,80($fp)
-break_0:
+break_3:
 	b	if_out_1
 else_1:
 if_out_1:
@@ -134,7 +134,7 @@ if_out_1:
 	add	$8,$8,$9
 	sw	$8,96($fp)
 	lw	$2,96($fp)
-break_0:
+break_2:
 	move	$sp,$fp
 	lw	$fp,108($sp)
 	lw	$31,112($sp)

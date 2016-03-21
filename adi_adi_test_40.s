@@ -37,7 +37,7 @@ if_1:
 	lw	$8,52($fp)
 	sw	$8,16($fp)
 	sw	$8,48($fp)
-break_0:
+break_2:
 	b	if_out_1
 else_1:
 if_2:
@@ -57,11 +57,11 @@ if_2:
 	lw	$8,68($fp)
 	sw	$8,16($fp)
 	sw	$8,64($fp)
-break_131072:
+break_4:
 	b	if_out_2
 else_2:
 if_out_2:
-break_131072:
+break_3:
 if_out_1:
 	lw	$8,40($fp)
 	li	$8,2
@@ -98,7 +98,7 @@ dw_loop_2:
 	sw	$8,96($fp)
 	addi	$8,$8,-1
 	sw	$8,84($fp)
-break_131072:
+break_6:
 	lw	$8,80($fp)
 	li	$8,0
 	sw	$8,80($fp)
@@ -109,7 +109,7 @@ break_131072:
 	lw	$8,100($fp)
 	bne	$8,$0,dw_loop_2
 	nop
-break_131072:
+break_5:
 	lw	$8,28($fp)
 	sw	$8,104($fp)
 	addi	$8,$8,-1
@@ -142,7 +142,7 @@ for_loop_3:
 	sw	$8,124($fp)
 	addi	$8,$8,-1
 	sw	$8,36($fp)
-break_131072:
+break_7:
 	b	for_loop_3
 	nop
 end_loop_3:
@@ -151,7 +151,7 @@ end_loop_3:
 	add	$8,$8,$9
 	sw	$8,128($fp)
 	lw	$2,128($fp)
-break_131072:
+break_1:
 	move	$sp,$fp
 	lw	$fp,136($sp)
 	lw	$31,140($sp)

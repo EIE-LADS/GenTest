@@ -28,9 +28,9 @@ f:
 	add	$8,$8,$9
 	sw	$8,36($fp)
 	sw	$8,44($fp)
-break_0:
+break_2:
 	lw	$2,16($fp)
-break_0:
+break_1:
 	move	$sp,$fp
 	lw	$fp,52($sp)
 	lw	$31,56($sp)
