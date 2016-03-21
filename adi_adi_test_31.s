@@ -38,6 +38,7 @@ while_loop_1:
 	nop
 	sw	$8,36($fp)
 	sw	$8,48($fp)
+break_2:
 	b	while_loop_1
 	nop
 end_loop_1:
@@ -46,6 +47,7 @@ end_loop_1:
 	sllv	$8,$8,$9
 	sw	$8,56($fp)
 	lw	$2,56($fp)
+break_1:
 	move	$sp,$fp
 	lw	$fp,64($sp)
 	lw	$31,68($sp)

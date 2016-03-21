@@ -116,6 +116,7 @@ for_loop_1:
 	lw	$8,80($fp)
 	sw	$8,40($fp)
 	sw	$8,76($fp)
+break_2:
 	lw	$8,28($fp)
 	sw	$8,84($fp)
 	addi	$8,$8,1
@@ -140,6 +141,7 @@ end_loop_1:
 	nop
 	sw	$2,88($fp)
 	lw	$2,40($fp)
+break_1:
 	move	$sp,$fp
 	lw	$fp,96($sp)
 	lw	$31,100($sp)
@@ -165,6 +167,7 @@ f1:
 	add	$8,$8,$9
 	sw	$8,28($fp)
 	lw	$2,28($fp)
+break_1:
 	move	$sp,$fp
 	lw	$fp,36($sp)
 	lw	$31,40($sp)
@@ -202,6 +205,7 @@ f2:
 	add	$8,$8,$9
 	sw	$8,48($fp)
 	lw	$2,48($fp)
+break_1:
 	move	$sp,$fp
 	lw	$fp,60($sp)
 	lw	$31,64($sp)
