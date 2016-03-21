@@ -71,5 +71,5 @@ if_end_1:
 	nop
 	.end	f
 	.size	f, .-f
-
+.data
 

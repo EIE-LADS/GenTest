@@ -48,5 +48,5 @@ break_exit_1:
 	nop
 	.end	f
 	.size	f, .-f
-
+.data
 

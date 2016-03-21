@@ -1,5 +1,5 @@
 	.text
-
+.data
 	.align	2
 	.globl	f
 	.ent	f
@@ -42,7 +42,7 @@ f:
 	nop
 	.end	f
 	.size	f, .-f
-
+.data
 	.align	2
 	.globl	fib
 	.ent	fib
@@ -126,5 +126,5 @@ if_end_1:
 	nop
 	.end	fib
 	.size	fib, .-fib
-
+.data
 

@@ -13,7 +13,7 @@ f:
 	lw	$8,28($fp)
 	li	$8,12
 	sw	$8,28($fp)
-	la	11,array_data_28
+	la	$11,array_data_28
 	lw	$8,36($fp)
 	li	$8,3
 	sw	$8,36($fp)
@@ -65,6 +65,6 @@ f:
 	nop
 	.end	f
 	.size	f, .-f
-array_data_28:
-	T_36	T_40	T_44	T_28
+.dataarray_data_28:
+
 
