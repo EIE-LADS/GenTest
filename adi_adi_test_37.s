@@ -55,5 +55,4 @@ if_out_1:
 	nop
 	.end	f
 	.size	f, .-f
-.data
 

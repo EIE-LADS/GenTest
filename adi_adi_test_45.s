@@ -1,5 +1,4 @@
 	.text
-.data
 
 	.align	2
 	.globl	f
@@ -35,7 +34,6 @@ f:
 	nop
 	.end	f
 	.size	f, .-f
-.data
 
 	.align	2
 	.globl	fac
@@ -108,5 +106,4 @@ if_out_1:
 	nop
 	.end	fac
 	.size	fac, .-fac
-.data
 
