@@ -64,4 +64,4 @@ f:
 	.size	f, .-f
 
 	.data
-arr_28:	
+arr_28:	.word
