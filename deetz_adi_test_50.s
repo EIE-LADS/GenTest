@@ -62,8 +62,6 @@ case_body_2:
 	sw	$8,28($fp)
 	sw	$8,60($fp)
 	nop
-case_test_3: 
-case_body_3: 
 	lw	$8,72($fp)
 	li	$8,1
 	sw	$8,72($fp)

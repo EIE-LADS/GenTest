@@ -68,8 +68,6 @@ case_body_2:
 	b	break_exit_1
 	nop
 	nop
-case_test_3: 
-case_body_3: 
 	lw	$8,72($fp)
 	li	$8,1
 	sw	$8,72($fp)
