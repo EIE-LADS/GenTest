@@ -23,34 +23,54 @@ case_test_0:
 	lw	$8,32($fp)
 	bne	$8,$12,case_test_1
 	nop
-case_body_0:
+	b	$case_body_0
+	nop
+case_test_1: 
+	lw	$8,36($fp)
+	li	$8,2
+	sw	$8,36($fp)
+	lw	$8,36($fp)
+	bne	$8,$12,case_test_2
+	nop
+	b	$case_body_1
+	nop
+case_test_2: 
 	lw	$8,40($fp)
 	li	$8,3
 	sw	$8,40($fp)
 	lw	$8,40($fp)
-	sw	$8,36($fp)
-while_start_1:
+	bne	$8,$12,case_test_3
+	nop
+	b	$case_body_2
+	nop
+case_body_0:
 	lw	$8,48($fp)
-	li	$8,4
+	li	$8,3
 	sw	$8,48($fp)
 	lw	$8,48($fp)
-	neg	$8,$8
-	sw	$8,52($fp)
-	lw	$8,36($fp)
-	lw	$9,52($fp)
-	sge	$8,$8,$9
 	sw	$8,44($fp)
+while_start_1:
+	lw	$8,56($fp)
+	li	$8,4
+	sw	$8,56($fp)
+	lw	$8,56($fp)
+	neg	$8,$8
+	sw	$8,60($fp)
 	lw	$8,44($fp)
+	lw	$9,60($fp)
+	sge	$8,$8,$9
+	sw	$8,52($fp)
+	lw	$8,52($fp)
 	beq	$8,$0,while_end_1
 	nop
 	lw	$8,16($fp)
-	sw	$8,56($fp)
+	sw	$8,64($fp)
 	addi	$8,$8,1
 	sw	$8,16($fp)
-	lw	$8,36($fp)
+	lw	$8,44($fp)
 	addi	$8,$8,-1
-	sw	$8,36($fp)
-	sw	$8,60($fp)
+	sw	$8,44($fp)
+	sw	$8,68($fp)
 	b	break_exit_2
 	nop
 	b	while_start_1
@@ -61,24 +81,10 @@ break_exit_2:
 	nop
 	b	case_body_1
 	nop
-case_test_1: 
-	lw	$8,64($fp)
-	li	$8,2
-	sw	$8,64($fp)
-	lw	$8,64($fp)
-	bne	$8,$12,case_test_2
-	nop
 case_body_1:
 	b	break_exit_1
 	nop
 	b	case_body_2
-	nop
-case_test_2: 
-	lw	$8,68($fp)
-	li	$8,3
-	sw	$8,68($fp)
-	lw	$8,68($fp)
-	bne	$8,$12,case_test_3
 	nop
 case_body_2:
 	lw	$8,16($fp)
