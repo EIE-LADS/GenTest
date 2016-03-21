@@ -10,16 +10,16 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,36($fp)
+	lw	$8,32($fp)
 	li	$8,3
-	sw	$8,36($fp)
-	lw	$8,36($fp)
 	sw	$8,32($fp)
-	lw	$8,36($fp)
+	lw	$8,32($fp)
+	sw	$8,28($fp)
+	lw	$8,32($fp)
 	li	$8,3
-	sw	$8,36($fp)
-	lw	$8,36($fp)
-	lw	$9,32($fp)
+	sw	$8,32($fp)
+	lw	$8,32($fp)
+	lw	$9,28($fp)
 	add	$8,$8,$9
 	sw	$8,48($fp)
 	lw	$8,20($fp)
@@ -46,12 +46,13 @@ f:
 	nop
 	sw	$8,44($fp)
 	lw	$8,44($fp)
-	sw	$8,28($fp)
+	sw	$8,36($fp)
 	sw	$8,40($fp)
-	lw	$8,28($fp)
+	lw	$8,36($fp)
 	not	$8,$8
 	sw	$8,72($fp)
 	lw	$2,72($fp)
+1_break_exit: 
 	move	$sp,$fp
 	lw	$fp,80($sp)
 	lw	$31,84($sp)

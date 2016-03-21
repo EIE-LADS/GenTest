@@ -63,7 +63,7 @@ f:
 	lw	$8,52($fp)
 	sw	$8,28($fp)
 	sw	$8,48($fp)
-for_start_1:
+1_for_start:
 	lw	$8,60($fp)
 	li	$8,2
 	sw	$8,60($fp)
@@ -94,7 +94,7 @@ for_start_1:
 	slt	$8,$8,$9
 	sw	$8,64($fp)
 	lw	$8,64($fp)
-	beq	$8,$0,for_end_1
+	beq	$8,$0,1_for_end
 	nop
 	lw	$8,56($fp)
 	li	$8,1
@@ -115,13 +115,14 @@ for_start_1:
 	lw	$8,80($fp)
 	sw	$8,40($fp)
 	sw	$8,76($fp)
+2_break_exit: 
 	lw	$8,28($fp)
 	sw	$8,84($fp)
 	addi	$8,$8,1
 	sw	$8,28($fp)
-	b	for_start_1
+	b	1_for_start
 	nop
-for_end_1:
+1_for_end:
 	lw	$8,56($fp)
 	li	$8,1
 	sw	$8,56($fp)
@@ -139,6 +140,7 @@ for_end_1:
 	nop
 	sw	$2,88($fp)
 	lw	$2,40($fp)
+1_break_exit: 
 	move	$sp,$fp
 	lw	$fp,96($sp)
 	lw	$31,100($sp)
@@ -164,6 +166,7 @@ f1:
 	add	$8,$8,$9
 	sw	$8,28($fp)
 	lw	$2,28($fp)
+1_break_exit: 
 	move	$sp,$fp
 	lw	$fp,36($sp)
 	lw	$31,40($sp)
@@ -201,6 +204,7 @@ f2:
 	add	$8,$8,$9
 	sw	$8,48($fp)
 	lw	$2,48($fp)
+1_break_exit: 
 	move	$sp,$fp
 	lw	$fp,60($sp)
 	lw	$31,64($sp)

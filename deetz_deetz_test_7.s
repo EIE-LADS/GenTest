@@ -49,6 +49,7 @@ f:
 	sw	$8,20($fp)
 	sw	$8,28($fp)
 	lw	$2,20($fp)
+1_break_exit: 
 	move	$sp,$fp
 	lw	$fp,68($sp)
 	lw	$31,72($sp)

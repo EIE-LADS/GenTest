@@ -15,6 +15,7 @@ f:
 	sgt	$8,$8,$9
 	sw	$8,28($fp)
 	lw	$2,28($fp)
+1_break_exit: 
 	move	$sp,$fp
 	lw	$fp,36($sp)
 	lw	$31,40($sp)

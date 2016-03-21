@@ -23,22 +23,24 @@ f:
 	sw	$8,44($fp)
 	lw	$8,44($fp)
 	sw	$8,40($fp)
-while_start_1:
+1_while_start:
 	lw	$8,28($fp)
 	sw	$8,48($fp)
 	addi	$8,$8,1
 	sw	$8,28($fp)
 	lw	$8,48($fp)
-	beq	$8,$0,while_end_1
+	beq	$8,$0,1_while_end
 	nop
 	lw	$8,40($fp)
 	sw	$8,52($fp)
 	addi	$8,$8,1
 	sw	$8,40($fp)
-	b	while_start_1
+2_break_exit: 
+	b	1_while_start
 	nop
-while_end_1:
+1_while_end:
 	lw	$2,40($fp)
+1_break_exit: 
 	move	$sp,$fp
 	lw	$fp,60($sp)
 	lw	$31,64($sp)
