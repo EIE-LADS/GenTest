@@ -26,7 +26,7 @@ f:
 	add	$8,$8,$9
 	sw	$8,36($fp)
 	lw	$2,36($fp)
-1_break_exit: 
+break_exit_1: 
 	move	$sp,$fp
 	lw	$fp,44($sp)
 	lw	$31,48($sp)
@@ -46,7 +46,7 @@ fac:
 	sw	$fp,60($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
-1_if_start:
+if_start_1:
 	lw	$8,32($fp)
 	li	$8,0
 	sw	$8,32($fp)
@@ -68,15 +68,15 @@ fac:
 	or	$8,$8,$9
 	sw	$8,24($fp)
 	lw	$8,24($fp)
-	beq	$8,$0,1_else
+	beq	$8,$0,else_1
 	nop
 	lw	$8,40($fp)
 	li	$8,1
 	sw	$8,40($fp)
 	lw	$2,40($fp)
-	b	1_if_end
+	b	if_end_1
 	nop
-1_else:
+else_1:
 	lw	$8,40($fp)
 	li	$8,1
 	sw	$8,40($fp)
@@ -98,8 +98,8 @@ fac:
 	nop
 	sw	$8,44($fp)
 	lw	$2,44($fp)
-1_if_end:
-1_break_exit: 
+if_end_1:
+break_exit_1: 
 	move	$sp,$fp
 	lw	$fp,60($sp)
 	lw	$31,64($sp)

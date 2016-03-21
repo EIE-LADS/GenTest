@@ -61,7 +61,7 @@ f:
 	nop
 	sw	$8,64($fp)
 	lw	$2,64($fp)
-1_break_exit: 
+break_exit_1: 
 	move	$sp,$fp
 	lw	$fp,72($sp)
 	lw	$31,76($sp)

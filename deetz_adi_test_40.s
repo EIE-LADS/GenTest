@@ -20,7 +20,7 @@ f:
 	sw	$8,40($fp)
 	lw	$8,40($fp)
 	sw	$8,36($fp)
-1_if_start:
+if_start_1:
 	lw	$8,32($fp)
 	li	$8,3
 	sw	$8,32($fp)
@@ -29,7 +29,7 @@ f:
 	seq	$8,$8,$9
 	sw	$8,44($fp)
 	lw	$8,44($fp)
-	beq	$8,$0,1_else
+	beq	$8,$0,else_1
 	nop
 	lw	$8,52($fp)
 	li	$8,5
@@ -37,11 +37,11 @@ f:
 	lw	$8,52($fp)
 	sw	$8,16($fp)
 	sw	$8,48($fp)
-2_break_exit: 
-	b	1_if_end
+break_exit_2: 
+	b	if_end_1
 	nop
-1_else:
-2_if_start:
+else_1:
+if_start_2:
 	lw	$8,60($fp)
 	li	$8,1
 	sw	$8,60($fp)
@@ -50,7 +50,7 @@ f:
 	sgt	$8,$8,$9
 	sw	$8,56($fp)
 	lw	$8,56($fp)
-	beq	$8,$0,2_else
+	beq	$8,$0,else_2
 	nop
 	lw	$8,68($fp)
 	li	$8,10
@@ -58,20 +58,20 @@ f:
 	lw	$8,68($fp)
 	sw	$8,16($fp)
 	sw	$8,64($fp)
-3_break_exit: 
-	b	2_if_end
+break_exit_3: 
+	b	if_end_2
 	nop
-2_else:
-2_if_end:
-2_break_exit: 
-1_if_end:
+else_2:
+if_end_2:
+break_exit_2: 
+if_end_1:
 	lw	$8,40($fp)
 	li	$8,2
 	sw	$8,40($fp)
 	lw	$8,40($fp)
 	sw	$8,28($fp)
 	sw	$8,72($fp)
-1_for_start:
+for_start_1:
 	lw	$8,80($fp)
 	li	$8,0
 	sw	$8,80($fp)
@@ -80,7 +80,7 @@ f:
 	sge	$8,$8,$9
 	sw	$8,76($fp)
 	lw	$8,76($fp)
-	beq	$8,$0,1_for_end
+	beq	$8,$0,for_end_1
 	nop
 	lw	$8,32($fp)
 	li	$8,3
@@ -91,7 +91,7 @@ f:
 	sw	$8,88($fp)
 	addi	$8,$8,1
 	sw	$8,20($fp)
-1_do_while_start:
+do_while_start_1:
 	lw	$8,16($fp)
 	addi	$8,$8,-1
 	sw	$8,16($fp)
@@ -100,7 +100,7 @@ f:
 	addi	$8,$8,-1
 	sw	$8,84($fp)
 	sw	$8,96($fp)
-3_break_exit: 
+break_exit_3: 
 	lw	$8,80($fp)
 	li	$8,0
 	sw	$8,80($fp)
@@ -109,23 +109,23 @@ f:
 	sge	$8,$8,$9
 	sw	$8,100($fp)
 	lw	$8,100($fp)
-	bne	$8,$0,1_do_while_start
+	bne	$8,$0,do_while_start_1
 	nop
-2_break_exit: 
+break_exit_2: 
 	lw	$8,28($fp)
 	addi	$8,$8,-1
 	sw	$8,28($fp)
 	sw	$8,104($fp)
-	b	1_for_start
+	b	for_start_1
 	nop
-1_for_end:
+for_end_1:
 	lw	$8,112($fp)
 	li	$8,1
 	sw	$8,112($fp)
 	lw	$8,112($fp)
 	sw	$8,36($fp)
 	sw	$8,108($fp)
-2_for_start:
+for_start_2:
 	lw	$8,80($fp)
 	li	$8,0
 	sw	$8,80($fp)
@@ -134,7 +134,7 @@ f:
 	sge	$8,$8,$9
 	sw	$8,116($fp)
 	lw	$8,116($fp)
-	beq	$8,$0,2_for_end
+	beq	$8,$0,for_end_2
 	nop
 	lw	$8,20($fp)
 	sw	$8,120($fp)
@@ -144,16 +144,16 @@ f:
 	addi	$8,$8,-1
 	sw	$8,36($fp)
 	sw	$8,124($fp)
-2_break_exit: 
-	b	2_for_start
+break_exit_2: 
+	b	for_start_2
 	nop
-2_for_end:
+for_end_2:
 	lw	$8,16($fp)
 	lw	$9,20($fp)
 	add	$8,$8,$9
 	sw	$8,128($fp)
 	lw	$2,128($fp)
-1_break_exit: 
+break_exit_1: 
 	move	$sp,$fp
 	lw	$fp,136($sp)
 	lw	$31,140($sp)
