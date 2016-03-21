@@ -39,7 +39,7 @@ f:
 	lw	$8,56($fp)
 	li	$8,3
 	sw	$8,56($fp)
-	la	$11,28($fp)
+	la	$11,array_data_28
 	lw	$8,56($fp)
 	li	$9,4
 	mul	$8,$8,$9
@@ -56,7 +56,7 @@ f:
 	lw	$8,68($fp)
 	li	$8,2
 	sw	$8,68($fp)
-	la	$11,28($fp)
+	la	$11,array_data_28
 	lw	$8,68($fp)
 	li	$9,4
 	mul	$8,$8,$9
