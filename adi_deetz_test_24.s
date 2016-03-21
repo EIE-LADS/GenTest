@@ -63,7 +63,7 @@ f:
 	nop
 	sw	$8,72($fp)
 	lw	$2,72($fp)
-break_1:
+break_0:
 	move	$sp,$fp
 	lw	$fp,80($sp)
 	lw	$31,84($sp)

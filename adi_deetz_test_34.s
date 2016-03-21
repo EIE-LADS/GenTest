@@ -35,12 +35,12 @@ while_loop_1:
 	sw	$8,52($fp)
 	addi	$8,$8,1
 	sw	$8,40($fp)
-break_2:
+break_941894712:
 	b	while_loop_1
 	nop
 end_loop_1:
 	lw	$2,40($fp)
-break_1:
+break_941894712:
 	move	$sp,$fp
 	lw	$fp,60($sp)
 	lw	$31,64($sp)
