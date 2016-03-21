@@ -97,7 +97,7 @@ for_loop_1:
 	b	for_loop_1
 	nop
 end_loop_1:
-break_2:
+break_1:
 	lw	$2,40($fp)
 	move	$sp,$fp
 	lw	$fp,96($sp)
