@@ -58,7 +58,7 @@ if_start_2:
 	lw	$8,68($fp)
 	sw	$8,28($fp)
 	sw	$8,64($fp)
-break_exit_2: 
+break_exit_3: 
 	b	if_end_2
 	nop
 else_2:

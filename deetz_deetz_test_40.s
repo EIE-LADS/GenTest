@@ -91,7 +91,7 @@ f1:
 	add	$8,$8,$9
 	sw	$8,68($fp)
 	lw	$2,68($fp)
-break_exit_1: 
+break_exit_2: 
 	move	$sp,$fp
 	lw	$fp,80($sp)
 	lw	$31,84($sp)
@@ -140,7 +140,7 @@ f2:
 	sw	$8,36($fp)
 	sw	$8,60($fp)
 	lw	$2,36($fp)
-break_exit_1: 
+break_exit_3: 
 	move	$sp,$fp
 	lw	$fp,72($sp)
 	lw	$31,76($sp)

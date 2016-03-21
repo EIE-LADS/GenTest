@@ -126,7 +126,7 @@ f1:
 	add	$8,$8,$9
 	sw	$8,28($fp)
 	lw	$2,28($fp)
-break_exit_1: 
+break_exit_3: 
 	move	$sp,$fp
 	lw	$fp,36($sp)
 	lw	$31,40($sp)

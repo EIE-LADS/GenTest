@@ -99,7 +99,7 @@ else_1:
 	sw	$8,44($fp)
 	lw	$2,44($fp)
 if_end_1:
-break_exit_1: 
+break_exit_2: 
 	move	$sp,$fp
 	lw	$fp,60($sp)
 	lw	$31,64($sp)

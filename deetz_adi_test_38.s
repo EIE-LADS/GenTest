@@ -58,12 +58,12 @@ if_start_2:
 	lw	$8,68($fp)
 	sw	$8,16($fp)
 	sw	$8,64($fp)
-break_exit_3: 
+break_exit_4: 
 	b	if_end_2
 	nop
 else_2:
 if_end_2:
-break_exit_2: 
+break_exit_3: 
 if_end_1:
 	lw	$8,40($fp)
 	li	$8,2
@@ -100,7 +100,7 @@ do_while_start_1:
 	addi	$8,$8,-1
 	sw	$8,84($fp)
 	sw	$8,96($fp)
-break_exit_3: 
+break_exit_6: 
 	lw	$8,80($fp)
 	li	$8,0
 	sw	$8,80($fp)
@@ -111,7 +111,7 @@ break_exit_3:
 	lw	$8,100($fp)
 	bne	$8,$0,do_while_start_1
 	nop
-break_exit_2: 
+break_exit_5: 
 	lw	$8,28($fp)
 	addi	$8,$8,-1
 	sw	$8,28($fp)

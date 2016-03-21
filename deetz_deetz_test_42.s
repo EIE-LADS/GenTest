@@ -110,7 +110,7 @@ if_start_1:
 	lw	$8,76($fp)
 	sw	$8,24($fp)
 	sw	$8,72($fp)
-break_exit_2: 
+break_exit_3: 
 	b	if_end_1
 	nop
 else_1:
@@ -137,7 +137,7 @@ if_end_1:
 	add	$8,$8,$9
 	sw	$8,100($fp)
 	lw	$2,100($fp)
-break_exit_1: 
+break_exit_2: 
 	move	$sp,$fp
 	lw	$fp,112($sp)
 	lw	$31,116($sp)
@@ -212,13 +212,13 @@ if_start_2:
 	jalr	$8
 	nop
 	sw	$2,76($fp)
-break_exit_2: 
+break_exit_5: 
 	b	if_end_2
 	nop
 else_2:
 if_end_2:
 	lw	$2,36($fp)
-break_exit_1: 
+break_exit_4: 
 	move	$sp,$fp
 	lw	$fp,88($sp)
 	lw	$31,92($sp)
