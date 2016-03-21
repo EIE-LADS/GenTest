@@ -52,7 +52,6 @@ if_start_2:
 	nop
 else_2:
 if_end_2:
-break_exit_2: 
 	b	if_end_1
 	nop
 else_1:
@@ -73,10 +72,8 @@ if_start_3:
 	nop
 else_3:
 if_end_3:
-break_exit_3: 
 if_end_1:
 	lw	$2,28($fp)
-break_exit_1: 
 	move	$sp,$fp
 	lw	$fp,80($sp)
 	lw	$31,84($sp)

@@ -63,7 +63,6 @@ if_start_1:
 	nop
 else_1:
 if_end_1:
-break_exit_3: 
 	lw	$8,52($fp)
 	sw	$8,76($fp)
 	addi	$8,$8,1
@@ -71,16 +70,16 @@ break_exit_3:
 	b	for_start_1
 	nop
 for_end_1:
+break_exit_2: 
 	lw	$8,28($fp)
 	addi	$8,$8,-1
 	sw	$8,28($fp)
 	sw	$8,80($fp)
-break_exit_2: 
 	b	while_start_1
 	nop
 while_end_1:
-	lw	$2,36($fp)
 break_exit_1: 
+	lw	$2,36($fp)
 	move	$sp,$fp
 	lw	$fp,88($sp)
 	lw	$31,92($sp)

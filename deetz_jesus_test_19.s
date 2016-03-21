@@ -62,7 +62,6 @@ f:
 	add	$8,$8,$9
 	sw	$8,84($fp)
 	lw	$2,84($fp)
-break_exit_1: 
 	move	$sp,$fp
 	lw	$fp,112($sp)
 	lw	$31,116($sp)

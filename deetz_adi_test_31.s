@@ -36,16 +36,15 @@ while_start_1:
 	rem	$8,$8,$9
 	sw	$8,36($fp)
 	sw	$8,48($fp)
-break_exit_2: 
 	b	while_start_1
 	nop
 while_end_1:
+break_exit_1: 
 	lw	$8,28($fp)
 	lw	$9,36($fp)
 	sllv	$8,$8,$9
 	sw	$8,56($fp)
 	lw	$2,56($fp)
-break_exit_1: 
 	move	$sp,$fp
 	lw	$fp,64($sp)
 	lw	$31,68($sp)

@@ -56,7 +56,6 @@ if_start_1:
 	lw	$8,72($fp)
 	sw	$8,36($fp)
 	sw	$8,68($fp)
-break_exit_2: 
 	b	if_end_1
 	nop
 else_1:
@@ -66,7 +65,6 @@ if_end_1:
 	add	$8,$8,$9
 	sw	$8,76($fp)
 	lw	$2,76($fp)
-break_exit_1: 
 	move	$sp,$fp
 	lw	$fp,84($sp)
 	lw	$31,88($sp)
