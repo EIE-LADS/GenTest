@@ -65,6 +65,6 @@ f:
 	nop
 	.end	f
 	.size	f, .-f
-array_data_28:
-	.word		.word		.word		.word	
+array_data_28:	.word	
+
 
