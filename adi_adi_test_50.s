@@ -10,13 +10,13 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$12,16
+	lw	$12,16($fp)
 case_0:
 	lw	$8,32($fp)
 	li	$8,0
 	sw	$8,32($fp)
 	lw	$8,32
-	bne	$8,$11,case_1
+	bne	$8,$12,case_1
 	nop
 body_0:
 	lw	$8,40($fp)
@@ -32,7 +32,7 @@ case_1:
 	li	$8,1
 	sw	$8,40($fp)
 	lw	$8,40
-	bne	$8,$11,case_2
+	bne	$8,$12,case_2
 	nop
 body_1:
 	lw	$8,48($fp)
@@ -48,7 +48,7 @@ case_2:
 	li	$8,3
 	sw	$8,52($fp)
 	lw	$8,52
-	bne	$8,$11,case_3
+	bne	$8,$12,case_3
 	nop
 body_2:
 	lw	$8,52($fp)
