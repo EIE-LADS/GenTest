@@ -104,5 +104,5 @@ f:
 
 .data
 
-array_data_T_28:	.word	0,0,0,0,0,
+array_data_T_28:	.word	0,	0,	0,	0,	0
 
