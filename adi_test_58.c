@@ -14,5 +14,6 @@ int f(int a, int b)
 
 int f1(int a[], int b)
 {
+	a[2] = a[2] + 1;
 	return 0; 
 }
