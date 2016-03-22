@@ -84,7 +84,7 @@ for_start_1:
 	nop
 	sw	$2,72($fp)
 	lw	$8,60($fp)
-	lw	$9,0($fp)
+	lw	$9,72($fp)
 	mul	$8,$8,$9
 	nop
 	nop

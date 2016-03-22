@@ -30,7 +30,7 @@ f:
 	li	$8,2
 	sw	$8,64($fp)
 	lw	$8,16($fp)
-	lw	$9,0($fp)
+	lw	$9,64($fp)
 	div	$8,$8,$9
 	nop
 	nop
@@ -40,7 +40,7 @@ f:
 	add	$8,$8,$9
 	sw	$8,52($fp)
 	lw	$8,48($fp)
-	lw	$9,0($fp)
+	lw	$9,52($fp)
 	mul	$8,$8,$9
 	nop
 	nop

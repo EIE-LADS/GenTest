@@ -68,7 +68,7 @@ f1:
 	li	$8,12
 	sw	$8,60($fp)
 	lw	$8,56($fp)
-	lw	$9,0($fp)
+	lw	$9,60($fp)
 	div	$8,$8,$9
 	nop
 	nop

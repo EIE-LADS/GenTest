@@ -66,7 +66,7 @@ f:
 	li	$8,4
 	sw	$8,60($fp)
 	lw	$8,36($fp)
-	lw	$9,0($fp)
+	lw	$9,60($fp)
 	mul	$8,$8,$9
 	nop
 	nop
@@ -88,7 +88,7 @@ f:
 	li	$8,3
 	sw	$8,108($fp)
 	lw	$8,60($fp)
-	lw	$9,0($fp)
+	lw	$9,108($fp)
 	div	$8,$8,$9
 	nop
 	nop
@@ -113,7 +113,7 @@ f:
 	li	$8,5
 	sw	$8,68($fp)
 	lw	$8,32($fp)
-	lw	$9,0($fp)
+	lw	$9,68($fp)
 	rem	$8,$8,$9
 	nop
 	nop

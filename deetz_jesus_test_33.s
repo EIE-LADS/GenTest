@@ -37,7 +37,7 @@ f:
 	li	$8,5
 	sw	$8,56($fp)
 	lw	$8,32($fp)
-	lw	$9,0($fp)
+	lw	$9,56($fp)
 	rem	$8,$8,$9
 	nop
 	nop

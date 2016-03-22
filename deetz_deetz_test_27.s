@@ -28,7 +28,7 @@ f:
 	li	$8,12
 	sw	$8,56($fp)
 	lw	$8,52($fp)
-	lw	$9,0($fp)
+	lw	$9,56($fp)
 	div	$8,$8,$9
 	nop
 	nop
