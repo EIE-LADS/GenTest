@@ -13,7 +13,7 @@ f:
 	lw	$8,32($fp)
 	li	$8,11
 	sw	$8,32($fp)
-	la	$11,arr_28
+	la	$11,arr_0
 	lw	$8,44($fp)
 	li	$8,3
 	sw	$8,44($fp)
@@ -21,13 +21,13 @@ f:
 	la	$11,arr_28
 	sll	$8,$8,2
 	add	$11,$11,$8
-	lw	$8,0($11)
-	sw	$8,40($fp)
+	sw	$11,40($fp)
 	lw	$8,48($fp)
 	li	$8,12
 	sw	$8,48($fp)
 	lw	$8,48($fp)
-	sw	$8,40($fp)
+	lw	$9,40($fp)
+	sw	$8,0($9)
 	sw	$8,36($fp)
 	lw	$8,52($fp)
 	li	$8,0
@@ -43,4 +43,5 @@ f:
 	.size	f, .-f
 
 	.data
+
 arr_28:	.word
