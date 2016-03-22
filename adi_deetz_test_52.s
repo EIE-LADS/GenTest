@@ -65,4 +65,4 @@ f:
 
 	.data
 
-arr_28:	.word
+arr_28:	.wor
