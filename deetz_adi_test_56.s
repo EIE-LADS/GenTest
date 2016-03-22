@@ -41,7 +41,7 @@ f:
 	jalr	$t0
 	nop
 	sw	$2,52($fp)
-	lw	$t0,4($fp)
+	lw	$t0,52($fp)
 	sw	$t0,48($fp)
 	lw	$t0,60($fp)
 	li	$t0,2

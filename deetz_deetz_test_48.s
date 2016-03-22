@@ -60,7 +60,7 @@ f:
 	jalr	$t0
 	nop
 	sw	$2,52($fp)
-	lw	$t0,40($fp)
+	lw	$t0,52($fp)
 	sw	$t0,28($fp)
 	sw	$t0,48($fp)
 for_start_1:
@@ -84,7 +84,7 @@ for_start_1:
 	nop
 	sw	$2,72($fp)
 	lw	$t0,60($fp)
-	lw	$t1,8($fp)
+	lw	$t1,72($fp)
 	mul	$t0,$t0,$t1
 	nop
 	nop
@@ -112,7 +112,7 @@ for_start_1:
 	jalr	$t0
 	nop
 	sw	$2,80($fp)
-	lw	$t0,8($fp)
+	lw	$t0,80($fp)
 	sw	$t0,40($fp)
 	sw	$t0,76($fp)
 	lw	$t0,28($fp)

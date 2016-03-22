@@ -18,7 +18,7 @@ f:
 	jalr	$t0
 	nop
 	sw	$2,32($fp)
-	lw	$t0,4($fp)
+	lw	$t0,32($fp)
 	sw	$t0,16($fp)
 	sw	$t0,28($fp)
 	lw	$t0,16($fp)
@@ -91,7 +91,7 @@ else_1:
 	nop
 	sw	$2,48($fp)
 	lw	$t0,16($fp)
-	lw	$t1,20($fp)
+	lw	$t1,48($fp)
 	mul	$t0,$t0,$t1
 	nop
 	nop

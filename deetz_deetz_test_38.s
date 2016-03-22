@@ -34,7 +34,7 @@ f:
 	jalr	$t0
 	nop
 	sw	$2,36($fp)
-	lw	$2,12($fp)
+	lw	$2,36($fp)
 	move	$sp,$fp
 	lw	$fp,48($sp)
 	lw	$31,52($sp)
@@ -117,7 +117,7 @@ if_start_1:
 	jalr	$t0
 	nop
 	sw	$2,92($fp)
-	lw	$t0,36($fp)
+	lw	$t0,92($fp)
 	sw	$t0,24($fp)
 	sw	$t0,88($fp)
 	b	if_end_1
@@ -147,7 +147,7 @@ if_end_1:
 	jalr	$t0
 	nop
 	sw	$2,108($fp)
-	lw	$t0,40($fp)
+	lw	$t0,108($fp)
 	sw	$t0,32($fp)
 	sw	$t0,104($fp)
 	lw	$t0,24($fp)

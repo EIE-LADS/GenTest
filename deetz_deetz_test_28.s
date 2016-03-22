@@ -27,7 +27,7 @@ f:
 	lw	$t0,60($fp)
 	li	$t0,12
 	sw	$t0,60($fp)
-	lw	$t0,36($fp)
+	lw	$t0,56($fp)
 	lw	$t1,60($fp)
 	div	$t0,$t0,$t1
 	nop

@@ -46,7 +46,7 @@ f:
 	sw	$t0,76($fp)
 	addi	$t0,$t0,1
 	sw	$t0,36($fp)
-	lw	$t0,36($fp)
+	lw	$t0,76($fp)
 	sw	$t0,28($fp)
 	sw	$t0,72($fp)
 	lw	$t0,72($fp)

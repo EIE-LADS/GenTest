@@ -32,7 +32,7 @@ do_while_start_1:
 	sw	$t0,52($fp)
 	addi	$t0,$t0,1
 	sw	$t0,28($fp)
-	lw	$t0,28($fp)
+	lw	$t0,52($fp)
 	bne	$t0,$0,do_while_start_1
 	nop
 break_exit_1: 
