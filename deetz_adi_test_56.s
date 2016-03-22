@@ -36,7 +36,7 @@ f:
 	sw	$t0,44($fp)
 	lw	$t0,44($fp)
 	sw	$t0,8($t3)
-	la	$t2,array_data_T_28
+	lw	$t0,28($fp)
 	move	$a0,$t0
 	sw	$t0,0($fp)
 	la	$t0,f1
