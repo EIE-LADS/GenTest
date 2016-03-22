@@ -16,9 +16,8 @@ f:
 	lw	$t1,16($fp)
 	lw	$t2,32($fp)
 	lw	$t0,20($fp)
-	movn	$t0,$t1,$t0
-	movz	$t0,$t2,$t0
-	sw	$t0,28($fp)
+	movz	$t1,$t2,$t0
+	sw	$t1,28($fp)
 	lw	$2,28($fp)
 	move	$sp,$fp
 	lw	$fp,40($sp)
