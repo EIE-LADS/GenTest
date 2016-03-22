@@ -24,6 +24,7 @@ f:
 	lw	$8,44($fp)
 	sw	$8,40($fp)
 while_loop_1:
+
 	lw	$8,28($fp)
 	sw	$8,48($fp)
 	addi	$8,$8,1
@@ -31,6 +32,7 @@ while_loop_1:
 	lw	$8,48($fp)
 	beq	$8,$0,end_loop_1
 	nop
+
 	lw	$8,40($fp)
 	sw	$8,52($fp)
 	addi	$8,$8,1

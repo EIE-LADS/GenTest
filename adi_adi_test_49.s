@@ -16,6 +16,7 @@ f:
 	lw	$8,32($fp)
 	sw	$8,28($fp)
 dw_loop_1:
+
 	lw	$8,28($fp)
 	sw	$8,36($fp)
 	addi	$8,$8,-1

@@ -24,10 +24,12 @@ f:
 	lw	$8,44($fp)
 	sw	$8,40($fp)
 dw_loop_1:
+
 	lw	$8,40($fp)
 	sw	$8,48($fp)
 	addi	$8,$8,1
 	sw	$8,40($fp)
+
 	lw	$8,28($fp)
 	sw	$8,52($fp)
 	addi	$8,$8,1

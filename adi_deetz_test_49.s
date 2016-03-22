@@ -33,6 +33,7 @@ if_1:
 	lw	$8,36($fp)
 	beq	$8,$0,else_1
 	nop
+
 	lw	$8,20($fp)
 	sw	$8,44($fp)
 	addi	$8,$8,1
@@ -41,6 +42,7 @@ if_1:
 	b	if_out_1
 else_1:
 if_out_1:
+
 	lw	$8,16($fp)
 	sw	$8,48($fp)
 	addi	$8,$8,1
