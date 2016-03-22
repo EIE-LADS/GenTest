@@ -3,7 +3,7 @@ int f1(int a[], int b);
 int f(int a, int b)
 {
 	int array[4];
-	return f1(array);
+	return f1(array, 0);
 }
 
 int f1(int a[], int b)
