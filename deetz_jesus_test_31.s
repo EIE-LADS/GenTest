@@ -66,7 +66,7 @@ f:
 	li	$8,4
 	sw	$8,60($fp)
 	lw	$8,36($fp)
-	lw	$9,60($fp)
+	lw	$9,0($fp)
 	mul	$8,$8,$9
 	nop
 	nop
@@ -78,6 +78,7 @@ f:
 	lw	$9,28($fp)
 	mul	$8,$8,$9
 	nop
+	nop
 	sw	$8,28($fp)
 	sw	$8,96($fp)
 	lw	$8,60($fp)
@@ -87,7 +88,7 @@ f:
 	li	$8,3
 	sw	$8,108($fp)
 	lw	$8,60($fp)
-	lw	$9,108($fp)
+	lw	$9,0($fp)
 	div	$8,$8,$9
 	nop
 	nop
@@ -102,6 +103,7 @@ f:
 	lw	$9,32($fp)
 	div	$8,$8,$9
 	nop
+	nop
 	sw	$8,28($fp)
 	sw	$8,112($fp)
 	lw	$8,32($fp)
@@ -111,7 +113,7 @@ f:
 	li	$8,5
 	sw	$8,68($fp)
 	lw	$8,32($fp)
-	lw	$9,68($fp)
+	lw	$9,0($fp)
 	rem	$8,$8,$9
 	nop
 	nop
@@ -122,6 +124,7 @@ f:
 	lw	$8,28($fp)
 	lw	$9,36($fp)
 	rem	$8,$8,$9
+	nop
 	nop
 	sw	$8,28($fp)
 	sw	$8,124($fp)
