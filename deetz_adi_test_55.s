@@ -4,9 +4,9 @@
 	.ent	f
 	.type	f, @function
 f: 
-	addiu	$sp,$sp,-92
-	sw	$31,88($sp)
-	sw	$fp,84($sp)
+	addiu	$sp,$sp,-88
+	sw	$31,84($sp)
+	sw	$fp,80($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
@@ -39,19 +39,19 @@ f:
 	li	$8,5
 	sw	$8,48($fp)
 	lw	$8,48($fp)
-	sw	$8,12($11)
+	sw	$8,0($11)
 	lw	$8,52($fp)
 	li	$8,6
 	sw	$8,52($fp)
 	lw	$8,52($fp)
-	sw	$8,16($11)
+	sw	$8,4($11)
 	lw	$8,48($fp)
 	sw	$8,44($fp)
-	lw	$8,64($fp)
-	li	$8,0
-	sw	$8,64($fp)
+	lw	$8,36($fp)
+	li	$8,1
+	sw	$8,36($fp)
 	la	$11,array_data_44
-	lw	$8,64($fp)
+	lw	$8,36($fp)
 	li	$9,4
 	mul	$8,$8,$9
 	nop
@@ -71,19 +71,19 @@ f:
 	nop
 	add	$11,$11,$8
 	lw	$9,0($11)
-	sw	$9,72($fp)
-	lw	$8,72($fp)
+	sw	$9,68($fp)
+	lw	$8,68($fp)
 	sw	$8,20($fp)
-	sw	$8,68($fp)
+	sw	$8,64($fp)
 	lw	$8,16($fp)
 	lw	$9,20($fp)
 	add	$8,$8,$9
-	sw	$8,76($fp)
-	lw	$2,76($fp)
+	sw	$8,72($fp)
+	lw	$2,72($fp)
 	move	$sp,$fp
-	lw	$fp,84($sp)
-	lw	$31,88($sp)
-	addiu	$sp,$sp,92
+	lw	$fp,80($sp)
+	lw	$31,84($sp)
+	addiu	$sp,$sp,88
 	j	$31
 	nop
 	.end	f
