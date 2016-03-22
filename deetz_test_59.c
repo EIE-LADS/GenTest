@@ -1,4 +1,4 @@
-int f1(int a[], b);
+int f1(int a[], int b);
 
 int f(int a, int b)
 {
