@@ -116,34 +116,20 @@ f:
 	.ent	f1
 	.type	f1, @function
 f1:
-	addiu	$sp,$sp,-56
-	sw	$fp,48($sp)
-	sw	$31,52($sp)
+	addiu	$sp,$sp,-44
+	sw	$fp,36($sp)
+	sw	$31,40($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,32($fp)
-	li	$8,2
-	sw	$8,32($fp)
-	lw	$8,32($fp)
-	lw	$11,16($fp)
-	sll	$8,$8,2
-	add	$11,$11,$8
-	lw	$8,0($11)
-	sw	$8,28($fp)
-	lw	$9,28($fp)
-	lw	$10,0($9)
-	sw	$10,36($fp)
-	addi	$10,$10,1
-	sw	$10,0($9)
-	lw	$8,40($fp)
+	lw	$8,28($fp)
 	li	$8,0
-	sw	$8,40($fp)
-	lw	$2,40($fp)
+	sw	$8,28($fp)
+	lw	$2,28($fp)
 	move	$sp,$fp
-	lw	$fp,48($sp)
-	lw	$31,52($sp)
-	addiu	$sp,$sp,56
+	lw	$fp,36($sp)
+	lw	$31,40($sp)
+	addiu	$sp,$sp,44
 	j	$31
 	nop
 	.end	f1
