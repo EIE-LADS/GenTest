@@ -11,50 +11,50 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,32($fp)
-	li	$8,3
-	sw	$8,32($fp)
-	la	$11,array_data_28
-	lw	$8,32($fp)
-	li	$8,3
-	sw	$8,32($fp)
-	lw	$8,32($fp)
-	sw	$8,0($11)
-	lw	$8,36($fp)
-	li	$8,10
-	sw	$8,36($fp)
-	lw	$8,36($fp)
-	neg	$8,$8
-	sw	$8,40($fp)
-	lw	$8,40($fp)
-	sw	$8,4($11)
-	lw	$8,44($fp)
-	li	$8,1
-	sw	$8,44($fp)
-	lw	$8,44($fp)
-	sw	$8,8($11)
-	lw	$8,32($fp)
-	sw	$8,28($fp)
-	lw	$8,28($fp)
-	move	$a0,$8
-	sw	$8,0($fp)
-	la	$8,f1
-	jalr	$8
+	lw	$t0,32($fp)
+	li	$t0,3
+	sw	$t0,32($fp)
+	la	$t3,array_data_28
+	lw	$t0,32($fp)
+	li	$t0,3
+	sw	$t0,32($fp)
+	lw	$t0,32($fp)
+	sw	$t0,0($t3)
+	lw	$t0,36($fp)
+	li	$t0,10
+	sw	$t0,36($fp)
+	lw	$t0,36($fp)
+	neg	$t0,$t0
+	sw	$t0,40($fp)
+	lw	$t0,40($fp)
+	sw	$t0,4($t3)
+	lw	$t0,44($fp)
+	li	$t0,1
+	sw	$t0,44($fp)
+	lw	$t0,44($fp)
+	sw	$t0,8($t3)
+	lw	$t0,32($fp)
+	sw	$t0,28($fp)
+	la	$t2,array_data_T_28
+	move	$a0,$t0
+	sw	$t0,0($fp)
+	la	$t0,f1
+	jalr	$t0
 	nop
 	sw	$2,52($fp)
-	lw	$8,52($fp)
-	sw	$8,48($fp)
-	lw	$8,60($fp)
-	li	$8,2
-	sw	$8,60($fp)
-	la	$11,array_data_28
-	lw	$8,60($fp)
-	li	$9,4
-	mul	$8,$8,$9
+	lw	$t0,52($fp)
+	sw	$t0,48($fp)
+	lw	$t0,60($fp)
+	li	$t0,2
+	sw	$t0,60($fp)
+	la	$t3,array_data_28
+	lw	$t0,60($fp)
+	li	$t1,4
+	mul	$t0,$t0,$t1
 	nop
-	add	$11,$11,$8
-	lw	$9,0($11)
-	sw	$9,56($fp)
+	add	$t3,$t3,$t0
+	lw	$t1,0($t3)
+	sw	$t1,56($fp)
 	lw	$2,56($fp)
 	move	$sp,$fp
 	lw	$fp,68($sp)
@@ -75,34 +75,34 @@ f1:
 	sw	$fp,52($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
-	lw	$8,32($fp)
-	li	$8,2
-	sw	$8,32($fp)
-	la	$11,array_data_16
-	lw	$8,32($fp)
-	li	$9,4
-	mul	$8,$8,$9
+	lw	$t0,32($fp)
+	li	$t0,2
+	sw	$t0,32($fp)
+	la	$t3,array_data_16
+	lw	$t0,32($fp)
+	li	$t1,4
+	mul	$t0,$t0,$t1
 	nop
-	add	$11,$11,$8
-	sw	$11,28($fp)
-	lw	$8,36($fp)
-	li	$8,80
-	sw	$8,36($fp)
-	lw	$8,36($fp)
-	lw	$9,28($fp)
-	sw	$8,0($9)
-	sw	$8,24($fp)
-	lw	$8,44($fp)
-	li	$8,2
-	sw	$8,44($fp)
-	la	$11,array_data_16
-	lw	$8,44($fp)
-	li	$9,4
-	mul	$8,$8,$9
+	add	$t3,$t3,$t0
+	sw	$t3,28($fp)
+	lw	$t0,36($fp)
+	li	$t0,80
+	sw	$t0,36($fp)
+	lw	$t0,36($fp)
+	lw	$t1,28($fp)
+	sw	$t0,0($t1)
+	sw	$t0,24($fp)
+	lw	$t0,44($fp)
+	li	$t0,2
+	sw	$t0,44($fp)
+	la	$t3,array_data_16
+	lw	$t0,44($fp)
+	li	$t1,4
+	mul	$t0,$t0,$t1
 	nop
-	add	$11,$11,$8
-	lw	$9,0($11)
-	sw	$9,40($fp)
+	add	$t3,$t3,$t0
+	lw	$t1,0($t3)
+	sw	$t1,40($fp)
 	lw	$2,40($fp)
 	move	$sp,$fp
 	lw	$fp,52($sp)

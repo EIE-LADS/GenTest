@@ -10,14 +10,14 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,32($fp)
-	li	$8,1
-	sw	$8,32($fp)
-	lw	$8,16($fp)
-	lw	$9,32($fp)
-	sub	$8,$8,$9
-	sw	$8,16($fp)
-	sw	$8,28($fp)
+	lw	$t0,32($fp)
+	li	$t0,1
+	sw	$t0,32($fp)
+	lw	$t0,16($fp)
+	lw	$t1,32($fp)
+	sub	$t0,$t0,$t1
+	sw	$t0,16($fp)
+	sw	$t0,28($fp)
 	lw	$2,16($fp)
 	move	$sp,$fp
 	lw	$fp,40($sp)

@@ -10,71 +10,71 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,32($fp)
-	li	$8,5
-	sw	$8,32($fp)
-	lw	$8,32($fp)
-	sw	$8,28($fp)
-	lw	$8,40($fp)
-	li	$8,1106
-	sw	$8,40($fp)
-	lw	$8,40($fp)
-	sw	$8,36($fp)
+	lw	$t0,32($fp)
+	li	$t0,5
+	sw	$t0,32($fp)
+	lw	$t0,32($fp)
+	sw	$t0,28($fp)
+	lw	$t0,40($fp)
+	li	$t0,1106
+	sw	$t0,40($fp)
+	lw	$t0,40($fp)
+	sw	$t0,36($fp)
 while_start_1:
-	lw	$8,48($fp)
-	li	$8,0
-	sw	$8,48($fp)
-	lw	$8,28($fp)
-	lw	$9,48($fp)
-	sge	$8,$8,$9
-	sw	$8,44($fp)
-	lw	$8,44($fp)
-	beq	$8,$0,while_end_1
+	lw	$t0,48($fp)
+	li	$t0,0
+	sw	$t0,48($fp)
+	lw	$t0,28($fp)
+	lw	$t1,48($fp)
+	sge	$t0,$t0,$t1
+	sw	$t0,44($fp)
+	lw	$t0,44($fp)
+	beq	$t0,$0,while_end_1
 	nop
-	lw	$8,48($fp)
-	li	$8,0
-	sw	$8,48($fp)
-	lw	$8,48($fp)
-	sw	$8,52($fp)
-	sw	$8,56($fp)
+	lw	$t0,48($fp)
+	li	$t0,0
+	sw	$t0,48($fp)
+	lw	$t0,48($fp)
+	sw	$t0,52($fp)
+	sw	$t0,56($fp)
 for_start_1:
-	lw	$8,64($fp)
-	li	$8,4
-	sw	$8,64($fp)
-	lw	$8,52($fp)
-	lw	$9,64($fp)
-	slt	$8,$8,$9
-	sw	$8,60($fp)
-	lw	$8,60($fp)
-	beq	$8,$0,for_end_1
+	lw	$t0,64($fp)
+	li	$t0,4
+	sw	$t0,64($fp)
+	lw	$t0,52($fp)
+	lw	$t1,64($fp)
+	slt	$t0,$t0,$t1
+	sw	$t0,60($fp)
+	lw	$t0,60($fp)
+	beq	$t0,$0,for_end_1
 	nop
 if_start_1:
-	lw	$8,28($fp)
-	lw	$9,36($fp)
-	slt	$8,$8,$9
-	sw	$8,68($fp)
-	lw	$8,68($fp)
-	beq	$8,$0,else_1
+	lw	$t0,28($fp)
+	lw	$t1,36($fp)
+	slt	$t0,$t0,$t1
+	sw	$t0,68($fp)
+	lw	$t0,68($fp)
+	beq	$t0,$0,else_1
 	nop
-	lw	$8,28($fp)
-	sw	$8,36($fp)
-	sw	$8,72($fp)
+	lw	$t0,28($fp)
+	sw	$t0,36($fp)
+	sw	$t0,72($fp)
 	b	if_end_1
 	nop
 else_1:
 if_end_1:
-	lw	$8,52($fp)
-	sw	$8,76($fp)
-	addi	$8,$8,1
-	sw	$8,52($fp)
+	lw	$t0,52($fp)
+	sw	$t0,76($fp)
+	addi	$t0,$t0,1
+	sw	$t0,52($fp)
 	b	for_start_1
 	nop
 for_end_1:
 break_exit_2: 
-	lw	$8,28($fp)
-	addi	$8,$8,-1
-	sw	$8,28($fp)
-	sw	$8,80($fp)
+	lw	$t0,28($fp)
+	addi	$t0,$t0,-1
+	sw	$t0,28($fp)
+	sw	$t0,80($fp)
 	b	while_start_1
 	nop
 while_end_1:

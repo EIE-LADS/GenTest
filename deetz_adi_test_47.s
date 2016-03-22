@@ -10,26 +10,26 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,32($fp)
-	li	$8,3
-	sw	$8,32($fp)
-	lw	$8,32($fp)
-	sw	$8,28($fp)
+	lw	$t0,32($fp)
+	li	$t0,3
+	sw	$t0,32($fp)
+	lw	$t0,32($fp)
+	sw	$t0,28($fp)
 while_start_1:
-	lw	$8,40($fp)
-	li	$8,0
-	sw	$8,40($fp)
-	lw	$8,28($fp)
-	lw	$9,40($fp)
-	sge	$8,$8,$9
-	sw	$8,36($fp)
-	lw	$8,36($fp)
-	beq	$8,$0,while_end_1
+	lw	$t0,40($fp)
+	li	$t0,0
+	sw	$t0,40($fp)
+	lw	$t0,28($fp)
+	lw	$t1,40($fp)
+	sge	$t0,$t0,$t1
+	sw	$t0,36($fp)
+	lw	$t0,36($fp)
+	beq	$t0,$0,while_end_1
 	nop
-	lw	$8,28($fp)
-	addi	$8,$8,-1
-	sw	$8,28($fp)
-	sw	$8,44($fp)
+	lw	$t0,28($fp)
+	addi	$t0,$t0,-1
+	sw	$t0,28($fp)
+	sw	$t0,44($fp)
 	b	break_exit_1
 	nop
 	b	while_start_1

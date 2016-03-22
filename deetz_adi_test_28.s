@@ -10,26 +10,26 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$8,32($fp)
-	li	$8,3
-	sw	$8,32($fp)
-	lw	$8,32($fp)
-	sw	$8,28($fp)
-	lw	$8,40($fp)
-	li	$8,1
-	sw	$8,40($fp)
-	lw	$8,40($fp)
-	sw	$8,36($fp)
-	lw	$8,48($fp)
-	li	$8,2
-	sw	$8,48($fp)
-	lw	$8,36($fp)
-	lw	$9,48($fp)
-	rem	$8,$8,$9
+	lw	$t0,32($fp)
+	li	$t0,3
+	sw	$t0,32($fp)
+	lw	$t0,32($fp)
+	sw	$t0,28($fp)
+	lw	$t0,40($fp)
+	li	$t0,1
+	sw	$t0,40($fp)
+	lw	$t0,40($fp)
+	sw	$t0,36($fp)
+	lw	$t0,48($fp)
+	li	$t0,2
+	sw	$t0,48($fp)
+	lw	$t0,36($fp)
+	lw	$t1,48($fp)
+	rem	$t0,$t0,$t1
 	nop
 	nop
-	sw	$8,36($fp)
-	sw	$8,44($fp)
+	sw	$t0,36($fp)
+	sw	$t0,44($fp)
 	lw	$2,16($fp)
 	move	$sp,$fp
 	lw	$fp,56($sp)
