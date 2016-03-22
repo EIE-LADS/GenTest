@@ -52,7 +52,8 @@ f:
 	lw	$11,28($fp)
 	sll	$8,$8,2
 	add	$11,$11,$8
-	sw	$11,64($fp)
+	lw	$8,0($11)
+	sw	$8,64($fp)
 	lw	$2,64($fp)
 	move	$sp,$fp
 	lw	$fp,72($sp)
