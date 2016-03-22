@@ -27,7 +27,7 @@ f:
 	sw	$8,56($fp)
 	addi	$8,$8,1
 	sw	$8,28($fp)
-	lw	$8,28($fp)
+	lw	$8,56($fp)
 	lw	$9,52($fp)
 	div	$8,$9
 	mflo	$8

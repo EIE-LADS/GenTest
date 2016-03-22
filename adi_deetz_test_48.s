@@ -60,7 +60,7 @@ f:
 	jalr	$8
 	nop
 	sw	$2,52($fp)
-	lw	$8,40($fp)
+	lw	$8,52($fp)
 	sw	$8,28($fp)
 	sw	$8,48($fp)
 for_loop_1:
@@ -84,7 +84,7 @@ for_loop_1:
 	li	$8,2
 	sw	$8,60($fp)
 	lw	$8,60($fp)
-	lw	$9,8($fp)
+	lw	$9,72($fp)
 	mult	$8,$9
 	mflo	$8
 	nop
@@ -113,7 +113,7 @@ for_loop_1:
 	jalr	$8
 	nop
 	sw	$2,80($fp)
-	lw	$8,8($fp)
+	lw	$8,80($fp)
 	sw	$8,40($fp)
 	sw	$8,76($fp)
 	lw	$8,28($fp)
