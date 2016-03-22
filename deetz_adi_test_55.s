@@ -57,6 +57,7 @@ f:
 	li	$t1,4
 	mul	$t0,$t0,$t1
 	nop
+	nop
 	add	$t3,$t3,$t0
 	lw	$t1,0($t3)
 	sw	$t1,60($fp)
@@ -70,6 +71,7 @@ f:
 	lw	$t0,40($fp)
 	li	$t1,4
 	mul	$t0,$t0,$t1
+	nop
 	nop
 	add	$t3,$t3,$t0
 	lw	$t1,0($t3)
@@ -93,6 +95,6 @@ f:
 
 .data
 
-array_data_28:	.word	0,0,0,
-array_data_44:	.word	0,0,
+array_data_T_28:	.word	0,0,0,
+array_data_T_44:	.word	0,0,
 
