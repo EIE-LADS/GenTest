@@ -81,7 +81,7 @@ for_loop_1:
 	jalr	$8
 	nop
 	sw	$2,76($fp)
-	lw	$8,76($fp)
+	lw	$8,8($fp)
 	sw	$8,40($fp)
 	sw	$8,72($fp)
 	lw	$8,36($fp)

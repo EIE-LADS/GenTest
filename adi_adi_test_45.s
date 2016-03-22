@@ -18,7 +18,7 @@ f:
 	jalr	$8
 	nop
 	sw	$2,32($fp)
-	lw	$8,32($fp)
+	lw	$8,4($fp)
 	sw	$8,16($fp)
 	sw	$8,28($fp)
 	lw	$8,16($fp)
@@ -90,7 +90,7 @@ else_1:
 	nop
 	sw	$2,48($fp)
 	lw	$8,16($fp)
-	lw	$9,48($fp)
+	lw	$9,20($fp)
 	mult	$8,$9
 	mflo	$8
 	nop
