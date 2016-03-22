@@ -14,6 +14,7 @@ f:
 	li	$t0,10
 	sw	$t0,32($fp)
 	la	$t3,array_data_28
+	sw	$t3,28
 	lw	$t0,36($fp)
 	li	$t0,1
 	sw	$t0,36($fp)

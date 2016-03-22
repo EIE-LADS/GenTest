@@ -1,4 +1,6 @@
 	.text
+	la	$t3,array_data_0
+	sw	$t3,0
 
 	.align	2
 	.globl	f
@@ -15,6 +17,7 @@ f:
 	li	$t0,3
 	sw	$t0,32($fp)
 	la	$t3,array_data_28
+	sw	$t3,28
 	lw	$t0,32($fp)
 	li	$t0,3
 	sw	$t0,32($fp)
@@ -47,7 +50,7 @@ f:
 	lw	$t0,60($fp)
 	li	$t0,2
 	sw	$t0,60($fp)
-	la	$t3,array_data_28
+	lw	$t3,28($fp)
 	lw	$t0,60($fp)
 	li	$t1,4
 	mul	$t0,$t0,$t1
@@ -75,10 +78,12 @@ f1:
 	sw	$fp,52($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
+	la	$t3,array_data_16
+	sw	$t3,16
 	lw	$t0,32($fp)
 	li	$t0,2
 	sw	$t0,32($fp)
-	la	$t3,array_data_16
+	lw	$t3,16($fp)
 	lw	$t0,32($fp)
 	li	$t1,4
 	mul	$t0,$t0,$t1
@@ -95,7 +100,7 @@ f1:
 	lw	$t0,44($fp)
 	li	$t0,2
 	sw	$t0,44($fp)
-	la	$t3,array_data_16
+	lw	$t3,16($fp)
 	lw	$t0,44($fp)
 	li	$t1,4
 	mul	$t0,$t0,$t1
@@ -115,5 +120,7 @@ f1:
 
 .data
 
+array_data_0:	.word	
 array_data_28:	.word	0,0,0,
+array_data_16:	.word	
 

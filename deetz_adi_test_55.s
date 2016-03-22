@@ -14,6 +14,7 @@ f:
 	li	$t0,3
 	sw	$t0,32($fp)
 	la	$t3,array_data_28
+	sw	$t3,28
 	lw	$t0,32($fp)
 	li	$t0,3
 	sw	$t0,32($fp)
@@ -35,6 +36,7 @@ f:
 	li	$t0,2
 	sw	$t0,40($fp)
 	la	$t3,array_data_44
+	sw	$t3,44
 	lw	$t0,48($fp)
 	li	$t0,5
 	sw	$t0,48($fp)
@@ -50,7 +52,7 @@ f:
 	lw	$t0,36($fp)
 	li	$t0,1
 	sw	$t0,36($fp)
-	la	$t3,array_data_44
+	lw	$t3,44($fp)
 	lw	$t0,36($fp)
 	li	$t1,4
 	mul	$t0,$t0,$t1
@@ -64,7 +66,7 @@ f:
 	lw	$t0,40($fp)
 	li	$t0,2
 	sw	$t0,40($fp)
-	la	$t3,array_data_28
+	lw	$t3,28($fp)
 	lw	$t0,40($fp)
 	li	$t1,4
 	mul	$t0,$t0,$t1
