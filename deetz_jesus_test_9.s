@@ -24,7 +24,7 @@ f:
 	li	$8,1
 	sw	$8,52($fp)
 	lw	$8,28($fp)
-	lw	$9,0($fp)
+	lw	$9,36($fp)
 	mul	$8,$8,$9
 	nop
 	nop

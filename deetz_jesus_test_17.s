@@ -25,7 +25,7 @@ f:
 	addi	$8,$8,1
 	sw	$8,16($fp)
 	lw	$8,56($fp)
-	lw	$9,0($fp)
+	lw	$9,60($fp)
 	mul	$8,$8,$9
 	nop
 	nop
@@ -61,7 +61,7 @@ f:
 	sw	$8,20($fp)
 	sw	$8,36($fp)
 	lw	$8,16($fp)
-	lw	$9,0($fp)
+	lw	$9,20($fp)
 	mul	$8,$8,$9
 	nop
 	nop

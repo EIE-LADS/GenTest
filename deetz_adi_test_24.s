@@ -40,7 +40,7 @@ f:
 	add	$8,$8,$9
 	sw	$8,52($fp)
 	lw	$8,48($fp)
-	lw	$9,0($fp)
+	lw	$9,52($fp)
 	mul	$8,$8,$9
 	nop
 	nop

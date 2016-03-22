@@ -45,7 +45,7 @@ f:
 	li	$8,3
 	sw	$8,32($fp)
 	lw	$8,32($fp)
-	lw	$9,0($fp)
+	lw	$9,16($fp)
 	mul	$8,$8,$9
 	nop
 	nop

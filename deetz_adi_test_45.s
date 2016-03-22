@@ -91,7 +91,7 @@ else_1:
 	nop
 	sw	$2,48($fp)
 	lw	$8,16($fp)
-	lw	$9,0($fp)
+	lw	$9,48($fp)
 	mul	$8,$8,$9
 	nop
 	nop
