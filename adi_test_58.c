@@ -9,11 +9,11 @@ int f(int a, int b)
 	array[1] = 10; 
 	array[3] = -50;
 	x = f1(array, a); 
-	return array[0]; 
+	return array[2]; 
 }
 
 int f1(int a[], int b)
 {
-	a[i]++;
+	a[2]++;
 	return 0; 
 }
