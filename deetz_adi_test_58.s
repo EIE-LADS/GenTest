@@ -150,10 +150,10 @@ f1:
 	lw	$t1,0($t3)
 	sw	$t1,28($fp)
 	lw	$t3,28($fp)
-	lw	$t00,($t3)
+	lw	$t0,0($t3)
 	sw	$t0,36($fp)
 	addi	$t0,$t0,1
-	sw	$t00,($t3)
+	sw	$t0,0($t3)
 	lw	$t0,40($fp)
 	li	$t0,0
 	sw	$t0,40($fp)
