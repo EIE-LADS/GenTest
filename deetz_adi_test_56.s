@@ -1,5 +1,5 @@
 	.text
-	la	$t3,array_data_0
+	la	$t3,array_data_T_0
 	sw	$t3,0
 
 	.align	2
@@ -16,7 +16,7 @@ f:
 	lw	$t0,32($fp)
 	li	$t0,3
 	sw	$t0,32($fp)
-	la	$t3,array_data_28
+	la	$t3,array_data_T_28
 	sw	$t3,28
 	lw	$t0,32($fp)
 	li	$t0,3
@@ -79,7 +79,7 @@ f1:
 	sw	$fp,52($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
-	la	$t3,array_data_16
+	la	$t3,array_data_T_16
 	sw	$t3,16
 	lw	$t0,32($fp)
 	li	$t0,2
@@ -123,7 +123,7 @@ f1:
 
 .data
 
-array_data_0:	.word	
+array_data_T_0:	.word	
 array_data_T_28:	.word	0,0,0,
-array_data_16:	.word	
+array_data_T_16:	.word	
 

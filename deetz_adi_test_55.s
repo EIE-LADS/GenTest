@@ -13,7 +13,7 @@ f:
 	lw	$t0,32($fp)
 	li	$t0,3
 	sw	$t0,32($fp)
-	la	$t3,array_data_28
+	la	$t3,array_data_T_28
 	sw	$t3,28
 	lw	$t0,32($fp)
 	li	$t0,3
@@ -35,7 +35,7 @@ f:
 	lw	$t0,40($fp)
 	li	$t0,2
 	sw	$t0,40($fp)
-	la	$t3,array_data_44
+	la	$t3,array_data_T_44
 	sw	$t3,44
 	lw	$t0,48($fp)
 	li	$t0,5
