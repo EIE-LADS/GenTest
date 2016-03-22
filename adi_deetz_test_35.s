@@ -32,7 +32,7 @@ dw_loop_1:
 	sw	$8,52($fp)
 	addi	$8,$8,1
 	sw	$8,28($fp)
-	lw	$8,52($fp)
+	lw	$8,28($fp)
 	bne	$8,$0,dw_loop_1
 	nop
 break_1:
