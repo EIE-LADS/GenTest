@@ -36,7 +36,7 @@ f:
 	sw	$8,44($fp)
 	lw	$8,44($fp)
 	sw	$8,8($11)
-	la	$8,arr_28
+	lw	$8,28($fp)
 	move	$a0,$8
 	sw	$8,0($fp)
 	la	$8,f1
