@@ -36,10 +36,11 @@ f:
 	nop
 	add	$t3,$t3,$t0
 	sw	$t3,40($fp)
-	lw	$t0,40($fp)
+	lw	$t3,40($fp)
+	lw	$t0,0($t3)
 	sw	$t0,44($fp)
 	addi	$t0,$t0,1
-	sw	$t0,40($fp)
+	sw	$t0,0($t3)
 	lw	$t0,36($fp)
 	li	$t0,1
 	sw	$t0,36($fp)
