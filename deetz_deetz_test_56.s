@@ -90,7 +90,8 @@ f:
 	nop
 	nop
 	add	$t3,$t3,$t0
-	sw	$t3,72($fp)
+	lw	$t1,0($t3)
+	sw	$t1,72($fp)
 	lw	$2,72($fp)
 	move	$sp,$fp
 	lw	$fp,80($sp)

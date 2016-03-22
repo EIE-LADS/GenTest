@@ -61,7 +61,8 @@ f:
 	nop
 	nop
 	add	$t3,$t3,$t0
-	sw	$t3,68($fp)
+	lw	$t1,0($t3)
+	sw	$t1,68($fp)
 	lw	$2,68($fp)
 	move	$sp,$fp
 	lw	$fp,76($sp)

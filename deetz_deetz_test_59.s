@@ -89,7 +89,8 @@ f1:
 	nop
 	nop
 	add	$t3,$t3,$t0
-	sw	$t3,60($fp)
+	lw	$t1,0($t3)
+	sw	$t1,60($fp)
 	lw	$t0,60($fp)
 	lw	$t1,52($fp)
 	sw	$t0,0($t1)
@@ -125,7 +126,8 @@ f1:
 	nop
 	nop
 	add	$t3,$t3,$t0
-	sw	$t3,92($fp)
+	lw	$t1,0($t3)
+	sw	$t1,92($fp)
 	lw	$t0,28($fp)
 	lw	$t1,92($fp)
 	add	$t0,$t0,$t1
