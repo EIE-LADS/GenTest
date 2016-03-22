@@ -116,7 +116,6 @@ for_loop_1:
 	lw	$8,80($fp)
 	sw	$8,40($fp)
 	sw	$8,76($fp)
-
 	lw	$8,28($fp)
 	sw	$8,84($fp)
 	addi	$8,$8,1

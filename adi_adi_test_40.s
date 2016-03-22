@@ -82,18 +82,15 @@ for_loop_1:
 	sw	$8,32($fp)
 	lw	$8,32($fp)
 	sw	$8,84($fp)
-
 	lw	$8,20($fp)
 	sw	$8,88($fp)
 	addi	$8,$8,1
 	sw	$8,20($fp)
 dw_loop_2:
-
 	lw	$8,16($fp)
 	sw	$8,92($fp)
 	addi	$8,$8,-1
 	sw	$8,16($fp)
-
 	lw	$8,84($fp)
 	sw	$8,96($fp)
 	addi	$8,$8,-1
@@ -109,7 +106,6 @@ dw_loop_2:
 	bne	$8,$0,dw_loop_2
 	nop
 break_2:
-
 	lw	$8,28($fp)
 	sw	$8,104($fp)
 	addi	$8,$8,-1
@@ -135,12 +131,10 @@ for_loop_3:
 	lw	$8,116($fp)
 	beq	$8,$0,end_loop_3
 	nop
-
 	lw	$8,20($fp)
 	sw	$8,120($fp)
 	addi	$8,$8,1
 	sw	$8,20($fp)
-
 	lw	$8,36($fp)
 	sw	$8,124($fp)
 	addi	$8,$8,-1

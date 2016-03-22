@@ -122,7 +122,6 @@ f1:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-array
 	lw	$8,32($fp)
 	li	$8,2
 	sw	$8,32($fp)

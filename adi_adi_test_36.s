@@ -62,7 +62,6 @@ if_1:
 	b	if_out_1
 else_1:
 if_out_1:
-
 	lw	$8,52($fp)
 	sw	$8,76($fp)
 	addi	$8,$8,1
@@ -71,7 +70,6 @@ if_out_1:
 	nop
 end_loop_2:
 break_2:
-
 	lw	$8,28($fp)
 	sw	$8,80($fp)
 	addi	$8,$8,-1

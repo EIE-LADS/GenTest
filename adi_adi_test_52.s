@@ -63,12 +63,10 @@ while_loop_1:
 	lw	$8,52($fp)
 	beq	$8,$0,end_loop_1
 	nop
-
 	lw	$8,16($fp)
 	sw	$8,64($fp)
 	addi	$8,$8,1
 	sw	$8,16($fp)
-
 	lw	$8,44($fp)
 	sw	$8,68($fp)
 	addi	$8,$8,-1
