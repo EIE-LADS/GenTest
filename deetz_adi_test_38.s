@@ -90,13 +90,13 @@ for_start_1:
 	sw	$t0,20($fp)
 do_while_start_1:
 	lw	$t0,16($fp)
+	sw	$t0,92($fp)
 	addi	$t0,$t0,-1
 	sw	$t0,16($fp)
-	sw	$t0,92($fp)
 	lw	$t0,84($fp)
+	sw	$t0,96($fp)
 	addi	$t0,$t0,-1
 	sw	$t0,84($fp)
-	sw	$t0,96($fp)
 	lw	$t0,80($fp)
 	li	$t0,0
 	sw	$t0,80($fp)
@@ -109,9 +109,9 @@ do_while_start_1:
 	nop
 break_exit_2: 
 	lw	$t0,28($fp)
+	sw	$t0,104($fp)
 	addi	$t0,$t0,-1
 	sw	$t0,28($fp)
-	sw	$t0,104($fp)
 	b	for_start_1
 	nop
 for_end_1:

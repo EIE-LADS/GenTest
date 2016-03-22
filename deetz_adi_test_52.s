@@ -68,9 +68,9 @@ while_start_1:
 	addi	$t0,$t0,1
 	sw	$t0,16($fp)
 	lw	$t0,44($fp)
+	sw	$t0,68($fp)
 	addi	$t0,$t0,-1
 	sw	$t0,44($fp)
-	sw	$t0,68($fp)
 	b	break_exit_2
 	nop
 	b	while_start_1

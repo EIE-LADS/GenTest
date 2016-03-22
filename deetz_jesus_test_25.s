@@ -51,9 +51,9 @@ f:
 	sw	$t0,28($fp)
 	sw	$t0,68($fp)
 	lw	$t0,28($fp)
+	sw	$t0,76($fp)
 	addi	$t0,$t0,-1
 	sw	$t0,28($fp)
-	sw	$t0,76($fp)
 	lw	$t0,84($fp)
 	li	$t0,4
 	sw	$t0,84($fp)

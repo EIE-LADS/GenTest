@@ -29,9 +29,9 @@ f:
 	sw	$t0,28($fp)
 	sw	$t0,44($fp)
 	lw	$t0,28($fp)
+	sw	$t0,52($fp)
 	addi	$t0,$t0,-1
 	sw	$t0,28($fp)
-	sw	$t0,52($fp)
 	lw	$t0,60($fp)
 	li	$t0,4
 	sw	$t0,60($fp)

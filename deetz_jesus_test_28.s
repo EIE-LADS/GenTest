@@ -33,9 +33,9 @@ f:
 	sw	$t0,28($fp)
 	sw	$t0,48($fp)
 	lw	$t0,28($fp)
+	sw	$t0,56($fp)
 	addi	$t0,$t0,-1
 	sw	$t0,28($fp)
-	sw	$t0,56($fp)
 	lw	$t0,64($fp)
 	li	$t0,4
 	sw	$t0,64($fp)

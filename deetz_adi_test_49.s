@@ -17,9 +17,9 @@ f:
 	sw	$t0,28($fp)
 do_while_start_1:
 	lw	$t0,28($fp)
+	sw	$t0,36($fp)
 	addi	$t0,$t0,-1
 	sw	$t0,28($fp)
-	sw	$t0,36($fp)
 if_start_1:
 	lw	$t0,44($fp)
 	li	$t0,3

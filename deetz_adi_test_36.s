@@ -72,9 +72,9 @@ if_end_1:
 for_end_1:
 break_exit_2: 
 	lw	$t0,28($fp)
+	sw	$t0,80($fp)
 	addi	$t0,$t0,-1
 	sw	$t0,28($fp)
-	sw	$t0,80($fp)
 	b	while_start_1
 	nop
 while_end_1:
