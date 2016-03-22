@@ -13,7 +13,7 @@ f:
 	lw	$8,32($fp)
 	li	$8,10
 	sw	$8,32($fp)
-	la	$11,arr_0
+	la	$11,arr_28
 	lw	$8,36($fp)
 	li	$8,1
 	sw	$8,36($fp)
