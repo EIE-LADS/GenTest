@@ -108,4 +108,4 @@ f1:
 
 	.data
 
-arr_28:	.word	0,	0,	0,
+arr_28:	.word	0,0,0
