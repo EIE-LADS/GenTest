@@ -32,6 +32,7 @@ f:
 	lw	$9,52($fp)
 	mul	$8,$8,$9
 	nop
+	nop
 	sw	$8,36($fp)
 	sw	$8,48($fp)
 	lw	$2,16($fp)

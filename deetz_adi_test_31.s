@@ -35,6 +35,7 @@ while_start_1:
 	lw	$9,52($fp)
 	rem	$8,$8,$9
 	nop
+	nop
 	sw	$8,36($fp)
 	sw	$8,48($fp)
 	b	while_start_1

@@ -27,6 +27,7 @@ f:
 	lw	$9,32($fp)
 	div	$8,$8,$9
 	nop
+	nop
 	sw	$8,28($fp)
 	sw	$8,44($fp)
 	lw	$8,32($fp)
@@ -47,6 +48,7 @@ f:
 	lw	$8,28($fp)
 	lw	$9,36($fp)
 	rem	$8,$8,$9
+	nop
 	nop
 	sw	$8,28($fp)
 	sw	$8,60($fp)

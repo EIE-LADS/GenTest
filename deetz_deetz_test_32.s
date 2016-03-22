@@ -27,6 +27,7 @@ f:
 	lw	$9,48($fp)
 	rem	$8,$8,$9
 	nop
+	nop
 	sw	$8,36($fp)
 	sw	$8,44($fp)
 	lw	$8,40($fp)
