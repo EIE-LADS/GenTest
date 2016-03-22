@@ -1,4 +1,6 @@
 	.text
+	la	$11,arr_0
+	sw	$11,0($fp)
 
 	.align	2
 	.globl	f
@@ -15,6 +17,7 @@ f:
 	li	$8,3
 	sw	$8,32($fp)
 	la	$11,arr_28
+	sw	$11,28($fp)
 	lw	$8,32($fp)
 	li	$8,3
 	sw	$8,32($fp)
@@ -48,7 +51,7 @@ f:
 	li	$8,2
 	sw	$8,60($fp)
 	lw	$8,60($fp)
-	la	$11,arr_28
+	lw	$11,28($fp)
 	sll	$8,$8,2
 	add	$11,$11,$8
 	lw	$8,0($11)
@@ -73,11 +76,13 @@ f1:
 	sw	$31,56($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
+	la	$11,arr_16
+	sw	$11,16($fp)
 	lw	$8,32($fp)
 	li	$8,2
 	sw	$8,32($fp)
 	lw	$8,32($fp)
-	la	$11,arr_16
+	lw	$11,16($fp)
 	sll	$8,$8,2
 	add	$11,$11,$8
 	sw	$11,28($fp)
@@ -92,7 +97,7 @@ f1:
 	li	$8,2
 	sw	$8,44($fp)
 	lw	$8,44($fp)
-	la	$11,arr_16
+	lw	$11,16($fp)
 	sll	$8,$8,2
 	add	$11,$11,$8
 	lw	$8,0($11)
@@ -109,4 +114,6 @@ f1:
 
 	.data
 
+arr_0:	.word
 arr_28:	.word	0,	0,	0,
+arr_16:	.word
