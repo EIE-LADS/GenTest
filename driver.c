@@ -1,5 +1,4 @@
-#include <stdl
-ib.h>
+#include <stdlib.h>
 int f(int x, int y);
 
 int main(int argc, char* argv[]){
