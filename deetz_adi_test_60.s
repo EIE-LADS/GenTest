@@ -149,7 +149,7 @@ f1:
 	add	$t3,$t3,$t0
 	lw	$t1,0($t3)
 	sw	$t1,28($fp)
-	lw	$t3,16($fp)
+	lw	$t3,28($fp)
 	lw	$t0,0($t3)
 	sw	$t0,36($fp)
 	addi	$t0,$t0,1
