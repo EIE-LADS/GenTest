@@ -1,6 +1,4 @@
 	.text
-	la	$11,arr_0
-	sw	$11,0($fp)
 
 	.align	2
 	.globl	f
@@ -74,8 +72,6 @@ f1:
 	sw	$31,56($sp)
 	move	$fp,$sp
 	sw	$a0,16($fp)
-	la	$11,arr_16
-	sw	$11,16($fp)
 	lw	$8,32($fp)
 	li	$8,2
 	sw	$8,32($fp)
@@ -112,6 +108,4 @@ f1:
 
 	.data
 
-arr_0:	.word
 arr_28:	.word	0,	0,	0,
-arr_16:	.word
