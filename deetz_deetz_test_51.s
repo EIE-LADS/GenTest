@@ -23,13 +23,14 @@ f:
 	mul	$8,$8,$9
 	nop
 	add	$11,$11,$8
-	lw	$8,0($11)
-	sw	$8,40($fp)
+	lw	$9,0($11)
+	sw	$9,40($fp)
 	lw	$8,48($fp)
 	li	$8,12
 	sw	$8,48($fp)
 	lw	$8,48($fp)
-	sw	$8,40($fp)
+	lw	$9,40($fp)
+	sw	$8,0($9)
 	sw	$8,36($fp)
 	lw	$8,52($fp)
 	li	$8,0
@@ -45,6 +46,6 @@ f:
 	.size	f, .-f
 
 .data
-array_data_28:	.word	
 
+array_data_28:	.word	
 

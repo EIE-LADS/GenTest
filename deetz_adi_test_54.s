@@ -70,8 +70,7 @@ f:
 	mul	$8,$8,$9
 	nop
 	add	$11,$11,$8
-	lw	$8,0($11)
-	sw	$8,68($fp)
+	sw	$11,68($fp)
 	lw	$2,68($fp)
 	move	$sp,$fp
 	lw	$fp,76($sp)
@@ -83,6 +82,6 @@ f:
 	.size	f, .-f
 
 .data
-array_data_28:	.word	
-0,0,0,0,0,0,0,0,0,
+
+array_data_28:	.word	0,0,0,0,0,0,0,0,0,
 
