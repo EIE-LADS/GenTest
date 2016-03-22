@@ -19,6 +19,8 @@ f:
 	lw	$t0,36($fp)
 	li	$t0,1
 	sw	$t0,36($fp)
+	lw	$t0,36($fp)
+	sw	$t0,44($fp)
 	lw	$t0,16($fp)
 	lw	$t1,20($fp)
 	seq	$t0,$t0,$t1
