@@ -114,8 +114,7 @@ f:
 	nop
 	nop
 	add	$t3,$t3,$t0
-	lw	$t1,0($t3)
-	sw	$t1,108($fp)
+	sw	$t3,108($fp)
 	lw	$2,108($fp)
 	move	$sp,$fp
 	lw	$fp,116($sp)
@@ -147,8 +146,7 @@ f1:
 	nop
 	nop
 	add	$t3,$t3,$t0
-	lw	$t1,0($t3)
-	sw	$t1,28($fp)
+	sw	$t3,28($fp)
 	lw	$t3,16($fp)
 	lw	$t0,0($t3)
 	sw	$t0,36($fp)
