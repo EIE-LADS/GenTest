@@ -30,8 +30,6 @@ f:
 	sw	$t0,40($fp)
 	lw	$t0,40($fp)
 	sw	$t0,8($t3)
-	lw	$t0,32($fp)
-	sw	$t0,28($fp)
 	lw	$t0,40($fp)
 	li	$t0,2
 	sw	$t0,40($fp)
@@ -47,8 +45,6 @@ f:
 	sw	$t0,52($fp)
 	lw	$t0,52($fp)
 	sw	$t0,4($t3)
-	lw	$t0,48($fp)
-	sw	$t0,44($fp)
 	lw	$t0,36($fp)
 	li	$t0,1
 	sw	$t0,36($fp)

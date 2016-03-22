@@ -13,6 +13,8 @@ f:
 	lw	$t0,32($fp)
 	li	$t0,3
 	sw	$t0,32($fp)
+	lw	$t0,32($fp)
+	sw	$t0,28($fp)
 	lw	$t0,20($fp)
 	lw	$t1,28($fp)
 	add	$t0,$t0,$t1

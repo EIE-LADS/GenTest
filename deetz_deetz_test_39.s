@@ -58,6 +58,8 @@ f1:
 	lw	$t0,36($fp)
 	li	$t0,12
 	sw	$t0,36($fp)
+	lw	$t0,36($fp)
+	sw	$t0,32($fp)
 	lw	$t0,48($fp)
 	li	$t0,33
 	sw	$t0,48($fp)
@@ -70,10 +72,14 @@ f1:
 	nop
 	nop
 	sw	$t0,44($fp)
+	lw	$t0,44($fp)
+	sw	$t0,40($fp)
 	lw	$t0,16($fp)
 	lw	$t1,20($fp)
 	add	$t0,$t0,$t1
 	sw	$t0,60($fp)
+	lw	$t0,60($fp)
+	sw	$t0,56($fp)
 	lw	$t0,68($fp)
 	li	$t0,155
 	sw	$t0,68($fp)

@@ -14,10 +14,14 @@ f:
 	lw	$t1,20($fp)
 	add	$t0,$t0,$t1
 	sw	$t0,32($fp)
+	lw	$t0,32($fp)
+	sw	$t0,28($fp)
 	lw	$t0,28($fp)
 	lw	$t1,16($fp)
 	add	$t0,$t0,$t1
 	sw	$t0,40($fp)
+	lw	$t0,40($fp)
+	sw	$t0,36($fp)
 	lw	$t0,28($fp)
 	lw	$t1,36($fp)
 	add	$t0,$t0,$t1

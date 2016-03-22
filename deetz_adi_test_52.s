@@ -13,6 +13,8 @@ f:
 	lw	$t0,32($fp)
 	li	$t0,1
 	sw	$t0,32($fp)
+	lw	$t0,32($fp)
+	sw	$t0,28($fp)
 	lw	$t4,28($fp)
 	lw	$t0,32($fp)
 	li	$t0,1
@@ -45,6 +47,8 @@ case_body_0:
 	lw	$t0,48($fp)
 	li	$t0,3
 	sw	$t0,48($fp)
+	lw	$t0,48($fp)
+	sw	$t0,44($fp)
 while_start_1:
 	lw	$t0,56($fp)
 	li	$t0,4

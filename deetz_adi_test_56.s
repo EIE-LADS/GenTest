@@ -36,8 +36,6 @@ f:
 	sw	$t0,44($fp)
 	lw	$t0,44($fp)
 	sw	$t0,8($t3)
-	lw	$t0,32($fp)
-	sw	$t0,28($fp)
 	la	$t2,array_data_T_28
 	move	$a0,$t0
 	sw	$t0,0($fp)
@@ -45,6 +43,8 @@ f:
 	jalr	$t0
 	nop
 	sw	$2,52($fp)
+	lw	$t0,52($fp)
+	sw	$t0,48($fp)
 	lw	$t0,60($fp)
 	li	$t0,2
 	sw	$t0,60($fp)

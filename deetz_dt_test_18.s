@@ -17,6 +17,8 @@ f:
 	lw	$t1,36($fp)
 	add	$t0,$t0,$t1
 	sw	$t0,32($fp)
+	lw	$t0,32($fp)
+	sw	$t0,28($fp)
 	lw	$2,28($fp)
 	move	$sp,$fp
 	lw	$fp,44($sp)

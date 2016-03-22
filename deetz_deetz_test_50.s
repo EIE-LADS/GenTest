@@ -35,8 +35,6 @@ f:
 	sw	$t0,44($fp)
 	lw	$t0,44($fp)
 	sw	$t0,12($t3)
-	lw	$t0,36($fp)
-	sw	$t0,28($fp)
 	lw	$t0,56($fp)
 	li	$t0,3
 	sw	$t0,56($fp)

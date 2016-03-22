@@ -13,6 +13,8 @@ f:
 	lw	$t0,32($fp)
 	li	$t0,3
 	sw	$t0,32($fp)
+	lw	$t0,32($fp)
+	sw	$t0,28($fp)
 while_start_1:
 	lw	$t0,40($fp)
 	li	$t0,0

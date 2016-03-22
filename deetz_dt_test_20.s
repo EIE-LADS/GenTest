@@ -10,6 +10,12 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
+	lw	$t0,16($fp)
+	sw	$t0,28($fp)
+	lw	$t0,16($fp)
+	sw	$t0,32($fp)
+	lw	$t0,20($fp)
+	sw	$t0,36($fp)
 	lw	$t0,28($fp)
 	lw	$t1,32($fp)
 	add	$t0,$t0,$t1

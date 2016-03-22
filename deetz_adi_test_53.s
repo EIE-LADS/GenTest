@@ -65,8 +65,6 @@ f:
 	sw	$t0,32($fp)
 	lw	$t0,32($fp)
 	sw	$t0,36($t3)
-	lw	$t0,36($fp)
-	sw	$t0,28($fp)
 	lw	$t0,72($fp)
 	li	$t0,0
 	sw	$t0,72($fp)
