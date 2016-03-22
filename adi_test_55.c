@@ -6,5 +6,5 @@ int f(int a, int b)
 		a = array[1]; 
 	}
 	b = array[2]; 
-	return a+b; 
+	return a; 
 }
