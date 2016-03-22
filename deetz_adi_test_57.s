@@ -10,31 +10,31 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
-	lw	$t0,16($fp)
-	lw	$t1,20($fp)
-	sgt	$t0,$t0,$t1
-	sw	$t0,32($fp)
+	lw	$t0,36($fp)
+	li	$t0,1
+	sw	$t0,36($fp)
+	lw	$t0,36($fp)
+	neg	$t0,$t0
+	sw	$t0,40($fp)
+	lw	$t0,36($fp)
+	li	$t0,1
+	sw	$t0,36($fp)
 	lw	$t0,16($fp)
 	lw	$t1,20($fp)
 	seq	$t0,$t0,$t1
-	sw	$t0,40($fp)
-	lw	$t0,44($fp)
-	li	$t0,1
-	sw	$t0,44($fp)
-	lw	$t0,44($fp)
-	neg	$t0,$t0
 	sw	$t0,48($fp)
-	lw	$t0,44($fp)
-	li	$t0,1
-	sw	$t0,44($fp)
-	lw	$t1,48($fp)
-	lw	$t2,52($fp)
-	lw	$t0,40($fp)
+	lw	$t1,40($fp)
+	lw	$t2,44($fp)
+	lw	$t0,48($fp)
 	movz	$t1,$t2,$t0
-	sw	$t1,36($fp)
+	sw	$t1,32($fp)
+	lw	$t0,16($fp)
+	lw	$t1,20($fp)
+	sgt	$t0,$t0,$t1
+	sw	$t0,52($fp)
 	lw	$t1,16($fp)
-	lw	$t2,36($fp)
-	lw	$t0,32($fp)
+	lw	$t2,32($fp)
+	lw	$t0,52($fp)
 	movz	$t1,$t2,$t0
 	sw	$t1,28($fp)
 	lw	$2,28($fp)
