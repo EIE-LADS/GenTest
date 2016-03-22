@@ -70,7 +70,8 @@ f:
 	mul	$8,$8,$9
 	nop
 	add	$11,$11,$8
-	sw	$11,68($fp)
+	lw	$9,0($11)
+	sw	$9,68($fp)
 	lw	$2,68($fp)
 	move	$sp,$fp
 	lw	$fp,76($sp)
