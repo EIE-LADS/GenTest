@@ -18,7 +18,7 @@ f:
 	jalr	$t0
 	nop
 	sw	$2,32($fp)
-	lw	$t0,32($fp)
+	lw	$t0,4($fp)
 	sw	$t0,28($fp)
 	lw	$2,16($fp)
 	move	$sp,$fp

@@ -18,7 +18,7 @@ f:
 	addi	$t0,$t0,1
 	sw	$t0,16($fp)
 	lw	$t0,48($fp)
-	lw	$t1,52($fp)
+	lw	$t1,16($fp)
 	mul	$t0,$t0,$t1
 	nop
 	nop

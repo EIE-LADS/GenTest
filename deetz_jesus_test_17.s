@@ -14,7 +14,7 @@ f:
 	sw	$t0,32($fp)
 	addi	$t0,$t0,1
 	sw	$t0,20($fp)
-	lw	$t0,32($fp)
+	lw	$t0,20($fp)
 	sw	$t0,16($fp)
 	sw	$t0,28($fp)
 	lw	$t0,56($fp)
@@ -25,7 +25,7 @@ f:
 	addi	$t0,$t0,1
 	sw	$t0,16($fp)
 	lw	$t0,56($fp)
-	lw	$t1,60($fp)
+	lw	$t1,16($fp)
 	mul	$t0,$t0,$t1
 	nop
 	nop

@@ -27,7 +27,7 @@ f:
 	sw	$t0,56($fp)
 	addi	$t0,$t0,1
 	sw	$t0,28($fp)
-	lw	$t0,56($fp)
+	lw	$t0,28($fp)
 	lw	$t1,36($fp)
 	add	$t0,$t0,$t1
 	sw	$t0,52($fp)

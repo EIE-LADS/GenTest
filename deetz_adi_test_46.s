@@ -82,7 +82,7 @@ for_start_1:
 	jalr	$t0
 	nop
 	sw	$2,76($fp)
-	lw	$t0,76($fp)
+	lw	$t0,8($fp)
 	sw	$t0,40($fp)
 	sw	$t0,72($fp)
 	lw	$t0,36($fp)

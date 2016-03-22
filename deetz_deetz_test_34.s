@@ -28,7 +28,7 @@ while_start_1:
 	sw	$t0,48($fp)
 	addi	$t0,$t0,1
 	sw	$t0,28($fp)
-	lw	$t0,48($fp)
+	lw	$t0,28($fp)
 	beq	$t0,$0,while_end_1
 	nop
 	lw	$t0,40($fp)

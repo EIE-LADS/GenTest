@@ -86,7 +86,7 @@ f:
 	lw	$t0,56($fp)
 	li	$t0,12
 	sw	$t0,56($fp)
-	lw	$t0,108($fp)
+	lw	$t0,28($fp)
 	lw	$t1,56($fp)
 	div	$t0,$t0,$t1
 	nop
