@@ -45,8 +45,8 @@ f:
 	mul	$8,$8,$9
 	nop
 	add	$11,$11,$8
-	lw	$8,0($11)
-	sw	$8,52($fp)
+	lw	$9,0($11)
+	sw	$9,52($fp)
 	lw	$8,60($fp)
 	li	$8,13
 	sw	$8,60($fp)
@@ -62,8 +62,7 @@ f:
 	mul	$8,$8,$9
 	nop
 	add	$11,$11,$8
-	lw	$8,0($11)
-	sw	$8,64($fp)
+	sw	$11,64($fp)
 	lw	$2,64($fp)
 	move	$sp,$fp
 	lw	$fp,76($sp)
@@ -75,6 +74,6 @@ f:
 	.size	f, .-f
 
 .data
-array_data_28:	.word	
-0,0,0,0,
+
+array_data_28:	.word	0,0,0,0,
 
