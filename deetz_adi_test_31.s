@@ -13,13 +13,9 @@ f:
 	lw	$t0,32($fp)
 	li	$t0,5
 	sw	$t0,32($fp)
-	lw	$t0,32($fp)
-	sw	$t0,28($fp)
 	lw	$t0,40($fp)
 	li	$t0,298
 	sw	$t0,40($fp)
-	lw	$t0,40($fp)
-	sw	$t0,36($fp)
 while_start_1:
 	lw	$t0,28($fp)
 	addi	$t0,$t0,-1

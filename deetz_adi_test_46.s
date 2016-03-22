@@ -15,17 +15,11 @@ f:
 	li	$t0,1
 	sw	$t0,32($fp)
 	lw	$t0,32($fp)
-	sw	$t0,28($fp)
-	lw	$t0,32($fp)
 	li	$t0,1
 	sw	$t0,32($fp)
-	lw	$t0,32($fp)
-	sw	$t0,36($fp)
 	lw	$t0,44($fp)
 	li	$t0,0
 	sw	$t0,44($fp)
-	lw	$t0,44($fp)
-	sw	$t0,40($fp)
 if_start_1:
 	lw	$t0,32($fp)
 	li	$t0,1

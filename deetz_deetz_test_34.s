@@ -16,13 +16,9 @@ f:
 	lw	$t0,32($fp)
 	neg	$t0,$t0
 	sw	$t0,36($fp)
-	lw	$t0,36($fp)
-	sw	$t0,28($fp)
 	lw	$t0,44($fp)
 	li	$t0,0
 	sw	$t0,44($fp)
-	lw	$t0,44($fp)
-	sw	$t0,40($fp)
 while_start_1:
 	lw	$t0,28($fp)
 	sw	$t0,48($fp)

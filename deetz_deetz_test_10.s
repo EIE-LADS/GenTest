@@ -13,8 +13,6 @@ f:
 	lw	$t0,32($fp)
 	li	$t0,12
 	sw	$t0,32($fp)
-	lw	$t0,32($fp)
-	sw	$t0,28($fp)
 	lw	$t0,44($fp)
 	li	$t0,4
 	sw	$t0,44($fp)

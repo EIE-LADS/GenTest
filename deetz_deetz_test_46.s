@@ -53,8 +53,6 @@ f1:
 	lw	$t0,44($fp)
 	li	$t0,12
 	sw	$t0,44($fp)
-	lw	$t0,44($fp)
-	sw	$t0,40($fp)
 	lw	$t0,56($fp)
 	li	$t0,33
 	sw	$t0,56($fp)
@@ -67,8 +65,6 @@ f1:
 	nop
 	nop
 	sw	$t0,52($fp)
-	lw	$t0,52($fp)
-	sw	$t0,48($fp)
 	lw	$t0,24($fp)
 	move	$a0,$t0
 	sw	$t0,0($fp)

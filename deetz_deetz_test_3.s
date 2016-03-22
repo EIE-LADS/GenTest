@@ -13,8 +13,6 @@ f:
 	lw	$t0,32($fp)
 	li	$t0,12
 	sw	$t0,32($fp)
-	lw	$t0,32($fp)
-	sw	$t0,28($fp)
 	lw	$2,28($fp)
 	move	$sp,$fp
 	lw	$fp,44($sp)

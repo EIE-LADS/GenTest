@@ -45,7 +45,7 @@ f:
 	lw	$t0,48($fp)
 	li	$t0,4
 	sw	$t0,48($fp)
-	lw	$t3,56($fp)
+	lw	$t3,28($fp)
 	lw	$t0,48($fp)
 	li	$t1,4
 	mul	$t0,$t0,$t1
@@ -65,7 +65,7 @@ f:
 	lw	$t0,48($fp)
 	li	$t0,4
 	sw	$t0,48($fp)
-	lw	$t3,64($fp)
+	lw	$t3,28($fp)
 	lw	$t0,48($fp)
 	li	$t1,4
 	mul	$t0,$t0,$t1
