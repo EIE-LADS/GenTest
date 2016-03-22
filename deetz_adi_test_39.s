@@ -89,14 +89,14 @@ for_start_1:
 	addi	$t0,$t0,1
 	sw	$t0,20($fp)
 do_while_start_1:
-	lw	$t0,0($fp)
+	lw	$t0,16($fp)
 	sw	$t0,92($fp)
 	addi	$t0,$t0,-1
-	sw	$t0,0($fp)
-	lw	$t0,0($fp)
+	sw	$t0,16($fp)
+	lw	$t0,84($fp)
 	sw	$t0,96($fp)
 	addi	$t0,$t0,-1
-	sw	$t0,0($fp)
+	sw	$t0,84($fp)
 	lw	$t0,80($fp)
 	li	$t0,0
 	sw	$t0,80($fp)
@@ -108,10 +108,10 @@ do_while_start_1:
 	bne	$t0,$0,do_while_start_1
 	nop
 break_exit_2: 
-	lw	$t0,0($fp)
+	lw	$t0,28($fp)
 	sw	$t0,104($fp)
 	addi	$t0,$t0,-1
-	sw	$t0,0($fp)
+	sw	$t0,28($fp)
 	b	for_start_1
 	nop
 for_end_1:
@@ -137,10 +137,10 @@ for_start_2:
 	sw	$t0,120($fp)
 	addi	$t0,$t0,1
 	sw	$t0,20($fp)
-	lw	$t0,0($fp)
+	lw	$t0,36($fp)
 	sw	$t0,124($fp)
 	addi	$t0,$t0,-1
-	sw	$t0,0($fp)
+	sw	$t0,36($fp)
 	b	for_start_2
 	nop
 for_end_2:

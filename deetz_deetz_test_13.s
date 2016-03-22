@@ -290,10 +290,10 @@ f:
 	add	$t0,$t0,$t1
 	sw	$t0,28($fp)
 	sw	$t0,252($fp)
-	lw	$t0,0($fp)
+	lw	$t0,28($fp)
 	sw	$t0,260($fp)
 	addi	$t0,$t0,-1
-	sw	$t0,0($fp)
+	sw	$t0,28($fp)
 	lw	$t0,60($fp)
 	li	$t0,4
 	sw	$t0,60($fp)
