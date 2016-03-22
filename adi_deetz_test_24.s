@@ -18,7 +18,7 @@ f:
 	li	$8,5
 	sw	$8,52($fp)
 	lw	$8,52($fp)
-	lw	$9,16($fp)
+	lw	$9,48($fp)
 	mult	$8,$9
 	mflo	$8
 	nop

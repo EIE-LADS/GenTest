@@ -89,7 +89,7 @@ f:
 	jalr	$8
 	nop
 	sw	$2,104($fp)
-	lw	$8,8($fp)
+	lw	$8,104($fp)
 	sw	$8,36($fp)
 	sw	$8,100($fp)
 	lw	$8,64($fp)
