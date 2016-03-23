@@ -39,10 +39,11 @@ f:
 	nop
 	add	$t3,$t3,$t0
 	sw	$t3,52($fp)
-	lw	$t0,52($fp)
+	lw	$t3,52($fp)
+	lw	$t0,0($t3)
 	addi	$t0,$t0,1
-	sw	$t0,52($fp)
 	sw	$t0,60($fp)
+	sw	$t0,0($t3)
 	lw	$t0,48($fp)
 	lw	$t1,60($fp)
 	div	$t0,$t0,$t1
