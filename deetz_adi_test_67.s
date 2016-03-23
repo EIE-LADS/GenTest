@@ -30,6 +30,7 @@ f:
 	lw	$t0,28($fp)
 	lw	$t1,32($fp)
 	sub	$t0,$t0,$t1
+	sra	$t0,$t0,2
 	sw	$t0,60($fp)
 	lw	$2,60($fp)
 	move	$sp,$fp
