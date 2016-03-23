@@ -4,5 +4,5 @@ int f(int a, int b)
 	int *y; 
 	y = &x;
 	y++; 
-	return *(++y); 
+	return *y; 
 }
