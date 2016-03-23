@@ -47,7 +47,7 @@ f:
 	sw	$t0,56($fp)
 	lw	$t0,56($fp)
 	lw	$t1,40($fp)
-	add	$t0,$t0,$t1
+	sub	$t0,$t0,$t1
 	sw	$t0,52($fp)
 	lw	$t0,28($fp)
 	sw	$t0,84($fp)
@@ -71,7 +71,7 @@ f:
 	sw	$t0,92($fp)
 	lw	$t0,92($fp)
 	lw	$t1,80($fp)
-	add	$t0,$t0,$t1
+	sub	$t0,$t0,$t1
 	sw	$t0,76($fp)
 	lw	$t0,76($fp)
 	lw	$t1,52($fp)

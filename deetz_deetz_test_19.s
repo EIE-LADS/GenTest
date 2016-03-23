@@ -16,7 +16,7 @@ f:
 	sw	$t0,16($fp)
 	lw	$t0,20($fp)
 	lw	$t1,16($fp)
-	add	$t0,$t0,$t1
+	sub	$t0,$t0,$t1
 	sw	$t0,32($fp)
 	lw	$2,32($fp)
 	move	$sp,$fp

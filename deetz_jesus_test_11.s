@@ -47,7 +47,7 @@ f:
 	sw	$t0,68($fp)
 	lw	$t0,68($fp)
 	lw	$t1,16($fp)
-	add	$t0,$t0,$t1
+	sub	$t0,$t0,$t1
 	sw	$t0,64($fp)
 	lw	$2,64($fp)
 	move	$sp,$fp
