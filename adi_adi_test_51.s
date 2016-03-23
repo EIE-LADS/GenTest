@@ -46,6 +46,7 @@ body_0:
 	sw	$8,28($fp)
 	sw	$8,44($fp)
 	j	break_1
+	nop
 body_1:
 	lw	$8,56($fp)
 	li	$8,2
@@ -54,6 +55,7 @@ body_1:
 	sw	$8,28($fp)
 	sw	$8,52($fp)
 	j	break_1
+	nop
 body_2:
 	lw	$8,64($fp)
 	li	$8,3
@@ -62,6 +64,7 @@ body_2:
 	sw	$8,28($fp)
 	sw	$8,60($fp)
 	j	break_1
+	nop
 	lw	$8,76($fp)
 	li	$8,1
 	sw	$8,76($fp)

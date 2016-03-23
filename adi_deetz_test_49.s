@@ -38,6 +38,7 @@ if_1:
 	addi	$8,$8,1
 	sw	$8,20($fp)
 	j	break_1
+	nop
 	b	if_out_1
 else_1:
 if_out_1:

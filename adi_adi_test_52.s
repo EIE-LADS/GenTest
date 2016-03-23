@@ -72,13 +72,16 @@ while_loop_1:
 	addi	$8,$8,-1
 	sw	$8,44($fp)
 	j	break_2
+	nop
 	b	while_loop_1
 	nop
 end_loop_1:
 break_2:
 	j	break_1
+	nop
 body_1:
 	j	break_1
+	nop
 body_2:
 	lw	$8,16($fp)
 	lw	$9,20($fp)
@@ -86,6 +89,7 @@ body_2:
 	sw	$8,16($fp)
 	sw	$8,72($fp)
 	j	break_1
+	nop
 break_1:
 	lw	$2,16($fp)
 	move	$sp,$fp

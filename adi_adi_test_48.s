@@ -45,6 +45,7 @@ if_1:
 	sw	$8,28($fp)
 	sw	$8,56($fp)
 	j	break_1
+	nop
 	b	if_out_1
 else_1:
 if_out_1:

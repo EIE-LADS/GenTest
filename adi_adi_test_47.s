@@ -31,6 +31,7 @@ while_loop_1:
 	addi	$8,$8,-1
 	sw	$8,28($fp)
 	j	break_1
+	nop
 	b	while_loop_1
 	nop
 end_loop_1:

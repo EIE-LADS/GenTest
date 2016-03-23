@@ -31,6 +31,7 @@ if_1:
 	beq	$8,$0,else_1
 	nop
 	j	break_1
+	nop
 	b	if_out_1
 else_1:
 if_out_1:
