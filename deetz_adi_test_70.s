@@ -21,13 +21,13 @@ f:
 	sw	$t0,28($fp)
 	sw	$t0,44($fp)
 	lw	$t0,28($fp)
-	lw	$t1,0($t0)
 	sw	$t1,56($fp)
 	lw	$t0,60($fp)
 	li	$t0,8
 	sw	$t0,60($fp)
 	lw	$t0,60($fp)
-	sw	$t0,56($fp)
+	lw	$t1,56($fp)
+	sw	$t0,0($t1)
 	sw	$t0,52($fp)
 	lw	$2,36($fp)
 	move	$sp,$fp
