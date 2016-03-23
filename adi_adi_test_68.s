@@ -36,10 +36,6 @@ f:
 	sub	$8,$8,$9
 	sra	$8,$8,2
 	sw	$8,64($fp)
-	lw	$8,28($fp)
-	lw	$9,32($fp)
-	sub	$8,$8,$9
-	sw	$8,64($fp)
 	lw	$2,64($fp)
 	move	$sp,$fp
 	lw	$fp,72($sp)
