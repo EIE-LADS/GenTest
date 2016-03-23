@@ -21,8 +21,8 @@ f:
 	sw	$t0,28($fp)
 	sw	$t0,40($fp)
 	lw	$t0,28($fp)
-	lw	$t1,0($t0)
-	sw	$t1,48($fp)
+	lw	$t0,0($t0)
+	sw	$t0,48($fp)
 	lw	$2,48($fp)
 	move	$sp,$fp
 	lw	$fp,56($sp)

@@ -21,7 +21,7 @@ f:
 	sw	$t0,28($fp)
 	sw	$t0,44($fp)
 	lw	$t0,28($fp)
-	sw	$t1,56($fp)
+	sw	$t0,56($fp)
 	lw	$t0,60($fp)
 	li	$t0,8
 	sw	$t0,60($fp)
