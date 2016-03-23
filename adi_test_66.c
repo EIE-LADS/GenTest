@@ -1,7 +1,6 @@
 int f(int a, int b)
 {
-	int x = 5; 
-	int *y; 
-	y = &x; 
-	return *y; 
+	int *y = 0x1234;
+	int x = *y; 
+	return x; 
 }
