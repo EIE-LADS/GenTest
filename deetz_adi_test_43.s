@@ -107,7 +107,7 @@ else_1:
 	sw	$t0,56($fp)
 	lw	$t0,16($fp)
 	lw	$t1,56($fp)
-	add	$t0,$t0,$t1
+	sub	$t0,$t0,$t1
 	sw	$t0,52($fp)
 	lw	$t0,52($fp)
 	move	$a0,$t0
@@ -121,7 +121,7 @@ else_1:
 	sw	$t0,32($fp)
 	lw	$t0,16($fp)
 	lw	$t1,32($fp)
-	add	$t0,$t0,$t1
+	sub	$t0,$t0,$t1
 	sw	$t0,64($fp)
 	lw	$t0,64($fp)
 	move	$a0,$t0
