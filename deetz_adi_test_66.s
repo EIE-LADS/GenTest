@@ -10,6 +10,7 @@ f:
 	move	$fp,$sp
 	sw	$a0,16($fp)
 	sw	$a1,20($fp)
+T_28
 	lw	$t0,32($fp)
 	li	$t0,4660
 	sw	$t0,32($fp)
