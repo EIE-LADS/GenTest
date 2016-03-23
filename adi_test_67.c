@@ -1,8 +1,9 @@
 int f(int a, int b)
 {
-	int *y;
+	int *y, *z;
 	int x = 5;
 	y = &x;
+	z = y; 
 	y++;
-	return *y; 
+	return y-z; 
 }
