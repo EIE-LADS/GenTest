@@ -81,7 +81,7 @@ else_1:
 	sw	$t0,40($fp)
 	lw	$t0,16($fp)
 	lw	$t1,40($fp)
-	sub	$t0,$t0,$t1
+	add	$t0,$t0,$t1
 	sw	$t0,52($fp)
 	lw	$t0,52($fp)
 	move	$a0,$t0
